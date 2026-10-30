@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zero Degree Strategy | 零度策略 - 高性能交易节点与期权算法策略提供商</title>
   <meta name="description" content="Zero Degree Strategy 专注于提供机构级低延迟交易节点接入与 BTC/USDT 期权短线算法策略。以技术驱动，捕捉市场瞬时定价偏差。">
+  <!-- 浏览器标签页 Favicon 图标 -->
+  <link rel="icon" type="image/png" href="logo.png">
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- FontAwesome 图标库 -->
@@ -17,9 +19,7 @@
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
       <!-- 品牌 Logo -->
       <a href="#" class="flex items-center space-x-3 group">
-        <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-amber-500 to-amber-300 flex items-center justify-center font-bold text-slate-950 shadow-lg shadow-amber-500/20 group-hover:scale-105 transition">
-          0°
-        </div>
+        <img src="logo.png" alt="Zero Degree Strategy Logo" class="h-9 w-auto object-contain group-hover:opacity-90 transition">
         <span class="font-bold text-lg tracking-wide text-white">Zero Degree <span class="text-amber-400 font-light">Strategy</span></span>
       </a>
 
@@ -232,4 +232,138 @@
           </p>
         </div>
 
-        <div class="p-6 bg-slate-900
+        <div class="p-6 bg-slate-900/50 border border-slate-800 rounded-2xl">
+          <div class="w-10 h-10 rounded-lg bg-cyan-950 flex items-center justify-center text-cyan-400 text-lg mb-4">
+            <i class="fa-solid fa-book-open"></i>
+          </div>
+          <h3 class="font-bold text-white text-base mb-2">投研智库与教育</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            系统化解析加密衍生品运作逻辑，助力高净值客户建立成熟的认知模型。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get Started: 快速开始与接入指引 -->
+    <section id="get-started" class="border-t border-slate-900 bg-slate-900/20 py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="text-amber-400 text-xs font-mono tracking-widest uppercase">GET STARTED</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-white mt-2 mb-4">三步接入专属交易网络</h2>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            清晰透明的对接流程，助您快速进入短线算法套利轨道。
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="p-6 bg-slate-950 border border-slate-800 rounded-2xl relative">
+            <div class="text-4xl font-extrabold text-slate-800 mb-4 font-mono">01</div>
+            <h3 class="text-lg font-bold text-white mb-2">需求评估与环境校验</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              联系官方商务，评估您的策略执行频率、交易偏好，并获取专属 API 接入参数。
+            </p>
+          </div>
+
+          <div class="p-6 bg-slate-950 border border-slate-800 rounded-2xl relative">
+            <div class="text-4xl font-extrabold text-amber-500/20 mb-4 font-mono">02</div>
+            <h3 class="text-lg font-bold text-white mb-2">节点配置与沙盒测试</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              分配独立私有交易节点，在模拟测试环境中验证毫秒级网络延迟与算法平稳度。
+            </p>
+          </div>
+
+          <div class="p-6 bg-slate-950 border border-slate-800 rounded-2xl relative">
+            <div class="text-4xl font-extrabold text-cyan-500/20 mb-4 font-mono">03</div>
+            <h3 class="text-lg font-bold text-white mb-2">正式上线与算法执行</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              启动自研 BTC/USDT 期权瞬时策略，依托程序化严密监控，享受自动锁利清算。
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <button onclick="toggleModal(true)" class="px-8 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold transition shadow-lg shadow-blue-600/30">
+            立即预约接入测试
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 免责声明 (Disclaimer) -->
+    <section class="border-t border-slate-900 bg-slate-950 py-12">
+      <div class="max-w-4xl mx-auto px-6 text-center space-y-3">
+        <div class="text-slate-400 text-xs font-semibold flex items-center justify-center space-x-2">
+          <i class="fa-solid fa-circle-exclamation text-amber-500"></i>
+          <span>技术服务与风险免责提示</span>
+        </div>
+        <p class="text-xs text-slate-500 leading-relaxed text-justify sm:text-center">
+          本平台仅提供交易节点网络基础设施与策略算法技术交流，不向任何个人或实体提供资产吸纳、资金代管或法定金融牌照业务。衍生品与加密货币市场具备极高价格波动性，客户需自行保管私钥与账户权限，并对自身决策承担全部责任。
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="border-t border-slate-900 bg-slate-950 py-8">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 space-y-4 sm:space-y-0">
+      <div>&copy; 2026 Zero Degree Strategy. 专注于交易节点与算法研发。</div>
+      <div class="flex space-x-6">
+        <a href="#" class="hover:text-slate-300 transition">Home</a>
+        <a href="#services" class="hover:text-slate-300 transition">Services</a>
+        <a href="#about" class="hover:text-slate-300 transition">About Us</a>
+        <a href="#get-started" class="hover:text-slate-300 transition">Get Started</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Contact Us 商务对接交互弹窗 -->
+  <div id="contact-modal" class="hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-md w-full p-6 space-y-6 relative shadow-2xl">
+      <div class="flex justify-between items-center">
+        <h3 class="text-lg font-bold text-white flex items-center space-x-2">
+          <i class="fa-solid fa-headset text-amber-400"></i>
+          <span>商务合作与节点接入</span>
+        </h3>
+        <button onclick="toggleModal(false)" class="text-slate-400 hover:text-white text-2xl leading-none">
+          &times;
+        </button>
+      </div>
+      <p class="text-sm text-slate-400 leading-relaxed">
+        欢迎联系 Zero Degree Strategy。请通过官方指定通道沟通节点接入方案与策略实测：
+      </p>
+      <div class="space-y-3">
+        <div class="p-4 bg-slate-950 border border-slate-800 rounded-xl flex items-center justify-between">
+          <div class="flex items-center space-x-3">
+            <i class="fa-brands fa-telegram text-sky-400 text-lg"></i>
+            <span class="text-sm text-slate-300">Telegram 官方对接</span>
+          </div>
+          <span class="text-xs font-mono text-amber-400">@ZeroDegree_Official</span>
+        </div>
+        <div class="p-4 bg-slate-950 border border-slate-800 rounded-xl flex items-center justify-between">
+          <div class="flex items-center space-x-3">
+            <i class="fa-brands fa-weixin text-emerald-400 text-lg"></i>
+            <span class="text-sm text-slate-300">官方微信 / WeChat</span>
+          </div>
+          <span class="text-xs font-mono text-cyan-400">联系授权机构代表</span>
+        </div>
+      </div>
+      <button onclick="toggleModal(false)" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm font-medium transition">
+        关闭
+      </button>
+    </div>
+  </div>
+
+  <!-- 弹窗开关脚本 -->
+  <script>
+    function toggleModal(show) {
+      const modal = document.getElementById('contact-modal');
+      if (show) {
+        modal.classList.remove('hidden');
+      } else {
+        modal.classList.add('hidden');
+      }
+    }
+  </script>
+
+</body>
+</html>
