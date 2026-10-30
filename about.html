@@ -3,70 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Zero Degree Strategy</title>
+  <title>Architecture & Philosophy | Zero Degree Strategy</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <header>
+  <header class="navbar">
     <div class="nav-container">
-      <a href="index.html" class="brand">
-        <img src="logo.png" alt="Zero Degree Strategy Logo" onerror="this.style.display='none'">
-        <span class="brand-name">Zero Degree Strategy</span>
+      <a href="index.html" class="nav-brand">
+        <img src="logo.png" alt="Zero Degree" class="brand-logo" onerror="this.style.display='none'">
+        <span>ZERO DEGREE</span>
+        <span class="brand-badge">PROPRIETARY LAB</span>
       </a>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="solutions.html">Infrastructure & Models</a></li>
-        <li><a href="about.html" class="active">About Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="about.html" class="active">Architecture</a></li>
+        <li><a href="contact.html">Institutional Channel</a></li>
       </ul>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-badge">Engineering & Philosophy</div>
-      <h1>Data-Driven Foundations,<br>Algorithm-Centric Execution</h1>
-      <p>Exploring digital asset derivative microstructure through robust quantitative models and dedicated low-latency node architecture.</p>
-    </section>
+  <section class="section-hero" style="padding: 4rem 2rem; text-align: left;">
+    <div style="max-width: 1240px; margin: 0 auto;">
+      <div class="hero-pill"><span class="hero-dot"></span> ENGINEERING PARADIGM</div>
+      <h1 class="hero-title" style="font-size: 2.8rem; margin-bottom: 1rem;">
+        Mathematical Discipline Over Speculation
+      </h1>
+      <p class="hero-desc" style="max-width: 780px;">
+        Zero Degree Strategy develops proprietary derivative pricing methodologies and low-latency infrastructure built on stochastic calculus and distributed systems.
+      </p>
+    </div>
+  </section>
 
-    <section class="content-block">
-      <h2>Mission & Positioning</h2>
-      <p>Zero Degree Strategy is an engineering and research group centered on microstructural analysis, BTC/USDT options quantitative modeling, and dedicated trading node deployments. We operate strictly by our core principle: <em>Strategy is Code, Risk is Absolute</em>.</p>
-      <p>Our focus is anchored strictly in mathematical finance and distributed systems architecture. We do not operate public investment funds, nor do we provide third-party asset custody or retail wealth management. Our goal is to empower institutional and research partners with transparent, resilient, and verifiable execution infrastructure.</p>
-    </section>
+  <section class="section-features">
+    <div class="features-container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+        <div class="card-violet">
+          <div class="badge">RESEARCH LAB</div>
+          <h3>Systematic Modeling</h3>
+          <p>
+            We eliminate directional prediction. Value generation is driven exclusively by mispricings across implied volatility skews, basis relationships, and volatility term structures.
+          </p>
+        </div>
 
-    <section class="content-block">
-      <h2>Core Engineering Pillars</h2>
-      <div class="grid" style="margin-top: 1.5rem; margin-bottom: 0;">
-        <div class="card" style="background: rgba(10, 14, 23, 0.6);">
-          <h3 style="font-size: 1.1rem; color: var(--accent-glow);">Mathematical Rigor</h3>
-          <p>Continuous volatility surface calibration and higher-order Greek sensitivities designed to identify genuine statistical dislocations.</p>
-        </div>
-        <div class="card" style="background: rgba(10, 14, 23, 0.6);">
-          <h3 style="font-size: 1.1rem; color: var(--accent-glow);">Deterministic Execution</h3>
-          <p>Colocated compute infrastructure ensuring reproducible execution speeds and sub-millisecond order feed ingestion.</p>
-        </div>
-        <div class="card" style="background: rgba(10, 14, 23, 0.6);">
-          <h3 style="font-size: 1.1rem; color: var(--accent-glow);">Absolute Risk Boundary</h3>
-          <p>Non-negotiable programmatic limits, stress simulations, and automated offloading to eliminate tail-risk exposure.</p>
+        <div class="card-teal">
+          <div class="badge">NODE TOPOLOGY</div>
+          <h3>Sub-Millisecond Engine</h3>
+          <p>
+            Strategy engines execute in zero-garbage-collection pathways, using dedicated network channels to minimize latency jitter during extreme order book volatility.
+          </p>
         </div>
       </div>
-    </section>
 
-    <section class="contact-section">
-      <h2>Institutional Inquiries</h2>
-      <p>For technical discussions or career inquiries:</p>
-      <div class="copy-box">
-        <span id="emailText" class="copy-email">hr@zero-degreestrategy.com</span>
-        <button id="copyBtn" class="copy-btn" onclick="copyContactEmail()">Copy Email</button>
+      <div class="card-amber" style="margin-top: 2rem;">
+        <div class="badge">CORE TENETS</div>
+        <h3>Infrastructure Directives</h3>
+        <p style="margin-top: 0.5rem; line-height: 2;">
+          • Continuous automated risk verification with dynamic kill-switches.<br>
+          • 100% Client-side cryptographic isolation and non-custodial credential handling.<br>
+          • High-throughput telemetry pipelines providing real-time Greek portfolio updates.
+        </p>
       </div>
-      <span id="copyFeedback" class="copy-feedback">Email copied to clipboard</span>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer>
-    <p>All rights reserved. This site is strictly for technological research and infrastructure demonstration. Zero Degree Strategy does not provide retail investment advice, asset custody, or financial intermediation services.</p>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div>Zero Degree Strategy · Quantitative Derivatives Modeling &amp; Node Operations</div>
+      <div class="footer-links">
+        <a href="index.html">Overview</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="contact.html">Institutional Channel</a>
+      </div>
+    </div>
   </footer>
 
   <script src="main.js"></script>
