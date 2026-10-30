@@ -1,84 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Methodology | Zero Degree Strategy</title>
+  <title>研究方法论 | 零度策略</title>
   <link rel="icon" type="image/png" href="logo.png">
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    :root {
+      --bg-primary: #070a10;
+      --bg-secondary: #0d131f;
+      --bg-card: rgba(15, 23, 42, 0.85);
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-glow: rgba(0, 240, 255, 0.3);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --cyan: #00f0ff;
+      --emerald: #10b981;
+      --purple: #a855f7;
+      --font-sans: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+      --font-mono: "JetBrains Mono", Consolas, Menlo, monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      background-image: 
+        radial-gradient(circle at 80% 20%, rgba(168, 85, 247, 0.04) 0%, transparent 40%),
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+      background-size: 100% 100%, 40px 40px, 40px 40px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    .navbar {
+      position: sticky; top: 0; z-index: 1000;
+      background: rgba(7, 10, 16, 0.88);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .nav-container {
+      max-width: 1240px; margin: 0 auto; padding: 1.1rem 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-brand {
+      display: flex; align-items: center; gap: 12px;
+      font-weight: 800; font-size: 1.2rem; color: #ffffff;
+    }
+    .brand-logo { height: 32px; width: auto; }
+    .brand-badge {
+      font-size: 0.72rem; font-family: var(--font-mono);
+      background: rgba(0, 240, 255, 0.12); color: var(--cyan);
+      padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(0, 240, 255, 0.3);
+    }
+    .nav-links { display: flex; gap: 2.2rem; list-style: none; }
+    .nav-links a { font-size: 0.92rem; color: var(--text-muted); font-weight: 500; }
+    .nav-links a:hover, .nav-links a.active { color: var(--cyan); }
+
+    .main-wrap { flex: 1; max-width: 1240px; margin: 0 auto; padding: 4.5rem 2rem 5rem; width: 100%; }
+    .page-tag {
+      display: inline-block; font-family: var(--font-mono); font-size: 0.8rem;
+      color: var(--purple); background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.3);
+      padding: 4px 12px; border-radius: 100px; margin-bottom: 1.2rem;
+    }
+    .page-title { font-size: 2.8rem; font-weight: 900; margin-bottom: 1rem; color: #ffffff; }
+    .page-desc { color: var(--text-muted); font-size: 1.1rem; max-width: 760px; line-height: 1.8; margin-bottom: 3.5rem; }
+
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2.2rem; margin-bottom: 3rem; }
+    .card {
+      background: var(--bg-card); border: 1px solid var(--border-subtle);
+      border-radius: 14px; padding: 2.4rem; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+    .card-title { font-size: 1.35rem; margin-bottom: 1rem; color: #ffffff; font-weight: 700; }
+    .card-desc { font-size: 0.95rem; color: var(--text-muted); line-height: 1.8; }
+
+    .directives-box {
+      background: var(--bg-secondary); border: 1px solid var(--border-subtle);
+      border-radius: 14px; padding: 2.5rem;
+    }
+    .directives-title { color: #ffffff; font-size: 1.25rem; font-weight: 800; margin-bottom: 1.2rem; }
+    .directives-list { list-style: none; display: flex; flex-direction: column; gap: 1rem; }
+    .directives-list li { color: #cbd5e1; font-size: 0.95rem; line-height: 1.7; position: relative; padding-left: 1.5rem; }
+    .directives-list li::before {
+      content: "▹"; position: absolute; left: 0; color: var(--cyan); font-weight: bold;
+    }
+
+    .site-footer { border-top: 1px solid var(--border-subtle); background: #04060a; padding: 2.5rem 2rem; }
+    .footer-inner {
+      max-width: 1240px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;
+      font-size: 0.88rem; color: #64748b;
+    }
+    .footer-links { display: flex; gap: 2rem; }
+    .footer-links a { color: #94a3b8; }
+    .footer-links a:hover { color: var(--cyan); }
+
+    @media (max-width: 900px) {
+      .grid-2 { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .footer-inner { flex-direction: column; gap: 1rem; text-align: center; }
+    }
+  </style>
 </head>
 <body>
   <header class="navbar">
     <div class="nav-container">
       <a href="index.html" class="nav-brand">
-        <img src="logo.png" alt="Zero Degree" class="brand-logo" onerror="this.style.display='none'">
-        <span>ZERO DEGREE</span>
-        <span class="brand-badge">RESEARCH &amp; EDUCATION</span>
+        <img src="logo.png" alt="零度策略" class="brand-logo" onerror="this.style.display='none'">
+        <span>零度策略</span>
+        <span class="brand-badge">DERIVATIVES LAB</span>
       </a>
       <ul class="nav-links">
-        <li><a href="index.html">Overview</a></li>
-        <li><a href="solutions.html">Services</a></li>
-        <li><a href="about.html" class="active">Methodology</a></li>
-        <li><a href="contact.html">Get in Touch</a></li>
+        <li><a href="index.html">首页概述</a></li>
+        <li><a href="solutions.html">服务体系</a></li>
+        <li><a href="about.html" class="active">研究方法论</a></li>
+        <li><a href="contact.html">联系交流</a></li>
       </ul>
     </div>
   </header>
 
-  <section class="section-hero" style="padding: 4rem 2rem; text-align: left;">
-    <div style="max-width: 1240px; margin: 0 auto;">
-      <div class="hero-pill"><span class="hero-dot"></span> PHILOSOPHY &amp; APPROACH</div>
-      <h1 class="hero-title" style="font-size: 2.8rem; margin-bottom: 1rem;">
-        Disciplined Derivatives Engineering
-      </h1>
-      <p class="hero-desc" style="max-width: 780px;">
-        Navigating crypto derivatives requires more than market instinct. We combine data-driven mathematical models, structural edge identification, and uncompromising risk management.
-      </p>
-    </div>
-  </section>
+  <main class="main-wrap">
+    <div class="page-tag">CORE PHILOSOPHY // 核心理念</div>
+    <h1 class="page-title">数理逻辑驱动与严谨风控准则</h1>
+    <p class="page-desc">在加密衍生品高波动市场中，主观猜测往往伴随着毁灭性回撤。我们坚持以数理统计为基础，在严格限定的风险预算内寻找确定性收益。</p>
 
-  <section class="section-features">
-    <div class="features-container">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
-        <div class="card-violet">
-          <div class="badge">OUR APPROACH</div>
-          <h3>Data-Driven Strategy</h3>
-          <p>
-            We focus on statistical probability, historical volatility patterns, and options surface anomalies rather than speculative gambling. Every strategy is tested against multiple market regimes.
-          </p>
-        </div>
-
-        <div class="card-teal">
-          <div class="badge">OUR MINDSET</div>
-          <h3>Capital Preservation First</h3>
-          <p>
-            In cryptocurrency markets, managing downside is the prerequisite to longevity. Our risk principles prioritize capital defense through strict sizing, hedge mechanics, and continuous Greek rebalancing.
-          </p>
-        </div>
+    <div class="grid-2">
+      <div class="card">
+        <h3 class="card-title">波动率曲面与统计套利</h3>
+        <p class="card-desc">
+          专注于 BTC/USDT 期权的期限结构、波动率微笑（Volatility Smile）异常拟合，挖掘衍生品相对定价偏差，构建非对称风险收益比的策略组合。
+        </p>
       </div>
 
-      <div class="card-amber" style="margin-top: 2rem;">
-        <div class="badge">OUR COMMITMENT</div>
-        <h3>Empowerment Through Knowledge</h3>
-        <p style="margin-top: 0.5rem; line-height: 2;">
-          • Practical and actionable derivatives curriculum without academic fluff.<br>
-          • Direct access to strategy blueprints, risk templates, and modeling techniques.<br>
-          • Ongoing mentoring to help clients build long-term independent trading competence.
+      <div class="card">
+        <h3 class="card-title">资本保护与尾部风控</h3>
+        <p class="card-desc">
+          我们把控制最大回撤视为交易的首要目标。在持仓过程中持续进行动态 Delta/Vega 中性化对冲，并设置极端流动性真空情景下的熔断防护预案。
         </p>
       </div>
     </div>
-  </section>
+
+    <div class="directives-box">
+      <div class="directives-title">我们的研究与交付原则</div>
+      <ul class="directives-list">
+        <li><strong>纯粹策略研究：</strong>聚焦数理逻辑与波动率结构，杜绝赌方向式的非理性交易。</li>
+        <li><strong>严格非托管：</strong>不代管任何客户资产，所有模型与策略均由客户在自身账户透明运行。</li>
+        <li><strong>实操技能赋能：</strong>授人以渔，协助客户深入理解衍生品运行底层逻辑，建立自洽的交易风控系统。</li>
+      </ul>
+    </div>
+  </main>
 
   <footer class="site-footer">
-    <div class="footer-content">
-      <div>Zero Degree Strategy · Crypto Derivatives Research, Risk Consulting &amp; Education</div>
+    <div class="footer-inner">
+      <div>零度策略 · 专注于加密衍生品策略研究、风险管理与教育赋能</div>
       <div class="footer-links">
-        <a href="index.html">Overview</a>
-        <a href="solutions.html">Services</a>
-        <a href="contact.html">Contact Us</a>
+        <a href="index.html">首页概述</a>
+        <a href="solutions.html">服务体系</a>
+        <a href="contact.html">联系交流</a>
       </div>
     </div>
   </footer>
-
-  <script src="main.js"></script>
 </body>
 </html>
