@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infrastructure & Models | Zero Degree Strategy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand">
+        <img src="logo.png" alt="Zero Degree Strategy Logo" onerror="this.style.display='none'">
+        <span class="brand-name">Zero Degree Strategy</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="solutions.html" class="active">Infrastructure & Models</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-badge">Technical Specifications</div>
+      <h1>Algorithmic Models & High-Throughput Nodes</h1>
+      <p>A rigorous breakdown of our quantitative option pricing models, colocated node architecture, and multi-layered risk validation pipelines.</p>
+    </section>
+
+    <section class="content-block">
+      <h2>1. Options Microstructure & Volatility Modeling</h2>
+      <p>Our quantitative strategies target BTC/USDT derivative inefficiencies through custom volatility surface construction and real-time smile curve calibrations. Rather than directional speculation, models focus on continuous non-directional arbitrage and spread compression across varying strikes and expiries.</p>
+      <p>Dynamic delta and gamma hedging algorithms continuously rebalance exposure via underlying linear instruments, maintaining neutral inventory balance even through abrupt liquidity shifts.</p>
+    </section>
+
+    <section class="content-block">
+      <h2>2. Dedicated Low-Latency Trading Nodes</h2>
+      <p>Execution certainty in digital asset markets depends entirely on physical network topology and deterministic software pipelines. Our dedicated nodes feature:</p>
+      <div class="grid" style="margin-top: 1.5rem; margin-bottom: 0;">
+        <div class="card" style="background: rgba(10, 14, 23, 0.6);">
+          <h3 style="font-size: 1.1rem; color: var(--accent-glow);">Proximity Colocation</h3>
+          <p>Bare-metal compute hardware deployed directly adjacent to major exchange infrastructure endpoints to minimize hop count and network jitter.</p>
+        </div>
+        <div class="card" style="background: rgba(10, 14, 23, 0.6);">
+          <h3 style="font-size: 1.1rem; color: var(--accent-glow);">Custom Kernel Tuning</h3>
+          <p>Zero-copy networking, kernel-bypass drivers, and lock-free memory ring buffers engineered for sub-millisecond market data ingestion.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-block">
+      <h2>3. Quantitative Risk Controls (Greeks Engine)</h2>
+      <p>Risk management is hardcoded at the kernel and network transport levels. Real-time Greeks calculation engines evaluate Delta, Gamma, Vega, Theta, and Rho in sub-millisecond loops. Automated circuit breakers instantly suspend quoting or invoke synthetic hedges if latency thresholds or risk tolerances are breached.</p>
+    </section>
+
+    <section class="contact-section">
+      <h2>Discuss Technical Specifications</h2>
+      <p>Inquire directly regarding node deployment specifications or quantitative research collaborations:</p>
+      <div class="copy-box">
+        <span id="emailText" class="copy-email">hr@zero-degreestrategy.com</span>
+        <button id="copyBtn" class="copy-btn" onclick="copyContactEmail()">Copy Email</button>
+      </div>
+      <span id="copyFeedback" class="copy-feedback">Email copied to clipboard</span>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Zero Degree Strategy. All rights reserved. This site is strictly for technological research and infrastructure demonstration. Zero Degree Strategy does not provide retail investment advice, asset custody, or financial intermediation services.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
