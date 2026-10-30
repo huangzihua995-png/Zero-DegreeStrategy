@@ -3,67 +3,171 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zero Degree Strategy</title>
-  <!-- 引入 Tailwind CSS 快速排版 -->
+  <title>Zero Degree Strategy | 零度策略 - 高性能交易节点与期权算法策略提供商</title>
+  <meta name="description" content="Zero Degree Strategy 专注于提供机构级低延迟交易节点接入与 BTC/USDT 期权短线算法策略。以纯技术驱动，捕获市场瞬时无效性。">
+  <!-- 引入 Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 引入 FontAwesome 图标库 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-amber-400 selection:text-slate-950 flex flex-col min-h-screen font-sans">
 
   <!-- 顶部导航 -->
-  <header class="max-w-4xl mx-auto w-full px-6 py-8 flex justify-between items-center">
-    <div class="font-bold text-xl tracking-tight text-slate-900">Zero Degree</div>
-    <nav class="space-x-6 text-sm font-medium text-slate-600">
-      <a href="#about" class="hover:text-blue-600 transition">关于</a>
-      <a href="#projects" class="hover:text-blue-600 transition">项目</a>
-     
-    </nav>
+  <header class="border-b border-slate-800/80 sticky top-0 bg-slate-950/90 backdrop-blur-md z-50">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-amber-500 to-amber-300 flex items-center justify-center font-bold text-slate-950 shadow-lg shadow-amber-500/20">
+          0°
+        </div>
+        <span class="font-bold text-lg tracking-wide text-white">Zero Degree <span class="text-amber-400 font-light">Strategy</span></span>
+      </div>
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-400">
+        <a href="#nodes" class="hover:text-amber-400 transition">交易节点服务</a>
+        <a href="#strategy" class="hover:text-amber-400 transition">BTC期权策略</a>
+        <a href="#features" class="hover:text-amber-400 transition">技术架构</a>
+        <a href="#solutions" class="hover:text-amber-400 transition">业务延展</a>
+        <a href="https://github.com/huangzihua995-png" target="_blank" class="text-slate-300 hover:text-white transition flex items-center space-x-1.5">
+          <i class="fa-brands fa-github text-base"></i>
+          <span>GitHub</span>
+        </a>
+      </nav>
+    </div>
   </header>
 
-  <!-- 核心展示区 (Hero) -->
-  <main class="max-w-4xl mx-auto w-full px-6 py-16 flex-grow">
-    <div class="space-y-6">
-      <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 leading-tight">
-        探索策略与创新的无限可能
-      </h1>
-      <p class="text-lg text-slate-600 max-w-2xl leading-relaxed">
-        欢迎来到 Zero Degree Strategy。这里专注于分享深度思考、项目沉淀以及前沿技术方案。
-      </p>
-      <div class="pt-4 flex gap-4">
-        <a href="#projects" class="px-5 py-3 rounded-xl bg-blue-600 text-white font-medium hover:bg-blue-700 transition shadow-sm">
-          查看项目
-        </a>
-        <a href="https://github.com/huangzihua995-png" target="_blank" class="px-5 py-3 rounded-xl bg-slate-200 text-slate-700 font-medium hover:bg-slate-300 transition">
-          GitHub 主页
-        </a>
-      </div>
-    </div>
-
-    <!-- 内容卡片区 -->
-    <section id="projects" class="mt-20">
-      <h2 class="text-2xl font-bold text-slate-900 mb-6">精选项目</h2>
-      <div class="grid sm:grid-cols-2 gap-6">
-        <div class="p-6 bg-white border border-slate-200 rounded-2xl shadow-sm hover:shadow-md transition">
-          <h3 class="font-semibold text-lg text-slate-900 mb-2">项目名称 01</h3>
-          <p class="text-slate-600 text-sm leading-relaxed mb-4">
-            简要介绍该项目的目标、解决的问题以及核心特色。
-          </p>
-          <span class="text-xs font-semibold px-2.5 py-1 bg-slate-100 text-slate-600 rounded-md">Web / AI</span>
+  <main class="flex-grow">
+    <!-- 主视觉区 (Hero Section) -->
+    <section class="max-w-6xl mx-auto px-6 pt-20 pb-16 grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7 space-y-6">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-amber-950/60 border border-amber-800/50 text-amber-400 text-xs font-semibold tracking-wider uppercase">
+          <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+          <span>基础设施节点 × 短线算法策略服务商</span>
         </div>
-        <div class="p-6 bg-white border border-slate-200 rounded-2xl shadow-sm hover:shadow-md transition">
-          <h3 class="font-semibold text-lg text-slate-900 mb-2">项目名称 02</h3>
-          <p class="text-slate-600 text-sm leading-relaxed mb-4">
-            简要介绍该项目的目标、解决的问题以及核心特色。
-          </p>
-          <span class="text-xs font-semibold px-2.5 py-1 bg-slate-100 text-slate-600 rounded-md">Strategy</span>
+        <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
+          极速节点直连，<br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-500">数分钟内完成 BTC 期权算法套利</span>
+        </h1>
+        <p class="text-base text-slate-400 max-w-xl leading-relaxed">
+          我们专注于为交易者与高净值伙伴提供<strong>高性能底层交易节点</strong>与<strong>自研 BTC/USDT 期权瞬时策略</strong>。不同于长周期持币模式，我们凭借微秒级执行通道捕捉市场微观无效性，实现快速建仓并在数分钟内获利平仓离场。
+        </p>
+        <div class="pt-2 flex flex-wrap gap-4">
+          <a href="#strategy" class="px-6 py-3 rounded-xl bg-amber-400 text-slate-950 font-semibold hover:bg-amber-300 transition shadow-lg shadow-amber-400/20">
+            了解期权短线策略
+          </a>
+          <a href="#nodes" class="px-6 py-3 rounded-xl border border-slate-800 bg-slate-900/60 text-slate-300 hover:bg-slate-800 hover:text-white transition">
+            节点服务规范
+          </a>
+        </div>
+      </div>
+
+      <!-- 核心技术指标面板 -->
+      <div class="lg:col-span-5 bg-slate-900/60 border border-slate-800 rounded-2xl p-6 shadow-2xl backdrop-blur-sm relative">
+        <div class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-4 flex justify-between items-center">
+          <span>节点与算法执行标准</span>
+          <span class="text-amber-400"><i class="fa-solid fa-server"></i> Dedicated Nodes</span>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-slate-950/80 border border-slate-800/80 p-4 rounded-xl">
+            <div class="text-2xl font-bold text-amber-400 font-mono tracking-tight">&lt; 3 mins</div>
+            <div class="text-xs text-slate-400 mt-1">单次策略平均获利离场周期</div>
+          </div>
+          <div class="bg-slate-950/80 border border-slate-800/80 p-4 rounded-xl">
+            <div class="text-2xl font-bold text-emerald-400 font-mono tracking-tight">Direct API</div>
+            <div class="text-xs text-slate-400 mt-1">独立私有撮合专线节点</div>
+          </div>
+          <div class="bg-slate-950/80 border border-slate-800/80 p-4 rounded-xl">
+            <div class="text-2xl font-bold text-white font-mono tracking-tight">Non-Custodial</div>
+            <div class="text-xs text-slate-400 mt-1">非托管架构·客户自主掌握资金</div>
+          </div>
+          <div class="bg-slate-950/80 border border-slate-800/80 p-4 rounded-xl">
+            <div class="text-2xl font-bold text-cyan-400 font-mono tracking-tight">Auto Exit</div>
+            <div class="text-xs text-slate-400 mt-1">算法严密监控·瞬时清算锁利</div>
+          </div>
         </div>
       </div>
     </section>
-  </main>
 
-  <!-- 页脚 -->
-  <footer class="max-w-4xl mx-auto w-full px-6 py-8 border-t border-slate-200 text-center text-sm text-slate-500">
-    &copy; 2026 Zero Degree Strategy. All rights reserved.
-  </footer>
+    <!-- 核心交易节点服务 (Nodes) -->
+    <section id="nodes" class="border-t border-slate-900 bg-slate-900/30 py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="text-amber-400 text-xs font-mono tracking-widest uppercase">INFRASTRUCTURE</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-white mt-2 mb-4">交易节点与底层执行通道</h2>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            任何成功的短期套利都依赖于毫秒级的网络响应。我们为客户提供专属低延迟交易接入。
+          </p>
+        </div>
 
-</body>
-</html>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-slate-950/60 border border-slate-800 p-6 rounded-2xl space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-amber-950/80 border border-amber-800/60 flex items-center justify-center text-amber-400 text-xl">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-white">低延迟专线接入</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              部署于主流数字资产交易所就近数据中心，最大限度压降数据往返延迟（RTT），确保订单瞬时成交。
+            </p>
+          </div>
+
+          <div class="bg-slate-950/60 border border-slate-800 p-6 rounded-2xl space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-blue-950/80 border border-blue-800/60 flex items-center justify-center text-blue-400 text-xl">
+              <i class="fa-solid fa-lock"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-white">独立安全的节点环境</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              客户掌握自有账户 API 权限，节点纯粹执行算法发单指令，不介入任何资金存储，杜绝黑箱风险。
+            </p>
+          </div>
+
+          <div class="bg-slate-950/60 border border-slate-800 p-6 rounded-2xl space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-emerald-950/80 border border-emerald-800/60 flex items-center justify-center text-emerald-400 text-xl">
+              <i class="fa-solid fa-gauge-high"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-white">99.99% 高可用集群</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              多节点灾备冗余切换，在突发行情与高并发场景下持续保障算法平稳运转，杜绝断连滑点。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 旗舰策略重点解析 (Strategy) -->
+    <section id="strategy" class="max-w-6xl mx-auto px-6 py-20">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-amber-400 text-xs font-mono tracking-widest uppercase">CORE STRATEGY</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white mt-2 mb-4">BTC/USDT 期权算法策略</h2>
+        <p class="text-slate-400 text-sm leading-relaxed">
+          不依赖单边持币，专注于捕捉期权市场定价的短期微观无效性。
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 items-stretch">
+        <!-- 传统模式对比 -->
+        <div class="bg-slate-900/40 border border-slate-800/80 p-8 rounded-2xl flex flex-col justify-between">
+          <div>
+            <div class="flex items-center space-x-2 text-slate-400 text-sm mb-4">
+              <i class="fa-solid fa-hourglass-half"></i>
+              <span class="font-semibold">传统“买入并持有”模式 (Buy & Hold)</span>
+            </div>
+            <ul class="space-y-4 text-sm text-slate-400">
+              <li class="flex items-start space-x-3">
+                <i class="fa-solid fa-xmark text-rose-500 mt-1"></i>
+                <span><strong>被动承受暴跌回撤：</strong>单向持币面临巨大的资产缩水风险，资金周期冗长。</span>
+              </li>
+              <li class="flex items-start space-x-3">
+                <i class="fa-solid fa-xmark text-rose-500 mt-1"></i>
+                <span><strong>机会成本极高：</strong>在漫长的横盘震荡行情中资金完全处于闲置状态。</span>
+              </li>
+              <li class="flex items-start space-x-3">
+                <i class="fa-solid fa-xmark text-rose-500 mt-1"></i>
+                <span><strong>容易受情绪支配：</strong>主观交易往往因恐慌和贪婪错过最佳退出时机。</span>
+              </li>
+            </ul>
+          </div>
+          <div class="text-xs text-slate-600 border-t border-slate-800/80 pt-4 mt-6">
+            传统模式只在单边大牛市生效，在震荡市极易侵蚀本金。
+          </div>
+        </div>
+
+        <!-- 零度期权模型 -->
+        <div class="bg-gradient-to-b from-slate-900 to-slate-950 border border-amber-500/40 p-8 rounded-2xl shadow-
