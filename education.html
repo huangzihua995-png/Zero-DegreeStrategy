@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>教育支持与投研智库 | Zero Degree Strategy 零度策略</title>
+  <meta name="description" content="Zero Degree Strategy 专业教育支持：系统化拆解加密期权微观结构、波动率对冲模型与机构级风控认知。">
+  <link rel="icon" type="image/png" href="logo.png">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome 图标库 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-amber-400 selection:text-slate-950 flex flex-col min-h-screen font-sans">
+
+  <!-- 顶部导航栏 (多页面架构) -->
+  <header class="border-b border-slate-800/80 sticky top-0 bg-slate-950/90 backdrop-blur-md z-40">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <!-- 品牌 Logo -->
+      <a href="index.html" class="flex items-center space-x-3 group">
+        <img src="logo.png" alt="Zero Degree Strategy" class="h-9 w-auto object-contain group-hover:opacity-90 transition">
+        <span class="font-bold text-lg tracking-wide text-white">Zero Degree <span class="text-amber-400 font-light">Strategy</span></span>
+      </a>
+
+      <!-- 导航链接 -->
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+        <a href="index.html" class="hover:text-amber-400 transition">Home</a>
+        <a href="services.html" class="hover:text-amber-400 transition">投资策略</a>
+        <a href="risk.html" class="hover:text-amber-400 transition">风险管理</a>
+        <a href="education.html" class="text-amber-400 font-semibold">教育支持</a>
+        <a href="about.html" class="hover:text-amber-400 transition">关于我们</a>
+        
+        <button onclick="toggleModal(true)" class="px-5 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-medium transition shadow-md shadow-blue-600/30">
+          联系我们
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <!-- 教育页 Banner -->
+    <section class="max-w-6xl mx-auto px-6 pt-16 pb-12">
+      <div class="space-y-4">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-emerald-950/60 border border-emerald-800/50 text-emerald-400 text-xs font-semibold tracking-wider uppercase">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>ACADEMY & RESEARCH SUPPORT</span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-white">加密衍生品专业教育与投研智库</h1>
+        <p class="text-slate-400 text-base max-w-3xl leading-relaxed">
+          成熟的认知是稳健执行的前提。我们系统化梳理数字资产衍生品的底层运作机理，帮助高净值与机构伙伴穿透市场噪点，构建科学的量化与期权思维模型。
+        </p>
+      </div>
+    </section>
+
+    <!-- 核心课程与知识体系 -->
+    <section class="border-t border-slate-900 bg-slate-900/30 py-16">
+      <div class="max-w-6xl mx-auto px-6 space-y-12">
+
+        <!-- 模块 1: 期权微观结构与定价 -->
+        <div class="bg-slate-950/70 border border-slate-800 rounded-2xl p-8 grid lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-8 space-y-4">
+            <div class="text-xs font-mono text-emerald-400 uppercase tracking-wider">MODULE 01 · FOUNDATION</div>
+            <h2 class="text-2xl font-bold text-white">期权微观结构与定价理论实务</h2>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              从底层原理剖析数字资产期权的微观运作机制。涵盖 Black-Scholes 模型在加密高波动资产中的局限性、隐含波动率与历史波动率的偏离成因，以及做市商盘口的订单簿深度与资金费率传导路径。
+            </p>
+            <div class="grid sm:grid-cols-3 gap-4 pt-2">
+              <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800">
+                <div class="text-xs text-slate-500">知识核心</div>
+                <div class="text-lg font-bold text-emerald-400 font-mono mt-0.5">IV 微观曲面</div>
+              </div>
+              <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800">
+                <div class="text-xs text-slate-500">学习目标</div>
+                <div class="text-lg font-bold text-white font-mono mt-0.5">识别定价偏差</div>
+              </div>
+              <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800">
+                <div class="text-xs text-slate-500">认知层次</div>
+                <div class="text-lg font-bold text-cyan-400 font-mono mt-0.5">机构交易员标准</div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-4 bg-slate-900/40 border border-slate-800/80 p-6 rounded-xl space-y-3 text-xs text-slate-400">
+            <div class="font-bold text-slate-200 text-sm mb-2">研讨要点</div>
+            <div class="flex items-center space-x-2"><i class="fa-solid fa-check text-emerald-400"></i><span>隐含波动率微笑（Volatility Smile）</span></div>
+            <div class="flex items-center space-x-2"><i class="fa-solid fa-check text-emerald-400"></i><span>期权希腊字母敏感度动态归因</span></div>
+            <div class="flex items-center space-x-2"><i class="fa-solid fa-check text-emerald-400"></i><span>衍生品结算周期与交割行权风险</span></div>
+            <div class="flex items-center space-x-2"><i class="fa-solid fa-check text-emerald-400"></i><span>买入持有与短线套利的机会成本</span></div>
+          </div>
+        </div>
+
+        <!-- 模块 2: 量化对冲与希腊字母风控 -->
+        <div class="bg-slate-950/70 border border-slate-800 rounded-2xl p-8 grid lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-8 space-y-4">
+            <div class="text-xs font-mono text-cyan-400 uppercase tracking-wider">MODULE 02 · ADVANCED RISK</div>
+            <h2 class="text-2xl font-bold text-white">希腊字母风控模型与动态对冲</h2>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              聚焦专业量化交易室的风险管理框架。解析 Delta、Gamma、Vega、Theta 对头寸净值的交互影响，理解机构如何通过期货进行动态 Delta 中性对冲，以及在极端波动行情下如何防范 Gamma 挤压与流动性枯竭。
+            </p>
+            <div class="grid sm:grid-cols-3 gap-4 pt-2">
+              <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800">
+                <div class="text-xs text-slate-500">风控基石</div>
+                <div class="text-lg font-bold text-cyan-400 font-mono mt-0.5">Greeks 动态对冲</div>
+              </div>
+              <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800">
+                <div class="text-xs text-slate-500">对冲工具</div>
+                <div class="text-lg font-bold text-white font-mono mt-0.5">永续合约/期权多腿</div>
+              </div>
+              <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-800">
+                <div class="text-xs text-slate-500">极端行情应对</div>
+                <div class="text-lg font-bold text-amber-400 font-mono mt-0.5">熔断阀值机制</div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-4 bg-slate-900/40 border border-slate-800/80 p-6 rounded-xl space-y-3 text-xs text-slate-400">
+            <div class="font-bold text-slate-200 text-sm mb-2">掌握技能</div>
+            <div class="flex items-center space-x-2"><i class="fa-solid fa-check text-cyan-400"></i><span>Delta-Gamma 对冲数学推导</span></div>
+            <div class="flex items-center space-x-2"><i class="fa-solid fa-check text-cyan-400"></i><span>极端黑天鹅事件压力测试设计</span></div>
+            <div class="flex items-center space-x-2"><i class="fa-solid fa-check text-cyan-400"></i><span>波动率对冲成本与摩擦损耗控制</span></div>
+            <div class="flex items-center space-x-2"><i class="fa-solid fa-check text-cyan-400"></i><span>程序化止损规则制定与验证</span></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 底部对接入口 -->
+    <section class="max-w-4xl mx-auto px-6 py-16 text-center space-y-6">
+      <h3 class="text-2xl font-bold text-white">预约团队定制投研交流？</h3>
+      <p class="text-slate-400 text-sm max-w-xl mx-auto">
+        我们为高净值合作伙伴提供一对一定制化衍生品认知梳理、研究研报解读与交易架构辅导。
+      </p>
+      <button onclick="toggleModal(true)" class="px-8 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold transition shadow-lg shadow-blue-600/30">
+        预约研究员对接
+      </button>
+    </section>
+  </main>
+
+  <!-- 页脚 (多页面导航) -->
+  <footer class="border-t border-slate-900 bg-slate-950 py-8">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 space-y-4 sm:space-y-0">
+      <div>&copy; 2026 Zero Degree Strategy. 保留所有权利。</div>
+      <div class="flex space-x-6">
+        <a href="index.html" class="hover:text-slate-300 transition">Home</a>
+        <a href="services.html" class="hover:text-slate-300 transition">投资策略</a>
+        <a href="risk.html" class="hover:text-slate-300 transition">风险管理</a>
+        <a href="education.html" class="text-slate-300">教育支持</a>
+        <a href="about.html" class="hover:text-slate-300 transition">关于我们</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Contact Us 弹窗 -->
+  <div id="contact-modal" class="hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-md w-full p-6 space-y-6 relative shadow-2xl">
+      <div class="flex justify-between items-center">
+        <h3 class="text-lg font-bold text-white flex items-center space-x-2">
+          <i class="fa-solid fa-envelope text-amber-400"></i>
+          <span>商务合作与官方咨询</span>
+        </h3>
+        <button onclick="toggleModal(false)" class="text-slate-400 hover:text-white text-2xl leading-none">&times;</button>
+      </div>
+      <p class="text-sm text-slate-400 leading-relaxed">
+        欢迎联系 Zero Degree Strategy。请通过官方指定邮箱与我们沟通：
+      </p>
+      <div class="p-4 bg-slate-950 border border-slate-800 rounded-xl space-y-3">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-lg bg-amber-950/60 border border-amber-800/40 flex items-center justify-center text-amber-400">
+            <i class="fa-regular fa-envelope text-lg"></i>
+          </div>
+          <div>
+            <div class="text-sm text-slate-200 font-medium">官方对接邮箱</div>
+            <div class="text-xs text-slate-500">Official Tech & Education Inquiry</div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between bg-slate-900 border border-slate-800 px-3 py-2.5 rounded-lg">
+          <span id="email-text" class="text-xs sm:text-sm font-mono text-amber-400 font-semibold select-all">hr@zero-degreestrategy.com</span>
+          <div class="flex items-center space-x-2">
+            <button id="copy-btn" onclick="copyEmail()" class="px-2.5 py-1.5 rounded-md bg-amber-400/10 hover:bg-amber-400/20 text-amber-400 text-xs font-medium transition border border-amber-400/30 flex items-center space-x-1.5">
+              <i id="copy-icon" class="fa-regular fa-clone"></i>
+              <span id="copy-label">复制</span>
+            </button>
+            <a href="mailto:hr@zero-degreestrategy.com" class="px-2.5 py-1.5 rounded-md bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-medium transition flex items-center space-x-1.5">
+              <i class="fa-solid fa-paper-plane text-xs"></i>
+              <span>写信</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button onclick="toggleModal(false)" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm font-medium transition">关闭</button>
+    </div>
+  </div>
+
+  <script>
+    function toggleModal(show) {
+      const modal = document.getElementById('contact-modal');
+      if (show) { modal.classList.remove('hidden'); } else { modal.classList.add('hidden'); }
+    }
+    function copyEmail() {
+      const email = document.getElementById('email-text').innerText;
+      const copyBtn = document.getElementById('copy-btn');
+      const copyIcon = document.getElementById('copy-icon');
+      const copyLabel = document.getElementById('copy-label');
+      navigator.clipboard.writeText(email).then(() => {
+        copyBtn.classList.remove('bg-amber-400/10', 'text-amber-400', 'border-amber-400/30');
+        copyBtn.classList.add('bg-emerald-500/20', 'text-emerald-400', 'border-emerald-500/40');
+        copyIcon.className = 'fa-solid fa-check';
+        copyLabel.innerText = '已复制！';
+        setTimeout(() => {
+          copyBtn.classList.add('bg-amber-400/10', 'text-amber-400', 'border-amber-400/30');
+          copyBtn.classList.remove('bg-emerald-500/20', 'text-emerald-400', 'border-emerald-500/40');
+          copyIcon.className = 'fa-regular fa-clone';
+          copyLabel.innerText = '复制';
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
