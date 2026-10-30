@@ -1,96 +1,290 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zero Degree Strategy | Digital Asset Quantitative Strategies & Trading Nodes</title>
+  <title>Zero Degree Strategy | Digital Asset Quantitative Strategies & High-Performance Infrastructure</title>
   <link rel="icon" type="image/png" href="logo.png">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
 
-  <header>
-    <div class="nav-container">
-      <a href="index.html" class="brand">
-        <img src="logo.png" alt="Zero Degree Strategy Logo" onerror="this.style.display='none'">
-        <span class="brand-name">Zero Degree Strategy</span>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome 图标库 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#070b14',
+              card: '#0f172a',
+              accent: '#3b82f6',
+              cyan: '#06b6d4',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* 星空极光渐变微光背景 */
+    body {
+      background-color: #070b14;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(6, 182, 212, 0.16) 0%, transparent 45%),
+        radial-gradient(circle at 85% 25%, rgba(139, 92, 246, 0.18) 0%, transparent 50%),
+        radial-gradient(circle at 50% 85%, rgba(37, 99, 235, 0.14) 0%, transparent 60%);
+      background-attachment: fixed;
+    }
+
+    .glass-nav {
+      background: rgba(7, 11, 20, 0.85);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .glass-card {
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .glass-card:hover {
+      border-color: rgba(6, 182, 212, 0.45);
+      box-shadow: 0 20px 40px -15px rgba(6, 182, 212, 0.2);
+      transform: translateY(-4px);
+    }
+
+    .text-glow {
+      text-shadow: 0 0 20px rgba(6, 182, 212, 0.35);
+    }
+  </style>
+</head>
+<body class="text-slate-100 min-h-screen flex flex-col font-sans selection:bg-cyan-500 selection:text-white">
+
+  <!-- 顶部导航栏 -->
+  <header class="sticky top-0 z-50 glass-nav">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <img src="logo.png" alt="Zero Degree Strategy" class="h-9 w-auto object-contain" onerror="this.style.display='none'">
+        <span class="text-xl font-bold tracking-tight text-white">Zero Degree Strategy</span>
       </a>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="solutions.html">Infrastructure & Models</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-cyan-400 transition-colors">About Us</a>
+        <a href="#capabilities" class="hover:text-cyan-400 transition-colors">Core Capabilities</a>
+        <a href="#infrastructure" class="hover:text-cyan-400 transition-colors">Infrastructure</a>
+        <a href="#governance" class="hover:text-cyan-400 transition-colors">Compliance</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <a href="#contact" class="px-5 py-2.5 rounded-lg text-xs font-semibold bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white transition-all shadow-lg shadow-blue-500/25">
+          Institutional Inquiries
+        </a>
+      </div>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-badge">Quantitative Strategies & Infrastructure</div>
-      <h1>Rigorous Derivatives Modeling &<br>High-Performance Trading Nodes</h1>
-      <p>Specializing in BTC/USDT options quantitative research and dedicated ultra-low-latency network infrastructure, delivering deterministic execution and risk engineering for digital asset markets.</p>
-    </section>
+  <main class="flex-grow w-full">
+    <!-- Hero 视觉焦点区域 -->
+    <section class="max-w-6xl mx-auto px-6 pt-20 pb-16 text-center">
+      <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full text-xs font-semibold text-cyan-300 bg-cyan-950/60 border border-cyan-700/60 mb-8 backdrop-blur-sm shadow-inner">
+        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+        DERIVATIVES QUANTITATIVE RESEARCH & HIGH-CONCURRENCY INFRASTRUCTURE
+      </div>
 
-    <!-- Operational Node Environment Status -->
-    <section class="status-panel">
-      <div class="status-header">
-        <h3 style="font-size: 1.05rem;">Global Node Network Status</h3>
-        <span class="status-indicator">
-          <span class="status-dot"></span> All Systems Operational
+      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+        Deterministic Execution & <br>
+        <span class="bg-gradient-to-r from-white via-cyan-300 to-blue-400 bg-clip-text text-transparent text-glow">
+          Systematic Derivatives Engineering
         </span>
+      </h1>
+
+      <p class="text-slate-400 text-base sm:text-lg max-w-3xl mx-auto mb-10 leading-relaxed">
+        Zero Degree Strategy develops proprietary mathematical models and dedicated ultra-low-latency node architectures for BTC/USDT options markets, delivering structural liquidity and algorithmic risk engineering.
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#capabilities" class="px-7 py-3.5 rounded-xl text-sm font-semibold bg-blue-600 hover:bg-blue-500 text-white transition-all shadow-lg shadow-blue-600/30">
+          Explore Mathematical Frameworks
+        </a>
+        <a href="#infrastructure" class="px-7 py-3.5 rounded-xl text-sm font-semibold bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-700/80 transition-all">
+          Node Specifications
+        </a>
       </div>
-      <div class="status-grid">
-        <div class="status-item">
-          <span>Routing Architecture</span>
-          <strong>Colocated Proximity</strong>
+    </section>
+
+    <!-- 机构级实时运行指标带 (Metrics Bar) -->
+    <section class="max-w-6xl mx-auto px-6 mb-20">
+      <div class="glass-card rounded-2xl p-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center border-slate-800">
+        <div>
+          <span class="text-xs font-mono uppercase text-slate-400 block mb-1 tracking-wider">Median Latency</span>
+          <span class="text-2xl font-bold font-mono text-cyan-400">&lt; 0.85 ms</span>
         </div>
-        <div class="status-item">
-          <span>Median Network Latency</span>
-          <strong>&lt; 0.85 ms</strong>
+        <div>
+          <span class="text-xs font-mono uppercase text-slate-400 block mb-1 tracking-wider">Trading Architecture</span>
+          <span class="text-2xl font-bold font-mono text-slate-100">Colocated DMA</span>
         </div>
-        <div class="status-item">
-          <span>Order Handling Engine</span>
-          <strong>Direct Memory Access (DMA)</strong>
+        <div>
+          <span class="text-xs font-mono uppercase text-slate-400 block mb-1 tracking-wider">Strategy Foundation</span>
+          <span class="text-2xl font-bold font-mono text-blue-400">BTC/USDT Options</span>
         </div>
-        <div class="status-item">
-          <span>Core Pair Focus</span>
-          <strong>BTC / USDT Options</strong>
+        <div>
+          <span class="text-xs font-mono uppercase text-slate-400 block mb-1 tracking-wider">Engine Execution</span>
+          <span class="text-2xl font-bold font-mono text-emerald-400">99.99% SLA</span>
         </div>
       </div>
     </section>
 
-    <section class="grid">
-      <div class="card">
-        <h2>BTC/USDT Options Research</h2>
-        <p>Engineered around microstructural dynamics and continuous implied volatility surfaces. We specialize in non-directional arbitrage, automated liquidity modeling, and continuous delta-neutral hedging. We operate strictly as an engineering research group and do not offer retail custodial or fund management services.</p>
+    <!-- 核心业务与技术矩阵 -->
+    <section id="capabilities" class="max-w-6xl mx-auto px-6 py-12">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <h2 class="text-xs font-mono uppercase tracking-widest text-cyan-400 mb-2 font-semibold">Institutional Disciplines</h2>
+        <h3 class="text-3xl font-bold text-white tracking-tight">Core Competencies & Strategy Matrix</h3>
       </div>
 
-      <div class="card">
-        <h2>Dedicated Trading Nodes</h2>
-        <p>Architected with point-to-point peering near core matching engines to provide sub-millisecond network communication. Built to handle massive concurrent order throughput and real-time market data feed parsing under high-volatility conditions.</p>
-      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- 业务卡片 1 -->
+        <div class="glass-card rounded-2xl p-8">
+          <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-6 text-xl">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <h4 class="text-xl font-bold mb-3 text-white">BTC/USDT Options Quantitative Research</h4>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            Specialized modeling of implied volatility surfaces, non-linear skew dynamics, and automated continuous Delta-Gamma-Vega neutral hedging algorithms calibrated for high-volatility regimes.
+          </p>
+          <ul class="text-xs font-mono text-slate-400 space-y-2 border-t border-slate-800/80 pt-4">
+            <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>Real-time Volatility Surface Fitting</li>
+            <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>Deterministic Gamma Balancing</li>
+          </ul>
+        </div>
 
-      <div class="card">
-        <h2>Risk Engineering & Analytics</h2>
-        <p>Comprehensive real-time Greek exposure monitoring, algorithmic scenario stress-testing, and analytical pricing pipelines—providing quantifiable, resilient risk controls for institutional-grade workflows.</p>
+        <!-- 业务卡片 2 -->
+        <div class="glass-card rounded-2xl p-8">
+          <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mb-6 text-xl">
+            <i class="fa-solid fa-server"></i>
+          </div>
+          <h4 class="text-xl font-bold mb-3 text-white">Dedicated Private Trading Nodes</h4>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            Low-jitter node clusters co-located within proximity to key liquidity hubs. Engineered with direct memory access (DMA), lock-free data feeds, and proprietary network acceleration layer.
+          </p>
+          <ul class="text-xs font-mono text-slate-400 space-y-2 border-t border-slate-800/80 pt-4">
+            <li><i class="fa-solid fa-check text-blue-400 mr-2"></i>Point-to-Point Exchange Cross-Connects</li>
+            <li><i class="fa-solid fa-check text-blue-400 mr-2"></i>Kernel-Bypass Packet Ingestion</li>
+          </ul>
+        </div>
+
+        <!-- 业务卡片 3 -->
+        <div class="glass-card rounded-2xl p-8">
+          <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-6 text-xl">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h4 class="text-xl font-bold mb-3 text-white">Systematic Risk Engineering</h4>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            Autonomous multi-layer safety valves operating at the gateway layer. Automated circuit breakers, instant tail-risk liquidation mitigation, and real-time portfolio stress testing.
+          </p>
+          <ul class="text-xs font-mono text-slate-400 space-y-2 border-t border-slate-800/80 pt-4">
+            <li><i class="fa-solid fa-check text-purple-400 mr-2"></i>Pre-Trade Risk Inspection (&lt; 5 µs)</li>
+            <li><i class="fa-solid fa-check text-purple-400 mr-2"></i>Dynamic Volatility Stress Scenarios</li>
+          </ul>
+        </div>
+
+        <!-- 业务卡片 4 -->
+        <div class="glass-card rounded-2xl p-8">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-6 text-xl">
+            <i class="fa-solid fa-database"></i>
+          </div>
+          <h4 class="text-xl font-bold mb-3 text-white">Microstructure & Historical Feeds</h4>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            High-precision reconstruction of full-depth orderbooks and trade prints across major digital asset venues, supporting comprehensive backtesting and empirical validation.
+          </p>
+          <ul class="text-xs font-mono text-slate-400 space-y-2 border-t border-slate-800/80 pt-4">
+            <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i>Nanosecond-Timestamped Tick Datasets</li>
+            <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i>Asynchronous Market Depth Analytics</li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section class="contact-section">
-      <h2>Institutional Inquiries</h2>
-      <p>Connect with our quantitative research and infrastructure engineering teams:</p>
-      <div class="copy-box">
-        <span id="emailText" class="copy-email">hr@zero-degreestrategy.com</span>
-        <button id="copyBtn" class="copy-btn" onclick="copyContactEmail()">Copy Email</button>
+    <!-- 机构介绍与理念 (About) -->
+    <section id="about" class="max-w-6xl mx-auto px-6 py-12">
+      <div class="glass-card rounded-2xl p-8 md:p-12 border-slate-800">
+        <div class="max-w-3xl">
+          <h2 class="text-xs font-mono uppercase tracking-widest text-cyan-400 mb-2 font-semibold">Institutional Background</h2>
+          <h3 class="text-3xl font-bold mb-6 text-white">Technology-First Quantitative Entity</h3>
+          <p class="text-slate-300 text-base leading-relaxed mb-4">
+            Zero Degree Strategy operates as a dedicated technology research and trading node enterprise. Combining mathematical rigor with cutting-edge network engineering, our mission is to eliminate structural friction and provide systemic stability across digital asset options markets.
+          </p>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Our research culture values reproducible empirical evidence, deterministic software architecture, and resilient operational boundaries.
+          </p>
+        </div>
       </div>
-      <span id="copyFeedback" class="copy-feedback">Email copied to clipboard</span>
+    </section>
+
+    <!-- 合规准则与合规边界 (Compliance & Governance) -->
+    <section id="governance" class="max-w-6xl mx-auto px-6 py-12">
+      <div class="glass-card rounded-2xl p-8 border-slate-800 bg-slate-950/60">
+        <h3 class="text-lg font-bold text-slate-200 mb-3 flex items-center gap-2">
+          <i class="fa-solid fa-scale-balanced text-cyan-400"></i> Regulatory Governance & Operational Boundaries
+        </h3>
+        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+          Zero Degree Strategy functions exclusively as a technology development and market microstructure research entity. We do not provide retail advisory services, portfolio custody, fund management, or financial intermediation to individual investors. All research and infrastructure operations are conducted strictly for eligible institutional entities and technological counterparties.
+        </p>
+      </div>
+    </section>
+
+    <!-- 机构联系与一键复制 (Contact) -->
+    <section id="contact" class="max-w-6xl mx-auto px-6 py-16 text-center">
+      <div class="glass-card max-w-xl mx-auto rounded-3xl p-10 border border-slate-800 shadow-2xl">
+        <h3 class="text-2xl font-bold mb-3 text-white">Institutional Engagement</h3>
+        <p class="text-slate-400 text-sm mb-8 leading-relaxed">
+          For technical collaboration, low-latency co-location inquiries, or research discussions:
+        </p>
+        
+        <div class="inline-flex items-center bg-slate-900/95 border border-cyan-500/40 rounded-xl p-2 pl-4 max-w-full shadow-lg shadow-cyan-950/40">
+          <span id="emailText" class="font-mono text-cyan-300 text-sm select-all mr-4 truncate">hr@zero-degreestrategy.com</span>
+          <button id="copyBtn" onclick="copyEmail()" class="px-5 py-2.5 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white text-xs font-semibold rounded-lg transition-all flex items-center gap-2 whitespace-nowrap shadow-md">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy</span>
+          </button>
+        </div>
+        <p id="copyFeedback" class="text-emerald-400 text-xs mt-3 h-4 opacity-0 transition-opacity font-mono">Email copied to clipboard</p>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>All rights reserved. This site is strictly for technological research and infrastructure demonstration. Zero Degree Strategy does not provide retail investment advice, asset custody, or financial intermediation services.</p>
+  <!-- 网站页脚 -->
+  <footer class="border-t border-slate-800/80 py-10 text-center text-xs text-slate-500 bg-[#05080f]">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <span class="font-semibold text-slate-400">Zero Degree Strategy</span>
+        <span>•</span>
+        <span>Quantitative Engineering & Infrastructure</span>
+      </div>
+      <p class="text-slate-500 text-center md:text-right max-w-xl leading-relaxed">
+        Strictly for institutional technology research. Does not offer retail investment services or digital asset brokerage.
+      </p>
+    </div>
   </footer>
 
-  <script src="main.js"></script>
+  <!-- 复制交互脚本 -->
+  <script>
+    function copyEmail() {
+      const email = document.getElementById("emailText").innerText;
+      navigator.clipboard.writeText(email).then(() => {
+        const feedback = document.getElementById("copyFeedback");
+        feedback.classList.remove("opacity-0");
+        feedback.classList.add("opacity-100");
+        setTimeout(() => {
+          feedback.classList.remove("opacity-100");
+          feedback.classList.add("opacity-0");
+        }, 2200);
+      });
+    }
+  </script>
 </body>
 </html>
