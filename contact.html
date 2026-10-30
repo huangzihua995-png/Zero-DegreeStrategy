@@ -3,57 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Zero Degree Strategy</title>
+  <title>Institutional Channel | Zero Degree Strategy</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <header>
+  <header class="navbar">
     <div class="nav-container">
-      <a href="index.html" class="brand">
-        <img src="logo.png" alt="Zero Degree Strategy Logo" onerror="this.style.display='none'">
-        <span class="brand-name">Zero Degree Strategy</span>
+      <a href="index.html" class="nav-brand">
+        <img src="logo.png" alt="Zero Degree" class="brand-logo" onerror="this.style.display='none'">
+        <span>ZERO DEGREE</span>
+        <span class="brand-badge">PROPRIETARY LAB</span>
       </a>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="solutions.html">Infrastructure & Models</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="about.html">Architecture</a></li>
+        <li><a href="contact.html" class="active">Institutional Channel</a></li>
       </ul>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-badge">Direct Communication</div>
-      <h1>Contact Zero Degree Strategy</h1>
-      <p>We welcome technical collaboration, peer quantitative research reviews, and node architecture inquiries from professional institutions.</p>
-    </section>
-
-    <section class="contact-section" style="margin-top: 1rem;">
-      <h2>Corporate Communications</h2>
-      <p>For research queries, node peering specifications, and recruiting:</p>
-      <div class="copy-box">
-        <span id="emailText" class="copy-email">hr@zero-degreestrategy.com</span>
-        <button id="copyBtn" class="copy-btn" onclick="copyContactEmail()">Copy Email</button>
+  <section class="section-contact" style="min-height: 80vh; display: flex; align-items: center; justify-content: center;">
+    <div class="contact-card" style="width: 100%;">
+      <div style="font-family: var(--font-mono); color: #6366f1; font-weight: 800; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase;">
+        OFFICIAL DESK
       </div>
-      <span id="copyFeedback" class="copy-feedback">Email copied to clipboard</span>
-    </section>
+      <h1 style="font-size: 2.4rem; color: #1e1b4b; font-weight: 900; margin: 0.8rem 0 1rem;">
+        Institutional Communication Channel
+      </h1>
+      <p style="color: #4338ca; font-size: 1rem; line-height: 1.7; max-width: 520px; margin: 0 auto;">
+        For node connectivity, quantitative research collaborations, or recruitment, communicate directly with our corporate desk:
+      </p>
 
-    <section class="grid">
-      <div class="card">
-        <h3>Technical Partnerships</h3>
-        <p>Inquiries regarding low-latency connectivity, order execution conduits, and colocation testing specifications.</p>
+      <div class="terminal-box">
+        <span id="emailTarget">hr@zero-degreestrategy.com</span>
+        <button class="copy-btn" id="copyEmailBtn">COPY EMAIL</button>
       </div>
-      <div class="card">
-        <h3>Talent & Careers</h3>
-        <p>Seeking quantitative developers, low-latency C++ / Rust engineers, and options researchers.</p>
-      </div>
-    </section>
-  </main>
 
-  <footer>
-    <p>All rights reserved. This site is strictly for technological research and infrastructure demonstration. Zero Degree Strategy does not provide retail investment advice, asset custody, or financial intermediation services.</p>
+      <div style="font-size: 0.88rem; color: #64748b; line-height: 1.6;">
+        Inquiries are reviewed by the infrastructure and research engineering teams.
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div>Zero Degree Strategy · Quantitative Derivatives Modeling &amp; Node Operations</div>
+      <div class="footer-links">
+        <a href="index.html">Overview</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="about.html">Architecture</a>
+      </div>
+    </div>
   </footer>
 
   <script src="main.js"></script>
