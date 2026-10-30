@@ -1,20 +1,21 @@
-function copyContactEmail() {
-  const emailEl = document.getElementById('emailText');
-  if (!emailEl) return;
+document.addEventListener("DOMContentLoaded", () => {
+  const copyBtn = document.getElementById("copyEmailBtn");
+  const emailTarget = document.getElementById("emailTarget");
 
-  const email = emailEl.innerText;
-  navigator.clipboard.writeText(email).then(() => {
-    const feedback = document.getElementById('copyFeedback');
-    const btn = document.getElementById('copyBtn');
-
-    if (feedback) feedback.classList.add('show');
-    if (btn) btn.textContent = 'Copied!';
-
-    setTimeout(() => {
-      if (feedback) feedback.classList.remove('show');
-      if (btn) btn.textContent = 'Copy Email';
-    }, 2000);
-  }).catch(err => {
-    console.error('Failed to copy email:', err);
-  });
-}
+  if (copyBtn && emailTarget) {
+    copyBtn.addEventListener("click", () => {
+      const email = emailTarget.innerText.trim();
+      navigator.clipboard.writeText(email).then(() => {
+        const originalText = copyBtn.innerText;
+        copyBtn.innerText = "COPIED ✓";
+        copyBtn.style.background = "#10b981";
+        setTimeout(() => {
+          copyBtn.innerText = originalText;
+          copyBtn.style.background = "";
+        }, 2200);
+      }).catch(err => {
+        console.error("Clipboard copy failed: ", err);
+      });
+    });
+  }
+});
