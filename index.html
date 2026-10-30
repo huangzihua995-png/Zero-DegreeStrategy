@@ -24,7 +24,6 @@
       <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-400">
         <a href="#nodes" class="hover:text-amber-400 transition">交易节点服务</a>
         <a href="#strategy" class="hover:text-amber-400 transition">BTC期权策略</a>
-        <a href="#features" class="hover:text-amber-400 transition">技术架构</a>
         <a href="#solutions" class="hover:text-amber-400 transition">业务延展</a>
         <a href="https://github.com/huangzihua995-png" target="_blank" class="text-slate-300 hover:text-white transition flex items-center space-x-1.5">
           <i class="fa-brands fa-github text-base"></i>
@@ -170,4 +169,113 @@
         </div>
 
         <!-- 零度期权模型 -->
-        <div class="bg-gradient-to-b from-slate-900 to-slate-950 border border-amber-500/40 p-8 rounded-2xl shadow-
+        <div class="bg-gradient-to-b from-slate-900 to-slate-950 border border-amber-500/40 p-8 rounded-2xl shadow-xl shadow-amber-500/5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center space-x-2 text-amber-400 text-sm mb-4">
+              <i class="fa-solid fa-bolt"></i>
+              <span class="font-semibold">Zero Degree 期权瞬时离场模型</span>
+            </div>
+            <ul class="space-y-4 text-sm text-slate-300">
+              <li class="flex items-start space-x-3">
+                <i class="fa-solid fa-check text-emerald-400 mt-1"></i>
+                <span><strong>短周期快速落袋：</strong>平均单笔持仓仅需短短数分钟，达到预期收益后立即自动结算离场。</span>
+              </li>
+              <li class="flex items-start space-x-3">
+                <i class="fa-solid fa-check text-emerald-400 mt-1"></i>
+                <span><strong>微观无效性套利：</strong>算法毫秒级监控期权溢价与波动率差，不赌大方向，仅吃确定性偏差。</span>
+              </li>
+              <li class="flex items-start space-x-3">
+                <i class="fa-solid fa-check text-emerald-400 mt-1"></i>
+                <span><strong>严格纪律止损：</strong>通过程序化固定参数执行，完全剔除人为贪婪与犹豫。</span>
+              </li>
+            </ul>
+          </div>
+          <div class="text-xs text-amber-400/80 border-t border-slate-800/80 pt-4 mt-6 font-mono">
+            ADVANTAGE: 极低敞口暴露时间，把资金安全放在首位
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 延展功能与生态集成 (Solutions) -->
+    <section id="solutions" class="border-t border-slate-900 bg-slate-900/20 py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">多元金融与数字资产融合生态</h2>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            基于传统金融合规视野，协助对接衍生品、合约化黄金及量化风控工具。
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-6">
+          <div class="p-6 bg-slate-950 border border-slate-800 rounded-2xl">
+            <div class="w-10 h-10 rounded-lg bg-amber-950 flex items-center justify-center text-amber-400 text-lg mb-4">
+              <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <h3 class="font-bold text-white text-base mb-2">衍生品策略集成</h3>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              支持期权多腿组合及波动率对冲模型，提供灵活的策略脚本适配。
+            </p>
+          </div>
+
+          <div class="p-6 bg-slate-950 border border-slate-800 rounded-2xl">
+            <div class="w-10 h-10 rounded-lg bg-yellow-950 flex items-center justify-center text-yellow-400 text-lg mb-4">
+              <i class="fa-solid fa-coins"></i>
+            </div>
+            <h3 class="font-bold text-white text-base mb-2">合约化黄金交易</h3>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              打通传统黄金避险资产与数字合约交易桥梁，丰富多资产对冲选择。
+            </p>
+          </div>
+
+          <div class="p-6 bg-slate-950 border border-slate-800 rounded-2xl">
+            <div class="w-10 h-10 rounded-lg bg-blue-950 flex items-center justify-center text-blue-400 text-lg mb-4">
+              <i class="fa-solid fa-shield-virus"></i>
+            </div>
+            <h3 class="font-bold text-white text-base mb-2">量化风控与协同</h3>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              提供硬性回撤熔断工具，协助对接第三方符合合规标准的资产托管通道。
+            </p>
+          </div>
+
+          <div class="p-6 bg-slate-950 border border-slate-800 rounded-2xl">
+            <div class="w-10 h-10 rounded-lg bg-cyan-950 flex items-center justify-center text-cyan-400 text-lg mb-4">
+              <i class="fa-solid fa-book-open"></i>
+            </div>
+            <h3 class="font-bold text-white text-base mb-2">投研智库与教育</h3>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              系统化解析加密衍生品运作逻辑，助力高净值客户建立成熟的数字资产认知。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 免责声明 (Disclaimer) -->
+    <section class="border-t border-slate-900 bg-slate-950 py-12">
+      <div class="max-w-4xl mx-auto px-6 text-center space-y-3">
+        <div class="text-slate-400 text-xs font-semibold flex items-center justify-center space-x-2">
+          <i class="fa-solid fa-circle-exclamation text-amber-500"></i>
+          <span>技术服务与风险免责提示</span>
+        </div>
+        <p class="text-xs text-slate-500 leading-relaxed text-justify sm:text-center">
+          本平台仅提供交易节点网络基础设施与策略算法技术交流，不向任何个人或实体提供资产吸纳、资金代管或法定金融牌照业务。衍生品与加密货币市场具备极高价格波动性，客户需自行保管私钥与账户权限，并对自身决策承担全部责任。
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="border-t border-slate-900 bg-slate-950 py-8">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 space-y-4 sm:space-y-0">
+      <div>&copy; 2026 Zero Degree Strategy. 专注于交易节点与算法研发。</div>
+      <div class="flex space-x-6">
+        <a href="#nodes" class="hover:text-slate-300 transition">节点架构</a>
+        <a href="#strategy" class="hover:text-slate-300 transition">期权策略</a>
+        <a href="https://github.com/huangzihua995-png" target="_blank" class="hover:text-slate-300 transition">GitHub 开源</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
