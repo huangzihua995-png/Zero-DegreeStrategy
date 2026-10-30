@@ -1,14 +1,12 @@
 :root {
-  --bg-dark: #0a0f1d;
+  --bg-dark: #0a0e17;
   --bg-card: #111827;
-  --bg-card-hover: #1e293b;
-  --accent: #3b82f6;
-  --accent-glow: #60a5fa;
+  --accent: #2563eb;
   --text-main: #f8fafc;
   --text-sub: #94a3b8;
-  --border: #1f293d;
-  --border-card: #27354f;
-  --transition: all 0.25s ease;
+  --border: #1e293b;
+  --border-card: #334155;
+  --transition: all 0.2s ease;
 }
 
 * {
@@ -29,8 +27,8 @@ body {
 
 header {
   border-bottom: 1px solid var(--border);
-  background-color: rgba(10, 15, 29, 0.85);
-  backdrop-filter: blur(12px);
+  background-color: rgba(10, 14, 23, 0.95);
+  backdrop-filter: blur(8px);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -54,7 +52,7 @@ header {
 }
 
 .brand img {
-  height: 38px;
+  height: 36px;
   width: auto;
   object-fit: contain;
 }
@@ -82,7 +80,7 @@ header {
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--accent-glow);
+  color: #60a5fa;
 }
 
 main {
@@ -95,31 +93,28 @@ main {
 
 .hero {
   text-align: center;
-  padding: 3.5rem 1rem 4.5rem;
+  padding: 3rem 1rem 4rem;
 }
 
 .hero-badge {
   display: inline-block;
-  padding: 0.4rem 1.1rem;
-  background: rgba(59, 130, 246, 0.12);
-  border: 1px solid rgba(96, 165, 250, 0.3);
+  padding: 0.35rem 1rem;
+  background: rgba(37, 99, 235, 0.15);
+  border: 1px solid rgba(37, 99, 235, 0.4);
   border-radius: 9999px;
-  color: var(--accent-glow);
+  color: #60a5fa;
   font-size: 0.85rem;
   margin-bottom: 1.5rem;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  font-weight: 600;
 }
 
 .hero h1 {
-  font-size: 2.85rem;
+  font-size: 2.75rem;
   font-weight: 800;
   line-height: 1.25;
   margin-bottom: 1.25rem;
-  background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ffffff;
 }
 
 .hero p {
@@ -145,10 +140,8 @@ main {
 }
 
 .card:hover {
-  border-color: rgba(96, 165, 250, 0.4);
-  background: var(--bg-card-hover);
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px -10px rgba(0, 0, 0, 0.5);
+  border-color: var(--accent);
+  transform: translateY(-2px);
 }
 
 .card h2, .card h3 {
@@ -167,22 +160,21 @@ main {
 .content-block {
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 2.5rem;
+  border-radius: 12px;
+  padding: 2.25rem;
   margin-bottom: 2.5rem;
 }
 
 .content-block h2 {
-  font-size: 1.45rem;
-  margin-bottom: 1.25rem;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
   color: var(--text-main);
-  font-weight: 700;
 }
 
 .content-block p {
   color: var(--text-sub);
-  font-size: 0.98rem;
-  line-height: 1.8;
+  font-size: 0.95rem;
+  line-height: 1.7;
   margin-bottom: 1rem;
 }
 
@@ -192,18 +184,18 @@ main {
 
 /* 节点面板 */
 .status-panel {
-  background: rgba(17, 24, 39, 0.7);
+  background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 1.75rem;
-  margin: 2.5rem 0 4rem;
+  padding: 1.5rem;
+  margin: 2rem 0 4rem;
 }
 
 .status-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   padding-bottom: 0.75rem;
   border-bottom: 1px solid var(--border);
 }
@@ -222,18 +214,18 @@ main {
   height: 8px;
   background-color: #10b981;
   border-radius: 50%;
-  box-shadow: 0 0 10px #10b981;
+  box-shadow: 0 0 8px #10b981;
 }
 
 .status-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.25rem;
+  gap: 1rem;
 }
 
 .status-item {
-  background: #0d1322;
-  padding: 1.1rem 1.25rem;
+  background: #0a0e17;
+  padding: 1rem 1.25rem;
   border-radius: 8px;
   border: 1px solid var(--border);
 }
@@ -242,7 +234,7 @@ main {
   display: block;
   font-size: 0.8rem;
   color: var(--text-sub);
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.25rem;
 }
 
 .status-item strong {
@@ -251,19 +243,19 @@ main {
   font-family: monospace;
 }
 
-/* 联系区域 */
+/* 联络区域与一键复制 */
 .contact-section {
-  background: linear-gradient(180deg, var(--bg-card) 0%, rgba(17, 24, 39, 0.6) 100%);
+  background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 3.5rem 2rem;
+  padding: 3rem 2rem;
   text-align: center;
-  max-width: 680px;
+  max-width: 650px;
   margin: 0 auto 3rem;
 }
 
 .contact-section h2 {
-  font-size: 1.75rem;
+  font-size: 1.65rem;
   margin-bottom: 0.75rem;
   color: var(--text-main);
 }
@@ -271,13 +263,13 @@ main {
 .contact-section p {
   color: var(--text-sub);
   font-size: 0.95rem;
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.5rem;
 }
 
 .copy-box {
   display: inline-flex;
   align-items: center;
-  background: #070b14;
+  background: #0a0e17;
   border: 1px solid var(--border-card);
   border-radius: 8px;
   padding: 0.5rem 0.5rem 0.5rem 1.25rem;
@@ -293,10 +285,10 @@ main {
 }
 
 .copy-btn {
-  background: #2563eb;
+  background: var(--accent);
   color: #ffffff;
   border: none;
-  padding: 0.65rem 1.25rem;
+  padding: 0.6rem 1.25rem;
   border-radius: 6px;
   font-size: 0.85rem;
   font-weight: 500;
@@ -306,7 +298,7 @@ main {
 }
 
 .copy-btn:hover {
-  background: #3b82f6;
+  background: #1d4ed8;
 }
 
 .copy-feedback {
@@ -335,9 +327,6 @@ footer {
 @media (max-width: 640px) {
   .hero h1 {
     font-size: 2rem;
-  }
-  .content-block {
-    padding: 1.75rem 1.25rem;
   }
   .copy-box {
     flex-direction: column;
