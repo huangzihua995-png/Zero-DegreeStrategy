@@ -313,7 +313,7 @@
     </div>
   </footer>
 
-  <!-- Contact Us 商务对接交互弹窗 (仅保留官方邮箱) -->
+  <!-- Contact Us 商务对接交互弹窗 (带一键复制与直连) -->
   <div id="contact-modal" class="hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
     <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-md w-full p-6 space-y-6 relative shadow-2xl">
       <div class="flex justify-between items-center">
@@ -328,27 +328,45 @@
       <p class="text-sm text-slate-400 leading-relaxed">
         欢迎联系 Zero Degree Strategy。请通过官方指定邮箱与我们沟通交易节点部署与算法接入方案：
       </p>
-      <div class="space-y-3">
-        <div class="p-4 bg-slate-950 border border-slate-800 rounded-xl flex items-center justify-between">
-          <div class="flex items-center space-x-3">
-            <i class="fa-regular fa-envelope text-amber-400 text-lg"></i>
-            <div>
-              <div class="text-sm text-slate-200 font-medium">官方对接邮箱</div>
-              <div class="text-xs text-slate-500">Official Contact & Inquiry</div>
-            </div>
+
+      <!-- 官方邮箱卡片与一键复制按钮 -->
+      <div class="p-4 bg-slate-950 border border-slate-800 rounded-xl space-y-3">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-lg bg-amber-950/60 border border-amber-800/40 flex items-center justify-center text-amber-400">
+            <i class="fa-regular fa-envelope text-lg"></i>
           </div>
-          <a href="mailto:hr@zero-degreestrategy.com" class="px-3 py-1.5 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-400 text-xs font-mono font-semibold transition border border-amber-400/30">
-            hr@zero-degreestrategy.com
-          </a>
+          <div>
+            <div class="text-sm text-slate-200 font-medium">官方对接邮箱</div>
+            <div class="text-xs text-slate-500">Official Contact & Inquiry</div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between bg-slate-900 border border-slate-800 px-3 py-2 rounded-lg">
+          <span id="email-text" class="text-xs sm:text-sm font-mono text-amber-400 font-semibold select-all">hr@zero-degreestrategy.com</span>
+          
+          <div class="flex items-center space-x-2">
+            <!-- 一键复制按钮 -->
+            <button id="copy-btn" onclick="copyEmail()" class="px-2.5 py-1 rounded-md bg-amber-400/10 hover:bg-amber-400/20 text-amber-400 text-xs font-medium transition border border-amber-400/30 flex items-center space-x-1">
+              <i id="copy-icon" class="fa-regular fa-clone"></i>
+              <span id="copy-label">复制</span>
+            </button>
+            
+            <!-- 邮件直连发送 -->
+            <a href="mailto:hr@zero-degreestrategy.com" title="唤起邮件客户端发送" class="px-2.5 py-1 rounded-md bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-medium transition flex items-center space-x-1">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <span>写信</span>
+            </a>
+          </div>
         </div>
       </div>
+
       <button onclick="toggleModal(false)" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm font-medium transition">
         关闭
       </button>
     </div>
   </div>
 
-  <!-- 弹窗交互控制 -->
+  <!-- 交互脚本：弹窗开关 & 智能复制剪贴板 -->
   <script>
     function toggleModal(show) {
       const modal = document.getElementById('contact-modal');
@@ -357,6 +375,31 @@
       } else {
         modal.classList.add('hidden');
       }
+    }
+
+    function copyEmail() {
+      const email = document.getElementById('email-text').innerText;
+      const copyBtn = document.getElementById('copy-btn');
+      const copyIcon = document.getElementById('copy-icon');
+      const copyLabel = document.getElementById('copy-label');
+
+      navigator.clipboard.writeText(email).then(() => {
+        // 复制成功的视觉反馈
+        copyBtn.classList.remove('bg-amber-400/10', 'text-amber-400', 'border-amber-400/30');
+        copyBtn.classList.add('bg-emerald-500/20', 'text-emerald-400', 'border-emerald-500/40');
+        copyIcon.className = 'fa-solid fa-check';
+        copyLabel.innerText = '已复制！';
+
+        // 2秒后恢复原状
+        setTimeout(() => {
+          copyBtn.classList.add('bg-amber-400/10', 'text-amber-400', 'border-amber-400/30');
+          copyBtn.classList.remove('bg-emerald-500/20', 'text-emerald-400', 'border-emerald-500/40');
+          copyIcon.className = 'fa-regular fa-clone';
+          copyLabel.innerText = '复制';
+        }, 2000);
+      }).catch(err => {
+        alert('复制失败，请手动选择复制：' + email);
+      });
     }
   </script>
 
