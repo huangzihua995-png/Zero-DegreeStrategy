@@ -1,5 +1,4 @@
 :root {
-  /* 全局基础冷钛灰背景 */
   --bg-canvas: #f1f5f9;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   --font-mono: "JetBrains Mono", Consolas, "Courier New", monospace;
@@ -25,12 +24,12 @@ a {
   transition: all 0.25s ease;
 }
 
-/* 顶部导航：磨砂玻璃 */
+/* 顶部导航 */
 .navbar {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(226, 232, 240, 0.9);
 }
@@ -87,9 +86,7 @@ a {
   color: #0284c7;
 }
 
-/* ========================================================
-   板块 1：极光青蓝舱 (Cyan Lab Hero Section)
-   ======================================================== */
+/* 板块 1：极光青蓝舱 (Hero) */
 .section-hero {
   background: linear-gradient(135deg, #e0f2fe 0%, #f0fdf4 60%, #e0e7ff 100%);
   border-bottom: 1px solid #bae6fd;
@@ -127,8 +124,8 @@ a {
 }
 
 .hero-title {
-  font-size: 3.4rem;
-  line-height: 1.18;
+  font-size: 3.3rem;
+  line-height: 1.2;
   font-weight: 900;
   letter-spacing: -0.03em;
   color: #0f172a;
@@ -144,7 +141,7 @@ a {
 }
 
 .hero-desc {
-  font-size: 1.2rem;
+  font-size: 1.18rem;
   color: #334155;
   line-height: 1.75;
   margin-bottom: 2.5rem;
@@ -184,9 +181,7 @@ a {
   background: #f8fafc;
 }
 
-/* ========================================================
-   板块 2：碳黑荧光数据终端 (Terminal Obsidian Section)
-   ======================================================== */
+/* 板块 2：数据指标终端 (黑底荧光) */
 .section-metrics {
   background: #090d16;
   border-top: 1px solid #1e293b;
@@ -219,7 +214,7 @@ a {
 
 .metric-num {
   font-family: var(--font-mono);
-  font-size: 2.4rem;
+  font-size: 2.3rem;
   font-weight: 900;
   margin-bottom: 0.5rem;
 }
@@ -246,15 +241,13 @@ a {
 
 .metric-sub {
   color: #94a3b8;
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
 
-/* ========================================================
-   板块 3：三色卡片阵列 (Solutions Colored Array)
-   ======================================================== */
+/* 板块 3：三色卡片业务阵列 */
 .section-features {
   background: #f8fafc;
   padding: 5rem 2rem;
@@ -278,10 +271,10 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 2.5rem;
 }
 
-/* 卡片 1：紫罗兰色系 */
+/* 紫罗兰卡片：策略研究 */
 .card-violet {
   background: linear-gradient(180deg, #ffffff 0%, #f5f3ff 100%);
   border: 2px solid #ddd6fe;
@@ -316,7 +309,7 @@ a {
   line-height: 1.7;
 }
 
-/* 卡片 2：海青色系 */
+/* 海青色卡片：风险管理 */
 .card-teal {
   background: linear-gradient(180deg, #ffffff 0%, #ecfeff 100%);
   border: 2px solid #a5f3fc;
@@ -351,7 +344,7 @@ a {
   line-height: 1.7;
 }
 
-/* 卡片 3：日落暖金色系 */
+/* 暖金色卡片：教育赋能 */
 .card-amber {
   background: linear-gradient(180deg, #ffffff 0%, #fffbeb 100%);
   border: 2px solid #fde68a;
@@ -386,9 +379,7 @@ a {
   line-height: 1.7;
 }
 
-/* ========================================================
-   板块 4：量子紫罗兰联络舱 (Quantum Contact Section)
-   ======================================================== */
+/* 板块 4：联络与交流舱 */
 .section-contact {
   background: linear-gradient(135deg, #eef2ff 0%, #fae8ff 100%);
   border-top: 1px solid #c7d2fe;
@@ -437,7 +428,7 @@ a {
   background: #312e81;
 }
 
-/* 底部栏：深青冷蓝底（无版权） */
+/* 页脚：深色科技底（完全无版权） */
 .site-footer {
   background: #0f172a;
   border-top: 1px solid #1e293b;
