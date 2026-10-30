@@ -27,6 +27,7 @@
         <a href="#about" class="hover:text-amber-400 transition">About Us</a>
         <a href="#get-started" class="hover:text-amber-400 transition">Get Started</a>
         
+        <!-- 核心行动按钮: Contact Us -->
         <button onclick="toggleModal(true)" class="px-5 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-medium transition shadow-md shadow-blue-600/30">
           Contact Us
         </button>
@@ -97,6 +98,7 @@
           </p>
         </div>
 
+        <!-- 节点三大核心特征 -->
         <div class="grid md:grid-cols-3 gap-8 mb-16">
           <div class="bg-slate-950/60 border border-slate-800 p-6 rounded-2xl space-y-3">
             <div class="w-12 h-12 rounded-xl bg-amber-950/80 border border-amber-800/60 flex items-center justify-center text-amber-400 text-xl">
@@ -129,6 +131,7 @@
           </div>
         </div>
 
+        <!-- 旗舰期权策略对比卡片 -->
         <div class="grid md:grid-cols-2 gap-8 items-stretch">
           <div class="bg-slate-950/60 border border-slate-800/80 p-8 rounded-2xl flex flex-col justify-between">
             <div>
@@ -310,35 +313,33 @@
     </div>
   </footer>
 
-  <!-- Contact Us 商务对接交互弹窗 -->
+  <!-- Contact Us 商务对接交互弹窗 (仅保留官方邮箱) -->
   <div id="contact-modal" class="hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
     <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-md w-full p-6 space-y-6 relative shadow-2xl">
       <div class="flex justify-between items-center">
         <h3 class="text-lg font-bold text-white flex items-center space-x-2">
-          <i class="fa-solid fa-headset text-amber-400"></i>
-          <span>商务合作与节点接入</span>
+          <i class="fa-solid fa-envelope text-amber-400"></i>
+          <span>商务合作与官方联络</span>
         </h3>
         <button onclick="toggleModal(false)" class="text-slate-400 hover:text-white text-2xl leading-none">
           &times;
         </button>
       </div>
       <p class="text-sm text-slate-400 leading-relaxed">
-        欢迎联系 Zero Degree Strategy。请通过官方指定通道沟通节点接入方案与策略实测：
+        欢迎联系 Zero Degree Strategy。请通过官方指定邮箱与我们沟通交易节点部署与算法接入方案：
       </p>
       <div class="space-y-3">
         <div class="p-4 bg-slate-950 border border-slate-800 rounded-xl flex items-center justify-between">
           <div class="flex items-center space-x-3">
-            <i class="fa-brands fa-telegram text-sky-400 text-lg"></i>
-            <span class="text-sm text-slate-300">Telegram 官方对接</span>
+            <i class="fa-regular fa-envelope text-amber-400 text-lg"></i>
+            <div>
+              <div class="text-sm text-slate-200 font-medium">官方对接邮箱</div>
+              <div class="text-xs text-slate-500">Official Contact & Inquiry</div>
+            </div>
           </div>
-          <span class="text-xs font-mono text-amber-400">@ZeroDegree_Official</span>
-        </div>
-        <div class="p-4 bg-slate-950 border border-slate-800 rounded-xl flex items-center justify-between">
-          <div class="flex items-center space-x-3">
-            <i class="fa-brands fa-weixin text-emerald-400 text-lg"></i>
-            <span class="text-sm text-slate-300">官方微信 / WeChat</span>
-          </div>
-          <span class="text-xs font-mono text-cyan-400">联系授权机构代表</span>
+          <a href="mailto:hr@zero-degreestrategy.com" class="px-3 py-1.5 rounded-lg bg-amber-400/10 hover:bg-amber-400/20 text-amber-400 text-xs font-mono font-semibold transition border border-amber-400/30">
+            hr@zero-degreestrategy.com
+          </a>
         </div>
       </div>
       <button onclick="toggleModal(false)" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm font-medium transition">
@@ -347,6 +348,7 @@
     </div>
   </div>
 
+  <!-- 弹窗交互控制 -->
   <script>
     function toggleModal(show) {
       const modal = document.getElementById('contact-modal');
