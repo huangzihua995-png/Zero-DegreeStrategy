@@ -1,7 +1,17 @@
 :root {
-  --bg-canvas: #f1f5f9;
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-  --font-mono: "JetBrains Mono", Consolas, "Courier New", monospace;
+  --bg-primary: #080b11;
+  --bg-secondary: #0f1623;
+  --bg-card: rgba(17, 24, 39, 0.7);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-glow: rgba(0, 240, 255, 0.25);
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --cyan: #00f0ff;
+  --blue: #3b82f6;
+  --emerald: #10b981;
+  --purple: #a855f7;
+  --font-sans: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --font-mono: "JetBrains Mono", Consolas, Menlo, monospace;
 }
 
 * {
@@ -11,27 +21,32 @@
 }
 
 body {
-  background-color: var(--bg-canvas);
+  background-color: var(--bg-primary);
+  color: var(--text-main);
   font-family: var(--font-sans);
   line-height: 1.6;
+  background-image: 
+    radial-gradient(circle at 10% 10%, rgba(0, 240, 255, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 90% 40%, rgba(59, 130, 246, 0.06) 0%, transparent 40%),
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 48px 48px, 48px 48px;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 a {
   text-decoration: none;
-  transition: all 0.25s ease;
+  transition: all 0.2s ease;
 }
 
-/* 顶部导航 */
+/* 导航 */
 .navbar {
   position: sticky;
   top: 0;
-  z-index: 1000;
-  background: rgba(255, 255, 255, 0.92);
+  z-index: 100;
+  background: rgba(8, 11, 17, 0.85);
   backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(226, 232, 240, 0.9);
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 .nav-container {
@@ -47,421 +62,359 @@ a {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-weight: 900;
-  font-size: 1.2rem;
-  letter-spacing: -0.02em;
-  color: #0f172a;
+  font-weight: 800;
+  font-size: 1.15rem;
+  color: #ffffff;
 }
 
 .brand-logo {
-  height: 32px;
+  height: 30px;
   width: auto;
 }
 
 .brand-badge {
   font-size: 0.72rem;
   font-family: var(--font-mono);
-  background: linear-gradient(135deg, #0284c7, #4f46e5);
-  color: #ffffff;
-  padding: 3px 8px;
+  background: rgba(0, 240, 255, 0.1);
+  color: var(--cyan);
+  padding: 2px 8px;
   border-radius: 4px;
-  font-weight: 700;
+  border: 1px solid rgba(0, 240, 255, 0.25);
 }
 
 .nav-links {
   display: flex;
-  gap: 2rem;
-  align-items: center;
+  gap: 2.2rem;
   list-style: none;
 }
 
 .nav-links a {
   font-size: 0.92rem;
-  color: #475569;
-  font-weight: 600;
+  color: var(--text-muted);
+  font-weight: 500;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: #0284c7;
+  color: var(--cyan);
 }
 
-/* 板块 1：极光青蓝舱 (Hero) */
-.section-hero {
-  background: linear-gradient(135deg, #e0f2fe 0%, #f0fdf4 60%, #e0e7ff 100%);
-  border-bottom: 1px solid #bae6fd;
-  padding: 5rem 2rem;
-  text-align: center;
-}
-
-.hero-content {
-  max-width: 900px;
+/* 首屏双列布局：彻底告别空旷感 */
+.hero-wrapper {
+  max-width: 1240px;
   margin: 0 auto;
+  padding: 4.5rem 2rem 3rem;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3.5rem;
+  align-items: center;
 }
 
-.hero-pill {
+.pill-tag {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 6px 16px;
-  background: rgba(255, 255, 255, 0.85);
-  border: 1px solid #7dd3fc;
-  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.12);
+  padding: 5px 14px;
+  background: rgba(0, 240, 255, 0.06);
+  border: 1px solid rgba(0, 240, 255, 0.2);
   border-radius: 100px;
   font-family: var(--font-mono);
-  font-size: 0.82rem;
-  font-weight: 700;
-  color: #0369a1;
-  margin-bottom: 2rem;
-}
-
-.hero-dot {
-  width: 8px;
-  height: 8px;
-  background-color: #0284c7;
-  border-radius: 50%;
-  box-shadow: 0 0 10px #0284c7;
-}
-
-.hero-title {
-  font-size: 3.3rem;
-  line-height: 1.2;
-  font-weight: 900;
-  letter-spacing: -0.03em;
-  color: #0f172a;
+  font-size: 0.8rem;
+  color: var(--cyan);
   margin-bottom: 1.5rem;
 }
 
-.hero-title-cyan {
-  color: #0284c7;
+.pill-dot {
+  width: 7px;
+  height: 7px;
+  background: var(--cyan);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--cyan);
 }
 
-.hero-title-indigo {
-  color: #4338ca;
+.hero-title {
+  font-size: 2.9rem;
+  line-height: 1.25;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.4rem;
+  background: linear-gradient(180deg, #ffffff 40%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.hero-desc {
-  font-size: 1.18rem;
-  color: #334155;
-  line-height: 1.75;
-  margin-bottom: 2.5rem;
+.highlight-cyan {
+  background: linear-gradient(90deg, #00f0ff, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.btn-cyan {
-  background: linear-gradient(135deg, #0284c7, #0369a1);
-  color: #ffffff;
-  padding: 0.85rem 2rem;
-  border-radius: 8px;
+.hero-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 2.2rem;
+}
+
+.btn-group {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.btn {
+  padding: 0.8rem 1.8rem;
+  border-radius: 6px;
+  font-size: 0.92rem;
   font-weight: 700;
-  font-size: 0.95rem;
-  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
-  display: inline-block;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.2s ease;
 }
 
-.btn-cyan:hover {
+.btn-primary {
+  background: var(--cyan);
+  color: #080b11;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+}
+
+.btn-primary:hover {
+  background: #67e8f9;
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(2, 132, 199, 0.45);
 }
 
-.btn-white {
-  background: #ffffff;
-  color: #0f172a;
-  border: 1px solid #cbd5e1;
-  padding: 0.85rem 2rem;
-  border-radius: 8px;
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.04);
+  color: #ffffff;
+  border: 1px solid var(--border-subtle);
+}
+
+.btn-secondary:hover {
+  border-color: var(--cyan);
+  color: var(--cyan);
+}
+
+/* 核心杀手锏：量化实时衍生品终端面板 */
+.terminal-panel {
+  background: var(--bg-secondary);
+  border: 1px solid rgba(0, 240, 255, 0.2);
+  border-radius: 12px;
+  padding: 1.8rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 240, 255, 0.08);
+  font-family: var(--font-mono);
+}
+
+.terminal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.terminal-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.terminal-dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #334155;
+}
+
+.terminal-dots span:nth-child(1) { background: #ef4444; }
+.terminal-dots span:nth-child(2) { background: #eab308; }
+.terminal-dots span:nth-child(3) { background: #10b981; }
+
+.terminal-badge {
+  font-size: 0.75rem;
+  color: var(--cyan);
+}
+
+.terminal-data-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.data-tile {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  padding: 0.8rem;
+  border-radius: 6px;
+}
+
+.data-tile-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.data-tile-val {
+  font-size: 1.1rem;
   font-weight: 700;
-  font-size: 0.95rem;
-  margin-left: 1rem;
-  display: inline-block;
+  margin-top: 4px;
 }
 
-.btn-white:hover {
-  border-color: #0284c7;
-  color: #0284c7;
-  background: #f8fafc;
+/* 模拟波动率波形条 */
+.vol-visualizer {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+  height: 70px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 1rem;
 }
 
-/* 板块 2：数据指标终端 (黑底荧光) */
-.section-metrics {
-  background: #090d16;
-  border-top: 1px solid #1e293b;
-  border-bottom: 1px solid #1e293b;
-  padding: 4.5rem 2rem;
+.vol-bar {
+  flex: 1;
+  background: linear-gradient(180deg, var(--cyan), transparent);
+  border-radius: 2px 2px 0 0;
+  animation: pulse 1.8s infinite ease-in-out alternate;
 }
 
-.metrics-container {
+@keyframes pulse {
+  0% { transform: scaleY(0.4); opacity: 0.4; }
+  100% { transform: scaleY(1); opacity: 0.9; }
+}
+
+.terminal-logs {
+  font-size: 0.78rem;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.terminal-logs span {
+  color: var(--emerald);
+}
+
+/* 核心四大指标栏 */
+.metrics-strip {
   max-width: 1240px;
-  margin: 0 auto;
+  margin: 2.5rem auto 4rem;
+  padding: 0 2rem;
+}
+
+.metrics-box {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-}
-
-.metric-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  gap: 1.5rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
   border-radius: 12px;
-  padding: 2rem 1.5rem;
+  padding: 2.2rem 1.5rem;
+}
+
+.metric-item {
   text-align: center;
-  transition: all 0.3s ease;
+  border-right: 1px solid var(--border-subtle);
 }
 
-.metric-card:hover {
-  border-color: #00f0ff;
-  box-shadow: 0 0 20px rgba(0, 240, 255, 0.15);
-  transform: translateY(-4px);
+.metric-item:last-child {
+  border-right: none;
 }
 
-.metric-num {
+.metric-val {
   font-family: var(--font-mono);
-  font-size: 2.3rem;
-  font-weight: 900;
-  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.4rem;
 }
 
-.metric-cyan {
-  color: #00f0ff;
-  text-shadow: 0 0 16px rgba(0, 240, 255, 0.4);
-}
-
-.metric-emerald {
-  color: #10b981;
-  text-shadow: 0 0 16px rgba(16, 185, 129, 0.4);
-}
-
-.metric-purple {
-  color: #c084fc;
-  text-shadow: 0 0 16px rgba(192, 132, 252, 0.4);
-}
-
-.metric-amber {
-  color: #fbbf24;
-  text-shadow: 0 0 16px rgba(251, 191, 36, 0.4);
-}
-
-.metric-sub {
-  color: #94a3b8;
+.metric-label {
   font-size: 0.82rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
 }
 
-/* 板块 3：三色卡片业务阵列 */
-.section-features {
-  background: #f8fafc;
-  padding: 5rem 2rem;
-}
-
-.features-container {
+/* 三大核心业务卡片 */
+.features-section {
   max-width: 1240px;
   margin: 0 auto;
-}
-
-.section-tag {
-  font-family: var(--font-mono);
-  font-weight: 800;
-  font-size: 0.85rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin-bottom: 0.8rem;
+  padding: 2rem 2rem 5rem;
 }
 
 .features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 
-/* 紫罗兰卡片：策略研究 */
-.card-violet {
-  background: linear-gradient(180deg, #ffffff 0%, #f5f3ff 100%);
-  border: 2px solid #ddd6fe;
-  border-radius: 14px;
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
   padding: 2.2rem;
-  box-shadow: 0 6px 18px rgba(139, 92, 246, 0.06);
+  position: relative;
+  overflow: hidden;
   transition: all 0.3s;
 }
 
-.card-violet:hover {
-  border-color: #8b5cf6;
+.card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(139, 92, 246, 0.15);
+  border-color: var(--border-glow);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
 }
 
-.card-violet .badge {
-  color: #7c3aed;
+.card-tag {
   font-family: var(--font-mono);
-  font-weight: 800;
   font-size: 0.75rem;
-}
-
-.card-violet h3 {
-  color: #4c1d95;
-  font-size: 1.3rem;
-  margin: 0.6rem 0 1rem;
-}
-
-.card-violet p {
-  color: #5b21b6;
-  font-size: 0.94rem;
-  line-height: 1.7;
-}
-
-/* 海青色卡片：风险管理 */
-.card-teal {
-  background: linear-gradient(180deg, #ffffff 0%, #ecfeff 100%);
-  border: 2px solid #a5f3fc;
-  border-radius: 14px;
-  padding: 2.2rem;
-  box-shadow: 0 6px 18px rgba(6, 182, 212, 0.06);
-  transition: all 0.3s;
-}
-
-.card-teal:hover {
-  border-color: #06b6d4;
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(6, 182, 212, 0.15);
-}
-
-.card-teal .badge {
-  color: #0891b2;
-  font-family: var(--font-mono);
-  font-weight: 800;
-  font-size: 0.75rem;
-}
-
-.card-teal h3 {
-  color: #155e75;
-  font-size: 1.3rem;
-  margin: 0.6rem 0 1rem;
-}
-
-.card-teal p {
-  color: #164e63;
-  font-size: 0.94rem;
-  line-height: 1.7;
-}
-
-/* 暖金色卡片：教育赋能 */
-.card-amber {
-  background: linear-gradient(180deg, #ffffff 0%, #fffbeb 100%);
-  border: 2px solid #fde68a;
-  border-radius: 14px;
-  padding: 2.2rem;
-  box-shadow: 0 6px 18px rgba(245, 158, 11, 0.06);
-  transition: all 0.3s;
-}
-
-.card-amber:hover {
-  border-color: #f59e0b;
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(245, 158, 11, 0.15);
-}
-
-.card-amber .badge {
-  color: #d97706;
-  font-family: var(--font-mono);
-  font-weight: 800;
-  font-size: 0.75rem;
-}
-
-.card-amber h3 {
-  color: #78350f;
-  font-size: 1.3rem;
-  margin: 0.6rem 0 1rem;
-}
-
-.card-amber p {
-  color: #92400e;
-  font-size: 0.94rem;
-  line-height: 1.7;
-}
-
-/* 板块 4：联络与交流舱 */
-.section-contact {
-  background: linear-gradient(135deg, #eef2ff 0%, #fae8ff 100%);
-  border-top: 1px solid #c7d2fe;
-  padding: 5rem 2rem;
-  text-align: center;
-}
-
-.contact-card {
-  max-width: 680px;
-  margin: 0 auto;
-  background: #ffffff;
-  border: 2px solid #c7d2fe;
-  border-radius: 16px;
-  padding: 3rem 2.5rem;
-  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.1);
-}
-
-.terminal-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #f8fafc;
-  border: 1px solid #cbd5e1;
-  padding: 1rem 1.4rem;
-  border-radius: 8px;
-  margin: 2rem 0;
-  font-family: var(--font-mono);
-  font-size: 1.1rem;
-  font-weight: 800;
-  color: #4338ca;
-}
-
-.copy-btn {
-  background: #4338ca;
-  color: #ffffff;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  font-size: 0.85rem;
   font-weight: 700;
-  cursor: pointer;
-  transition: all 0.2s;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.8rem;
 }
 
-.copy-btn:hover {
-  background: #312e81;
+.card-title {
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
 }
 
-/* 页脚：深色科技底（完全无版权） */
+.card-desc {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+/* 页脚 */
 .site-footer {
-  background: #0f172a;
-  border-top: 1px solid #1e293b;
-  padding: 2.2rem 2rem;
-  color: #94a3b8;
+  border-top: 1px solid var(--border-subtle);
+  background: #05070a;
+  padding: 2.5rem 2rem;
 }
 
-.footer-content {
+.footer-inner {
   max-width: 1240px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
+  color: #64748b;
 }
 
 .footer-links {
   display: flex;
-  gap: 1.8rem;
+  gap: 2rem;
 }
 
 .footer-links a {
-  color: #cbd5e1;
-  font-weight: 600;
+  color: #94a3b8;
 }
 
 .footer-links a:hover {
-  color: #38bdf8;
+  color: var(--cyan);
 }
 
-@media (max-width: 900px) {
-  .hero-title { font-size: 2.3rem; }
-  .metrics-container, .features-grid { grid-template-columns: 1fr; }
-  .footer-content { flex-direction: column; gap: 1.2rem; text-align: center; }
+@media (max-width: 960px) {
+  .hero-wrapper { grid-template-columns: 1fr; }
+  .metrics-box { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  .metric-item { border-right: none; }
+  .features-grid { grid-template-columns: 1fr; }
   .nav-links { display: none; }
 }
