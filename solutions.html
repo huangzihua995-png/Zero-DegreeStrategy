@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>服务体系 | 零度策略</title>
+  <title>Services &amp; Solutions | Zero Degree Strategy</title>
   <link rel="icon" type="image/png" href="logo.png">
   <style>
     :root {
@@ -11,14 +11,14 @@
       --bg-secondary: #0d131f;
       --bg-card: rgba(15, 23, 42, 0.85);
       --border-subtle: rgba(255, 255, 255, 0.08);
-      --border-glow: rgba(0, 240, 255, 0.3);
+      --border-glow: rgba(0, 240, 255, 0.35);
       --text-main: #f8fafc;
       --text-muted: #94a3b8;
       --cyan: #00f0ff;
       --emerald: #10b981;
       --purple: #a855f7;
-      --font-sans: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
-      --font-mono: "JetBrains Mono", Consolas, Menlo, monospace;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --font-mono: "JetBrains Mono", Menlo, Consolas, Courier, monospace;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -40,7 +40,7 @@
 
     .navbar {
       position: sticky; top: 0; z-index: 1000;
-      background: rgba(7, 10, 16, 0.88);
+      background: rgba(7, 10, 16, 0.9);
       backdrop-filter: blur(16px);
       border-bottom: 1px solid var(--border-subtle);
     }
@@ -71,7 +71,6 @@
     .page-title { font-size: 2.8rem; font-weight: 900; margin-bottom: 1rem; color: #ffffff; }
     .page-desc { color: var(--text-muted); font-size: 1.1rem; max-width: 760px; line-height: 1.8; margin-bottom: 3.5rem; }
 
-    /* 三大专业服务卡片（带有立体深邃边框与半透明底色） */
     .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 4rem; }
     .card {
       background: var(--bg-card); border: 1px solid var(--border-subtle);
@@ -86,7 +85,6 @@
     .card-title { font-size: 1.35rem; margin-bottom: 1rem; color: #ffffff; font-weight: 700; }
     .card-desc { font-size: 0.95rem; color: var(--text-muted); line-height: 1.8; }
 
-    /* 底部声明模块（替换原有纯白刺眼背景为沉浸式深蓝面板） */
     .statement-box {
       background: linear-gradient(180deg, rgba(13, 19, 31, 0.9) 0%, rgba(15, 23, 42, 0.9) 100%);
       border: 1px solid rgba(0, 240, 255, 0.25);
@@ -116,65 +114,67 @@
   <header class="navbar">
     <div class="nav-container">
       <a href="index.html" class="nav-brand">
-        <img src="logo.png" alt="零度策略" class="brand-logo" onerror="this.style.display='none'">
-        <span>零度策略</span>
-        <span class="brand-badge">DERIVATIVES LAB</span>
+        <img src="logo.png" alt="Zero Degree" class="brand-logo" onerror="this.style.display='none'">
+        <span>ZERO DEGREE</span>
+        <span class="brand-badge">RESEARCH &amp; LAB</span>
       </a>
       <ul class="nav-links">
-        <li><a href="index.html">首页概述</a></li>
-        <li><a href="solutions.html" class="active">服务体系</a></li>
-        <li><a href="about.html">研究方法论</a></li>
-        <li><a href="contact.html">联系交流</a></li>
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="solutions.html" class="active">Services</a></li>
+        <li><a href="about.html">Methodology</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
   </header>
 
   <main class="main-wrap">
-    <div class="page-tag">WHAT WE OFFER // 核心服务</div>
-    <h1 class="page-title">系统化策略构建、风控体系与专业教育</h1>
-    <p class="page-desc">专注于 BTC/USDT 加密期权与衍生品市场，为客户输出高确定性量化策略模型、全维度风控系统与实战进阶指导。</p>
+    <div class="page-tag">PRACTICE SUITE // TECHNICAL OFFERINGS</div>
+    <h1 class="page-title">Strategy Modeling, Risk Protocols &amp; Education</h1>
+    <p class="page-desc">
+      Delivering quantitative derivative analysis, automated Greeks risk tooling, and structured training programs specifically tailored for active digital asset traders.
+    </p>
 
     <div class="grid-3">
       <div class="card">
-        <div class="card-tag" style="color: var(--cyan);">SERVICE 01 · 策略架构</div>
-        <h3 class="card-title">期权与衍生品策略设计</h3>
+        <div class="card-tag" style="color: var(--cyan);">SERVICE 01 · STRATEGY RESEARCH</div>
+        <h3 class="card-title">Options Strategy Engineering</h3>
         <p class="card-desc">
-          提供 Delta 中性对冲、日历跨期价差模型、波动率曲面套利及备兑增益架构，帮助客户在不同牛熊与高低波动率周期中建立非对称收益优势。
+          Systematic modeling including volatility surface arbitrage, non-directional calendar spreads, dynamic Gamma scalping protocols, and delta-hedged structural yield overlays.
         </p>
       </div>
 
       <div class="card">
-        <div class="card-tag" style="color: var(--emerald);">SERVICE 02 · 风险管理</div>
-        <h3 class="card-title">系统化风险控制工具</h3>
+        <div class="card-tag" style="color: var(--emerald);">SERVICE 02 · RISK ARCHITECTURE</div>
+        <h3 class="card-title">Risk Management Tooling</h3>
         <p class="card-desc">
-          动态监控投资组合 Delta、Gamma、Vega、Theta 敏感性风险。提供极端行情压力测试模型、保证金清算距离预警及动态止损对冲机制。
+          Continuous Greeks monitoring, tail-risk stress testing under liquidity vacuum scenarios, margin liquidation proximity alerts, and automated downside hedge mechanisms.
         </p>
       </div>
 
       <div class="card">
-        <div class="card-tag" style="color: var(--purple);">SERVICE 03 · 教育赋能</div>
-        <h3 class="card-title">实战型衍生品专业教学</h3>
+        <div class="card-tag" style="color: var(--purple);">SERVICE 03 · TRADER EMPOWERMENT</div>
+        <h3 class="card-title">Structured Mentorship</h3>
         <p class="card-desc">
-          一对一导师制与实盘案例复盘。系统涵盖期权定价数学、波动率微笑曲线拟合、交易执行纪律与心理管理，培养具备独立思考能力的交易者。
+          Comprehensive curriculum from stochastic volatility foundations to high-execution trade discipline. Hands-on case studies and post-trade analytical reviews.
         </p>
       </div>
     </div>
 
     <div class="statement-box">
-      <div class="statement-title">非机构与纯研究/教育定位声明</div>
+      <div class="statement-title">Advisory Scope &amp; Non-Custodial Disclaimer</div>
       <p class="statement-desc">
-        零度策略是一家专注于加密衍生品数学建模、策略研究与实战教育的咨询团队。我们不是公募或私募基金管理机构，不承诺任何形式的固定保底收益，不提供资金托管或代客理财业务。所有分析研究与技术工具均供客户在自身独立账户内参考与执行。
+        Zero Degree Strategy operates strictly as an independent research, quantitative advisory, and educational entity. We are not a registered investment advisor (RIA), broker-dealer, or hedge fund, and do not provide custodial asset management or hold client funds. All research models and educational frameworks are intended for informational and technical support; execution remains entirely at the client's sole discretion on their own accounts.
       </p>
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <div>零度策略 · 专注于加密衍生品策略研究、风险管理与教育赋能</div>
+      <div>Zero Degree Strategy · Crypto Derivatives Research, Risk Consulting &amp; Education</div>
       <div class="footer-links">
-        <a href="index.html">首页概述</a>
-        <a href="about.html">研究方法论</a>
-        <a href="contact.html">联系交流</a>
+        <a href="index.html">Overview</a>
+        <a href="about.html">Methodology</a>
+        <a href="contact.html">Contact Us</a>
       </div>
     </div>
   </footer>
