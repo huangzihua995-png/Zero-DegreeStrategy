@@ -6,12 +6,24 @@
   <title>Zero Degree Strategy | 零度策略 - 高性能交易节点与期权算法策略提供商</title>
   <meta name="description" content="Zero Degree Strategy 专注于提供机构级低延迟交易节点接入与 BTC/USDT 期权短线算法策略。以技术驱动，捕捉市场瞬时定价偏差。">
   <link rel="icon" type="image/png" href="logo.png">
+
+  <!-- Open Graph 社交卡片 -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zero-degreestrategy.com/">
+  <meta property="og:title" content="Zero Degree Strategy | 零度策略 - 高性能交易节点与期权算法策略提供商">
+  <meta property="og:description" content="机构级低延迟交易节点直连，自研 BTC/USDT 期权短线算法策略，数分钟内捕捉瞬时定价偏差。">
+  <meta property="og:image" content="https://zero-degreestrategy.com/logo.png">
+
+  <!-- Twitter / X 社交卡片 -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Zero Degree Strategy | 零度策略">
+  <meta name="twitter:description" content="机构级低延迟交易节点直连，自研 BTC/USDT 期权短线算法策略。">
+  <meta name="twitter:image" content="https://zero-degreestrategy.com/logo.png">
+
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- FontAwesome 图标库 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Chart.js 量化图表库 -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body class="bg-slate-950 text-slate-100 antialiased selection:bg-amber-400 selection:text-slate-950 flex flex-col min-h-screen font-sans">
 
@@ -45,65 +57,65 @@
       <div class="lg:col-span-7 space-y-6">
         <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-amber-950/60 border border-amber-800/50 text-amber-400 text-xs font-semibold tracking-wider uppercase">
           <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
-          <span>基础设施专线 × BTC/USDT 期权短线算法</span>
+          <span>高可用专线节点 × BTC/USDT 期权短线算法</span>
         </div>
         <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
           极速节点直连，<br>
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-500">数分钟内完成 BTC 期权算法套利</span>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-500">毫秒级捕捉市场瞬时定价偏差</span>
         </h1>
         <p class="text-base text-slate-400 max-w-xl leading-relaxed">
-          专为高净值交易者与自营机构提供<strong>微秒级底层交易节点</strong>与<strong>自研 BTC/USDT 期权瞬时策略</strong>。摆脱长周期单边持币被动承受暴跌的风险，通过毫秒级执行通道捕捉微观定价偏差，实现快速建仓并于数分钟内自动化止盈离场。
+          我们为量化交易者与自营团队提供<strong>微秒级撮合专线节点</strong>与<strong>自研 BTC/USDT 期权短线算法架构</strong>。纯技术接入、非托管模式，客户自持交易所 API 权限，杜绝任何资金池黑箱风险。
         </p>
         <div class="pt-2 flex flex-wrap gap-4">
           <a href="#services" class="px-6 py-3 rounded-xl bg-amber-400 text-slate-950 font-semibold hover:bg-amber-300 transition shadow-lg shadow-amber-400/20">
-            浏览核心策略
+            浏览技术方案
           </a>
           <button onclick="toggleModal(true)" class="px-6 py-3 rounded-xl border border-slate-800 bg-slate-900/60 text-slate-300 hover:bg-slate-800 hover:text-white transition">
-            申请节点测试
+            申请专线测试
           </button>
         </div>
       </div>
 
-      <!-- 四宫格指标面板 -->
+      <!-- 四宫格硬核技术面板 -->
       <div class="lg:col-span-5 bg-slate-900/60 border border-slate-800 rounded-2xl p-6 shadow-2xl backdrop-blur-sm relative">
         <div class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-4 flex justify-between items-center">
-          <span>核心执行与风控标准</span>
-          <span class="text-amber-400"><i class="fa-solid fa-server"></i> Dedicated Nodes</span>
+          <span>基础设施执行标准</span>
+          <span class="text-amber-400"><i class="fa-solid fa-server"></i> Dedicated Infrastructure</span>
         </div>
         <div class="grid grid-cols-2 gap-4">
           <div class="bg-slate-950/80 border border-slate-800/80 p-4 rounded-xl">
-            <div class="text-2xl font-bold text-amber-400 font-mono tracking-tight">&lt; 3 mins</div>
-            <div class="text-xs text-slate-400 mt-1">单笔策略平均持仓周期</div>
+            <div class="text-2xl font-bold text-emerald-400 font-mono tracking-tight">&lt; 3.5 ms</div>
+            <div class="text-xs text-slate-400 mt-1">撮合专线往返 RTT 延迟</div>
           </div>
           <div class="bg-slate-950/80 border border-slate-800/80 p-4 rounded-xl">
-            <div class="text-2xl font-bold text-emerald-400 font-mono tracking-tight">Direct API</div>
-            <div class="text-xs text-slate-400 mt-1">独立撮合专线节点</div>
+            <div class="text-2xl font-bold text-amber-400 font-mono tracking-tight">Direct API</div>
+            <div class="text-xs text-slate-400 mt-1">独立私有撮合网关</div>
           </div>
           <div class="bg-slate-950/80 border border-slate-800/80 p-4 rounded-xl">
             <div class="text-2xl font-bold text-white font-mono tracking-tight">Non-Custodial</div>
-            <div class="text-xs text-slate-400 mt-1">零资金托管·客户自持权限</div>
+            <div class="text-xs text-slate-400 mt-1">零资金托管·纯发单架构</div>
           </div>
           <div class="bg-slate-950/80 border border-slate-800/80 p-4 rounded-xl">
-            <div class="text-2xl font-bold text-cyan-400 font-mono tracking-tight">Auto Exit</div>
-            <div class="text-xs text-slate-400 mt-1">毫秒波动监控·硬性止盈止损</div>
+            <div class="text-2xl font-bold text-cyan-400 font-mono tracking-tight">Auto Risk</div>
+            <div class="text-xs text-slate-400 mt-1">硬性风控·毫秒级止损结算</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Services: 核心服务与策略板块 -->
+    <!-- Services: 核心服务与技术方案 -->
     <section id="services" class="border-t border-slate-900 bg-slate-900/30 py-20">
       <div class="max-w-6xl mx-auto px-6">
         <div class="text-center max-w-2xl mx-auto mb-16">
-          <span class="text-amber-400 text-xs font-mono tracking-widest uppercase">OUR SERVICES</span>
+          <span class="text-amber-400 text-xs font-mono tracking-widest uppercase">INFRASTRUCTURE & ALGO</span>
           <h2 class="text-2xl sm:text-3xl font-bold text-white mt-2 mb-4">交易节点网络与算法服务</h2>
           <p class="text-slate-400 text-sm leading-relaxed">
-            以毫秒级基础设施配合量化期权套利，为高净值交易者提供全链路技术支持。
+            以毫秒级基础设施配合短周期期权模型，提供纯粹的技术与策略执行服务。
           </p>
         </div>
 
         <!-- 节点三大核心特征 -->
-        <div class="grid md:grid-cols-3 gap-8 mb-16">
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
           <div class="bg-slate-950/60 border border-slate-800 p-6 rounded-2xl space-y-3">
             <div class="w-12 h-12 rounded-xl bg-amber-950/80 border border-amber-800/60 flex items-center justify-center text-amber-400 text-xl">
               <i class="fa-solid fa-network-wired"></i>
@@ -190,47 +202,44 @@
           </div>
         </div>
 
-        <!-- 动态量化收益回测面板 (新增图表模块) -->
+        <!-- 纯技术参数规格面板（彻底替代图表，合规、安全、硬核） -->
         <div class="bg-slate-950/80 border border-slate-800 rounded-2xl p-6 sm:p-8">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-slate-800/80 gap-4">
             <div>
               <div class="text-xs font-mono text-amber-400 tracking-wider uppercase flex items-center space-x-2">
                 <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                <span>BACKTEST PERFORMANCE (BTC/USDT OPTIONS MODEL)</span>
+                <span>ENTERPRISE SPECIFICATIONS</span>
               </div>
-              <h3 class="text-lg sm:text-xl font-bold text-white mt-1">算法累计净值与收益回测模型</h3>
+              <h3 class="text-lg sm:text-xl font-bold text-white mt-1">节点网络与策略执行工程参数</h3>
             </div>
             <div class="flex items-center space-x-3 text-xs">
-              <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-slate-300 font-mono">Cycle: 90 Days</span>
-              <span class="px-3 py-1 rounded-full bg-emerald-950/60 border border-emerald-800/40 text-emerald-400 font-mono font-semibold">+68.4% Cumulative</span>
+              <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-slate-300 font-mono">Status: Production Live</span>
+              <span class="px-3 py-1 rounded-full bg-emerald-950/60 border border-emerald-800/40 text-emerald-400 font-mono font-semibold">SLA 99.99%</span>
             </div>
           </div>
 
-          <!-- 三大硬核指标卡片 -->
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-6">
-            <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
-              <div class="text-xs text-slate-400">平均胜率 (Win Rate)</div>
-              <div class="text-2xl font-bold text-emerald-400 font-mono mt-1">87.4%</div>
-              <div class="text-[11px] text-slate-500 mt-1">基于短周期定价偏差离场</div>
+          <!-- 4 项纯技术规范网格 -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+            <div class="p-5 rounded-xl bg-slate-900/50 border border-slate-800/80 space-y-2">
+              <div class="text-xs text-slate-400">平均订单执行延迟</div>
+              <div class="text-2xl font-bold text-emerald-400 font-mono">&lt; 3.2 ms</div>
+              <div class="text-[11px] text-slate-500 leading-relaxed">专线直连撮合服务器链路，杜绝排队延迟</div>
             </div>
-            <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
-              <div class="text-xs text-slate-400">单笔平均盈亏比 (P/L Ratio)</div>
-              <div class="text-2xl font-bold text-amber-400 font-mono mt-1">1 : 2.65</div>
-              <div class="text-[11px] text-slate-500 mt-1">严格执行预设参数清算</div>
+            <div class="p-5 rounded-xl bg-slate-900/50 border border-slate-800/80 space-y-2">
+              <div class="text-xs text-slate-400">单笔策略结算周期</div>
+              <div class="text-2xl font-bold text-amber-400 font-mono">&lt; 180 s</div>
+              <div class="text-[11px] text-slate-500 leading-relaxed">瞬时捕捉微观定价偏差，短周期止盈离场</div>
             </div>
-            <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
-              <div class="text-xs text-slate-400">最大回撤控制 (Max Drawdown)</div>
-              <div class="text-2xl font-bold text-cyan-400 font-mono mt-1">&lt; 4.2%</div>
-              <div class="text-[11px] text-slate-500 mt-1">程序化硬性多级熔断机制</div>
+            <div class="p-5 rounded-xl bg-slate-900/50 border border-slate-800/80 space-y-2">
+              <div class="text-xs text-slate-400">协议与接口支持</div>
+              <div class="text-2xl font-bold text-cyan-400 font-mono">FIX / WS</div>
+              <div class="text-[11px] text-slate-500 leading-relaxed">支持机构级 FIX 协议与私有高频 WebSocket</div>
             </div>
-          </div>
-
-          <!-- Chart.js 曲线画布 -->
-          <div class="relative w-full h-64 sm:h-72">
-            <canvas id="performanceChart"></canvas>
-          </div>
-          <div class="text-[11px] text-slate-500 text-center mt-4">
-            * 注：以上图表为 BTC/USDT 期权短线算法策略在标准化交易节点环境下的历史脱敏回测表现，不代表对未来实际收益的承诺。
+            <div class="p-5 rounded-xl bg-slate-900/50 border border-slate-800/80 space-y-2">
+              <div class="text-xs text-slate-400">权限隔离级别</div>
+              <div class="text-2xl font-bold text-white font-mono">Zero-Trust</div>
+              <div class="text-[11px] text-slate-500 leading-relaxed">客户自持 API，无任何出入金权限接口</div>
+            </div>
           </div>
         </div>
       </div>
@@ -240,50 +249,50 @@
     <section id="about" class="max-w-6xl mx-auto px-6 py-20">
       <div class="text-center max-w-2xl mx-auto mb-16">
         <span class="text-amber-400 text-xs font-mono tracking-widest uppercase">ABOUT US</span>
-        <h2 class="text-2xl sm:text-3xl font-bold text-white mt-2 mb-4">传统金融底蕴 × 数字资产科技</h2>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white mt-2 mb-4">技术专长 × 严密系统架构</h2>
         <p class="text-slate-400 text-sm leading-relaxed">
-          我们立足于传统金融体系的严谨风控标准，协同衍生品、合约化黄金交易与量化体系，推动前沿资产融合。
+          我们专注于高性能交易基础设施与期权微观定价算法研发，为专业机构提供定制技术支撑。
         </p>
       </div>
 
       <div class="grid md:grid-cols-4 gap-6">
         <div class="p-6 bg-slate-900/50 border border-slate-800 rounded-2xl">
           <div class="w-10 h-10 rounded-lg bg-amber-950 flex items-center justify-center text-amber-400 text-lg mb-4">
-            <i class="fa-solid fa-layer-group"></i>
+            <i class="fa-solid fa-microchip"></i>
           </div>
-          <h3 class="font-bold text-white text-base mb-2">衍生品策略集成</h3>
+          <h3 class="font-bold text-white text-base mb-2">低延迟协议优化</h3>
           <p class="text-slate-400 text-xs leading-relaxed">
-            支持期权多腿组合及波动率对冲模型，提供灵活的策略脚本适配。
+            基于 WebSocket / FIX 协议栈深度调优，确保发单报文快速送达撮合引擎。
           </p>
         </div>
 
         <div class="p-6 bg-slate-900/50 border border-slate-800 rounded-2xl">
           <div class="w-10 h-10 rounded-lg bg-yellow-950 flex items-center justify-center text-yellow-400 text-lg mb-4">
-            <i class="fa-solid fa-coins"></i>
+            <i class="fa-solid fa-chart-line"></i>
           </div>
-          <h3 class="font-bold text-white text-base mb-2">合约化黄金交易</h3>
+          <h3 class="font-bold text-white text-base mb-2">期权算法建模</h3>
           <p class="text-slate-400 text-xs leading-relaxed">
-            打通传统黄金避险资产与数字合约交易桥梁，丰富多资产对冲选择。
+            专注 BTC/USDT 衍生品瞬时定价偏差识别，短周期自动化建仓与对冲平仓。
           </p>
         </div>
 
         <div class="p-6 bg-slate-900/50 border border-slate-800 rounded-2xl">
           <div class="w-10 h-10 rounded-lg bg-blue-950 flex items-center justify-center text-blue-400 text-lg mb-4">
-            <i class="fa-solid fa-shield-virus"></i>
+            <i class="fa-solid fa-shield-halved"></i>
           </div>
-          <h3 class="font-bold text-white text-base mb-2">量化风控协同</h3>
+          <h3 class="font-bold text-white text-base mb-2">程序化硬性风控</h3>
           <p class="text-slate-400 text-xs leading-relaxed">
-            提供硬性回撤熔断工具，协助对接第三方符合合规标准的资产托管通道。
+            在策略底层植入多层阈值熔断体系，发生异常行情时第一时间清算离场。
           </p>
         </div>
 
         <div class="p-6 bg-slate-900/50 border border-slate-800 rounded-2xl">
           <div class="w-10 h-10 rounded-lg bg-cyan-950 flex items-center justify-center text-cyan-400 text-lg mb-4">
-            <i class="fa-solid fa-book-open"></i>
+            <i class="fa-solid fa-server"></i>
           </div>
-          <h3 class="font-bold text-white text-base mb-2">投研智库与教育</h3>
+          <h3 class="font-bold text-white text-base mb-2">私有化节点部署</h3>
           <p class="text-slate-400 text-xs leading-relaxed">
-            系统化解析加密衍生品运作逻辑，助力高净值客户建立成熟的认知模型。
+            支持为机构客户分配独立物理服务器与专用带宽，保障业务高度隔离。
           </p>
         </div>
       </div>
@@ -294,55 +303,55 @@
       <div class="max-w-6xl mx-auto px-6">
         <div class="text-center max-w-2xl mx-auto mb-16">
           <span class="text-amber-400 text-xs font-mono tracking-widest uppercase">GET STARTED</span>
-          <h2 class="text-2xl sm:text-3xl font-bold text-white mt-2 mb-4">三步接入专属交易网络</h2>
+          <h2 class="text-2xl sm:text-3xl font-bold text-white mt-2 mb-4">三步开启技术接入</h2>
           <p class="text-slate-400 text-sm leading-relaxed">
-            清晰透明的对接流程，助您快速进入短线算法套利轨道。
+            标准化、全透明的接入流程，助您快速部署量化环境。
           </p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
           <div class="p-6 bg-slate-950 border border-slate-800 rounded-2xl relative">
             <div class="text-4xl font-extrabold text-slate-800 mb-4 font-mono">01</div>
-            <h3 class="text-lg font-bold text-white mb-2">需求评估与环境校验</h3>
+            <h3 class="text-lg font-bold text-white mb-2">技术评估与网络校验</h3>
             <p class="text-sm text-slate-400 leading-relaxed">
-              联系官方商务，评估您的策略执行频率、交易偏好，并获取专属 API 接入参数。
+              联系官方团队，评估您的交易标的与执行频率，制定专属网络接入方案。
             </p>
           </div>
 
           <div class="p-6 bg-slate-950 border border-slate-800 rounded-2xl relative">
             <div class="text-4xl font-extrabold text-amber-500/20 mb-4 font-mono">02</div>
-            <h3 class="text-lg font-bold text-white mb-2">节点配置与沙盒测试</h3>
+            <h3 class="text-lg font-bold text-white mb-2">专线配置与沙盒压测</h3>
             <p class="text-sm text-slate-400 leading-relaxed">
-              分配独立私有交易节点，在模拟测试环境中验证毫秒级网络延迟与算法平稳度。
+              分配独立测试节点，在模拟环境中实测往返延迟、丢包率与算法响应效率。
             </p>
           </div>
 
           <div class="p-6 bg-slate-950 border border-slate-800 rounded-2xl relative">
             <div class="text-4xl font-extrabold text-cyan-500/20 mb-4 font-mono">03</div>
-            <h3 class="text-lg font-bold text-white mb-2">正式上线与算法执行</h3>
+            <h3 class="text-lg font-bold text-white mb-2">正式上线与运行监控</h3>
             <p class="text-sm text-slate-400 leading-relaxed">
-              启动自研 BTC/USDT 期权瞬时策略，依托程序化严密监控，享受自动锁利清算。
+              接入自有 API 启动算法执行，7×24 小时节点高可用保障平稳运转。
             </p>
           </div>
         </div>
 
         <div class="mt-12 text-center">
           <button onclick="toggleModal(true)" class="px-8 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold transition shadow-lg shadow-blue-600/30">
-            立即预约接入测试
+            预约技术接入沟通
           </button>
         </div>
       </div>
     </section>
 
-    <!-- 免责声明 (Disclaimer) -->
+    <!-- 免责声明 (强化纯技术服务属性) -->
     <section class="border-t border-slate-900 bg-slate-950 py-12">
       <div class="max-w-4xl mx-auto px-6 text-center space-y-3">
         <div class="text-slate-400 text-xs font-semibold flex items-center justify-center space-x-2">
-          <i class="fa-solid fa-circle-exclamation text-amber-500"></i>
-          <span>技术服务与风险免责提示</span>
+          <i class="fa-solid fa-shield-halved text-amber-500"></i>
+          <span>技术服务与合规免责声明</span>
         </div>
         <p class="text-xs text-slate-500 leading-relaxed text-justify sm:text-center">
-          本平台仅提供交易节点网络基础设施与策略算法技术交流，不向任何个人或实体提供资产吸纳、资金代管或法定金融牌照业务。衍生品与加密货币市场具备极高价格波动性，客户需自行保管私钥与账户权限，并对自身决策承担全部责任。
+          Zero Degree Strategy 是一家技术基础设施与算法软件服务商。我们不吸纳公众存款，不提供任何形式的代客理财、资产托管或收益承诺保证。所有策略执行均在客户自持的交易所账户中由客户自主授权运行。衍生品市场具有较高波动性，客户应对其自身的交易行为承担全部决策责任。
         </p>
       </div>
     </section>
@@ -367,14 +376,14 @@
       <div class="flex justify-between items-center">
         <h3 class="text-lg font-bold text-white flex items-center space-x-2">
           <i class="fa-solid fa-envelope text-amber-400"></i>
-          <span>商务合作与官方联络</span>
+          <span>商务合作与技术咨询</span>
         </h3>
         <button onclick="toggleModal(false)" class="text-slate-400 hover:text-white text-2xl leading-none">
           &times;
         </button>
       </div>
       <p class="text-sm text-slate-400 leading-relaxed">
-        欢迎联系 Zero Degree Strategy。请通过官方指定邮箱与我们沟通交易节点部署与算法接入方案：
+        欢迎联系 Zero Degree Strategy。请通过官方指定邮箱与我们沟通技术节点部署与算法接入方案：
       </p>
 
       <!-- 官方邮箱卡片与一键复制按钮 -->
@@ -385,7 +394,7 @@
           </div>
           <div>
             <div class="text-sm text-slate-200 font-medium">官方对接邮箱</div>
-            <div class="text-xs text-slate-500">Official Contact & Inquiry</div>
+            <div class="text-xs text-slate-500">Official Tech & Inquiry</div>
           </div>
         </div>
 
@@ -414,7 +423,7 @@
     </div>
   </div>
 
-  <!-- 交互脚本与图表渲染 -->
+  <!-- 纯轻量交互脚本：弹窗开关 & 智能复制剪贴板 -->
   <script>
     function toggleModal(show) {
       const modal = document.getElementById('contact-modal');
@@ -472,75 +481,6 @@
         label.innerText = '复制';
       }, 2000);
     }
-
-    // 渲染平滑稳健上升的量化收益走势曲线
-    document.addEventListener("DOMContentLoaded", function () {
-      const ctx = document.getElementById('performanceChart');
-      if (!ctx) return;
-
-      const labels = ['Day 1', 'Day 10', 'Day 20', 'Day 30', 'Day 40', 'Day 50', 'Day 60', 'Day 70', 'Day 80', 'Day 90'];
-      const dataPoints = [1.00, 1.05, 1.11, 1.18, 1.25, 1.34, 1.42, 1.51, 1.59, 1.684];
-
-      const chartCtx = ctx.getContext('2d');
-      const gradient = chartCtx.createLinearGradient(0, 0, 0, 260);
-      gradient.addColorStop(0, 'rgba(251, 191, 36, 0.35)'); // 金色微光渐变
-      gradient.addColorStop(1, 'rgba(251, 191, 36, 0.00)');
-
-      new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: labels,
-          datasets: [{
-            label: '策略净值 (NAV)',
-            data: dataPoints,
-            borderColor: '#fbbf24',
-            borderWidth: 2.5,
-            fill: true,
-            backgroundColor: gradient,
-            tension: 0.35,
-            pointRadius: 2,
-            pointHoverRadius: 6,
-            pointBackgroundColor: '#f59e0b',
-            pointBorderColor: '#fff',
-          }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-            legend: { display: false },
-            tooltip: {
-              backgroundColor: '#0f172a',
-              titleColor: '#94a3b8',
-              bodyColor: '#fbbf24',
-              borderColor: '#334155',
-              borderWidth: 1,
-              padding: 10,
-              displayColors: false,
-              callbacks: {
-                label: function(context) {
-                  return '累计净值: ' + context.parsed.y.toFixed(3) + ' (' + ((context.parsed.y - 1) * 100).toFixed(1) + '%)';
-                }
-              }
-            }
-          },
-          scales: {
-            x: {
-              grid: { color: 'rgba(51, 65, 85, 0.3)' },
-              ticks: { color: '#64748b', font: { size: 11, family: 'monospace' } }
-            },
-            y: {
-              grid: { color: 'rgba(51, 65, 85, 0.3)' },
-              ticks: {
-                color: '#64748b',
-                font: { size: 11, family: 'monospace' },
-                callback: function(value) { return value.toFixed(2); }
-              }
-            }
-          }
-        }
-      });
-    });
   </script>
 
 </body>
