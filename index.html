@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zero Degree Strategy | Crypto Derivatives Research & Risk Advisory</title>
+  <title>Zero Degree Strategy | Trading Nodes, Risk Systems & Education</title>
   <link rel="icon" type="image/png" href="logo.png">
   <style>
     :root {
@@ -38,7 +38,7 @@
     }
     a { text-decoration: none; color: inherit; }
 
-    /* Top Navigation */
+    /* Navbar */
     .navbar {
       position: sticky; top: 0; z-index: 1000;
       background: rgba(7, 10, 16, 0.9);
@@ -52,20 +52,18 @@
     .nav-brand {
       display: flex; align-items: center; gap: 12px;
       font-weight: 800; font-size: 1.2rem; color: #ffffff;
-      letter-spacing: -0.01em;
     }
     .brand-logo { height: 32px; width: auto; }
     .brand-badge {
       font-size: 0.72rem; font-family: var(--font-mono);
       background: rgba(0, 240, 255, 0.12); color: var(--cyan);
       padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(0, 240, 255, 0.3);
-      letter-spacing: 0.04em;
     }
     .nav-links { display: flex; gap: 2.2rem; list-style: none; }
     .nav-links a { font-size: 0.92rem; color: var(--text-muted); font-weight: 500; transition: color 0.2s; }
     .nav-links a:hover, .nav-links a.active { color: var(--cyan); }
 
-    /* Hero Section */
+    /* Hero */
     .hero-wrapper {
       max-width: 1240px; margin: 0 auto; padding: 4.5rem 2rem 3rem;
       display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3.5rem; align-items: center;
@@ -94,7 +92,7 @@
     .btn-secondary { background: rgba(255, 255, 255, 0.05); color: #ffffff; border: 1px solid var(--border-subtle); }
     .btn-secondary:hover { border-color: var(--cyan); color: var(--cyan); }
 
-    /* Terminal Monitor Panel */
+    /* Terminal */
     .terminal-panel {
       background: var(--bg-secondary); border: 1px solid rgba(0, 240, 255, 0.25);
       border-radius: 12px; padding: 1.8rem;
@@ -110,7 +108,7 @@
     .terminal-dots span:nth-child(1) { background: #ef4444; }
     .terminal-dots span:nth-child(2) { background: #eab308; }
     .terminal-dots span:nth-child(3) { background: #10b981; }
-    .terminal-badge { font-size: 0.72rem; color: var(--cyan); letter-spacing: 0.05em; }
+    .terminal-badge { font-size: 0.72rem; color: var(--cyan); }
     .terminal-data-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.2rem; }
     .data-tile { background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-subtle); padding: 0.8rem; border-radius: 6px; }
     .data-tile-label { font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; }
@@ -130,7 +128,7 @@
     .terminal-logs { font-size: 0.76rem; color: #94a3b8; line-height: 1.7; }
     .terminal-logs span { color: var(--emerald); font-weight: 700; }
 
-    /* Performance Metrics Strip */
+    /* Metrics Strip */
     .metrics-strip { max-width: 1240px; margin: 2.5rem auto 4rem; padding: 0 2rem; }
     .metrics-box {
       display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;
@@ -142,7 +140,7 @@
     .metric-val { font-family: var(--font-mono); font-size: 2.1rem; font-weight: 800; margin-bottom: 0.4rem; }
     .metric-label { font-size: 0.82rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
 
-    /* 3 Pillars Section */
+    /* Features */
     .features-section { max-width: 1240px; margin: 0 auto; padding: 2rem 2rem 5rem; }
     .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2rem; }
     .card {
@@ -157,7 +155,7 @@
     .card-title { font-size: 1.3rem; color: #ffffff; margin-bottom: 1rem; }
     .card-desc { font-size: 0.94rem; color: var(--text-muted); line-height: 1.8; }
 
-    /* Site Footer (Zero Copyright Notice) */
+    /* Footer */
     .site-footer { border-top: 1px solid var(--border-subtle); background: #04060a; padding: 2.5rem 2rem; }
     .footer-inner {
       max-width: 1240px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;
@@ -183,12 +181,12 @@
       <a href="index.html" class="nav-brand">
         <img src="logo.png" alt="Zero Degree" class="brand-logo" onerror="this.style.display='none'">
         <span>ZERO DEGREE</span>
-        <span class="brand-badge">RESEARCH &amp; LAB</span>
+        <span class="brand-badge">NODES &amp; RESEARCH</span>
       </a>
       <ul class="nav-links">
         <li><a href="index.html" class="active">Overview</a></li>
         <li><a href="solutions.html">Services</a></li>
-        <li><a href="about.html">Methodology</a></li>
+        <li><a href="about.html">Architecture</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
@@ -198,18 +196,17 @@
     <section class="hero-wrapper">
       <div>
         <div class="pill-tag">
-          <span class="pill-dot"></span> BTC/USDT DERIVATIVES &amp; VOLATILITY RESEARCH
+          <span class="pill-dot"></span> BTC/USDT DERIVATIVES &amp; INFRASTRUCTURE
         </div>
         <h1 class="hero-title">
-          Empowering Traders with <br>
-          <span class="highlight-cyan">Stochastic Models &amp; Risk Tools</span>
+          Proprietary <span class="highlight-cyan">Trading Nodes</span>, Systematic Risk &amp; Education
         </h1>
         <p class="hero-subtitle">
-          Specializing in BTC/USDT options and crypto derivatives. Operating under a strictly non-custodial framework, we equip clients with systematic trading strategies, automated Greeks risk management, and comprehensive educational support.
+          Specializing in BTC/USDT options and crypto derivatives. Operating under a strictly non-custodial framework, we equip clients with high-performance trading nodes, real-time Greeks risk governance, and rigorous strategy education.
         </p>
         <div class="btn-group">
-          <a href="solutions.html" class="btn btn-primary">Explore Services</a>
-          <a href="contact.html" class="btn btn-secondary">Inquire Directly</a>
+          <a href="solutions.html" class="btn btn-primary">Our Solutions</a>
+          <a href="contact.html" class="btn btn-secondary">Direct Channel</a>
         </div>
       </div>
 
@@ -218,21 +215,21 @@
           <div class="terminal-dots">
             <span></span><span></span><span></span>
           </div>
-          <div class="terminal-badge">LIVE VOLATILITY MONITOR // BTC-DERIV</div>
+          <div class="terminal-badge">NODE TELEMETRY // BTC-OPTIONS</div>
         </div>
 
         <div class="terminal-data-grid">
           <div class="data-tile">
-            <div class="data-tile-label">Implied Vol Index (DVOL)</div>
-            <div class="data-tile-val" style="color: var(--cyan);">58.42% <span style="font-size:0.75rem; color:var(--emerald);">+2.1%</span></div>
+            <div class="data-tile-label">Node Round-Trip Latency</div>
+            <div class="data-tile-val" style="color: var(--cyan);">&lt; 1.2ms <span style="font-size:0.75rem; color:var(--emerald);">(Optimal)</span></div>
           </div>
           <div class="data-tile">
             <div class="data-tile-label">Portfolio Delta Skew</div>
-            <div class="data-tile-val" style="color: var(--purple);">+0.014 <span style="font-size:0.75rem; color:#64748b;">(Neutral)</span></div>
+            <div class="data-tile-val" style="color: var(--purple);">+0.012 <span style="font-size:0.75rem; color:#64748b;">(Neutralized)</span></div>
           </div>
         </div>
 
-        <div style="font-size: 0.72rem; color: #64748b; margin-bottom: 4px;">SKEW SURFACE &amp; CURVE FITTING (SIMULATED):</div>
+        <div style="font-size: 0.72rem; color: #64748b; margin-bottom: 4px;">VOLATILITY SURFACE STREAM &amp; EXECUTION QUEUE:</div>
         <div class="vol-visualizer">
           <div class="vol-bar" style="height: 35%; animation-delay: 0.1s;"></div>
           <div class="vol-bar" style="height: 55%; animation-delay: 0.3s;"></div>
@@ -245,8 +242,8 @@
         </div>
 
         <div class="terminal-logs">
-          <div>[STATUS] <span>NORMAL</span> · Active Greeks monitoring matrix engaged</div>
-          <div>[REGIME] Tail-risk stress test: 99.9% VaR confidence pass</div>
+          <div>[NODE STATUS] <span>ACTIVE</span> · Co-located gateway clusters online</div>
+          <div>[RISK SHIELD] Dynamic Greeks hedge &amp; liquidation buffers verified</div>
         </div>
       </div>
     </section>
@@ -254,12 +251,12 @@
     <section class="metrics-strip">
       <div class="metrics-box">
         <div class="metric-item">
-          <div class="metric-val" style="color: var(--cyan);">BTC / USDT</div>
-          <div class="metric-label">Focused Asset Scope</div>
+          <div class="metric-val" style="color: var(--cyan);">&lt; 1.2ms</div>
+          <div class="metric-label">Execution Node Latency</div>
         </div>
         <div class="metric-item">
-          <div class="metric-val" style="color: var(--emerald);">24/7 Multi-Tier</div>
-          <div class="metric-label">Dynamic Greeks Models</div>
+          <div class="metric-val" style="color: var(--emerald);">24/7/365</div>
+          <div class="metric-label">Autonomous Risk Protocol</div>
         </div>
         <div class="metric-item">
           <div class="metric-val" style="color: var(--purple);">1-on-1 Labs</div>
@@ -267,39 +264,39 @@
         </div>
         <div class="metric-item">
           <div class="metric-val" style="color: #f59e0b;">Non-Custodial</div>
-          <div class="metric-label">Zero Fund Handling</div>
+          <div class="metric-label">Pure Infrastructure &amp; Advisory</div>
         </div>
       </div>
     </section>
 
     <section class="features-section">
       <div style="text-align: center; margin-bottom: 2rem;">
-        <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--cyan); letter-spacing: 0.1em;">OUR EXPERTISE</div>
+        <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--cyan); letter-spacing: 0.1em;">THREE CORE CAPABILITIES</div>
         <h2 style="font-size: 2rem; margin-top: 0.5rem; color: #ffffff;">Specialized Derivatives Practice</h2>
       </div>
 
       <div class="features-grid">
         <div class="card">
-          <div class="card-tag" style="color: var(--cyan);">PILLAR 01 · STRATEGY RESEARCH</div>
-          <h3 class="card-title">Derivatives Strategy Design</h3>
+          <div class="card-tag" style="color: var(--cyan);">PILLAR 01 · INFRASTRUCTURE</div>
+          <h3 class="card-title">Trading Nodes &amp; Execution</h3>
           <p class="card-desc">
-            Volatility arbitrage, term-structure calendar spreads, Gamma scalping routines, and structured yield architectures engineered to capitalize on digital asset market inefficiencies.
+            Dedicated trading nodes with ultra-low latency WebSocket/FIX connectivity, co-located near primary digital asset derivatives venues with zero custodial exposure.
           </p>
         </div>
 
         <div class="card">
           <div class="card-tag" style="color: var(--emerald);">PILLAR 02 · RISK GOVERNANCE</div>
-          <h3 class="card-title">Systematic Risk Frameworks</h3>
+          <h3 class="card-title">Risk Management Systems</h3>
           <p class="card-desc">
-            Granular multi-order Greek sensitivity tracking across Delta, Gamma, Vega, and Theta. Includes scenario stress testing, liquidation buffer margins, and dynamic stop triggers.
+            Automated Delta-neutral hedging, real-time Greeks tracking (Gamma/Vega/Theta), and scenario stress testing structured to mitigate sudden market dislocation.
           </p>
         </div>
 
         <div class="card">
-          <div class="card-tag" style="color: var(--purple);">PILLAR 03 · EDUCATIONAL SUPPORT</div>
-          <h3 class="card-title">Practical Options Curriculum</h3>
+          <div class="card-tag" style="color: var(--purple);">PILLAR 03 · KNOWLEDGE TRANSFER</div>
+          <h3 class="card-title">Comprehensive Education</h3>
           <p class="card-desc">
-            Hands-on mentorship bridging theoretical pricing models (Black-Scholes, SABR) with real-market execution discipline, trade mechanics, and rigorous portfolio capital management.
+            Systematic options training ranging from implied volatility skew calibration to disciplined execution psychology and portfolio sizing methodology.
           </p>
         </div>
       </div>
@@ -308,10 +305,10 @@
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <div>Zero Degree Strategy · Crypto Derivatives Research, Risk Consulting &amp; Education</div>
+      <div>Zero Degree Strategy · Trading Nodes, Risk Systems &amp; Education</div>
       <div class="footer-links">
         <a href="solutions.html">Services</a>
-        <a href="about.html">Methodology</a>
+        <a href="about.html">Architecture</a>
         <a href="contact.html">Contact Us</a>
       </div>
     </div>
