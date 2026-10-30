@@ -64,4 +64,306 @@
       </div>
 
       <!-- 四宫格指标面板 -->
-      <div class="lg:
+      <div class="lg:col-span-5 bg-slate-900/60 border border-slate-800 rounded-2xl p-6 shadow-2xl backdrop-blur-sm relative">
+        <div class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-4 flex justify-between items-center">
+          <span>节点与算法执行标准</span>
+          <span class="text-amber-400"><i class="fa-solid fa-server"></i> Dedicated Nodes</span>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-slate-950/80 border border-slate-800/80 p-4 rounded-xl">
+            <div class="text-2xl font-bold text-amber-400 font-mono tracking-tight">&lt; 3 mins</div>
+            <div class="text-xs text-slate-400 mt-1">单次策略平均获利离场周期</div>
+          </div>
+          <div class="bg-slate-950/80 border border-slate-800/80 p-4 rounded-xl">
+            <div class="text-2xl font-bold text-emerald-400 font-mono tracking-tight">Direct API</div>
+            <div class="text-xs text-slate-400 mt-1">独立私有撮合专线节点</div>
+          </div>
+          <div class="bg-slate-950/80 border border-slate-800/80 p-4 rounded-xl">
+            <div class="text-2xl font-bold text-white font-mono tracking-tight">Non-Custodial</div>
+            <div class="text-xs text-slate-400 mt-1">非托管架构·客户自主掌握资金</div>
+          </div>
+          <div class="bg-slate-950/80 border border-slate-800/80 p-4 rounded-xl">
+            <div class="text-2xl font-bold text-cyan-400 font-mono tracking-tight">Auto Exit</div>
+            <div class="text-xs text-slate-400 mt-1">算法严密监控·瞬时清算锁利</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services: 核心服务与策略板块 -->
+    <section id="services" class="border-t border-slate-900 bg-slate-900/30 py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="text-amber-400 text-xs font-mono tracking-widest uppercase">OUR SERVICES</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-white mt-2 mb-4">交易节点网络与算法服务</h2>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            以毫秒级基础设施配合量化期权套利，为高净值交易者提供全链路技术支持。
+          </p>
+        </div>
+
+        <!-- 节点三大核心特征 -->
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+          <div class="bg-slate-950/60 border border-slate-800 p-6 rounded-2xl space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-amber-950/80 border border-amber-800/60 flex items-center justify-center text-amber-400 text-xl">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-white">低延迟专线接入</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              部署于主流数字资产交易所就近数据中心，最大限度压降数据往返延迟（RTT），确保订单瞬时成交。
+            </p>
+          </div>
+
+          <div class="bg-slate-950/60 border border-slate-800 p-6 rounded-2xl space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-blue-950/80 border border-blue-800/60 flex items-center justify-center text-blue-400 text-xl">
+              <i class="fa-solid fa-lock"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-white">独立安全的节点环境</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              客户掌握自有账户 API 权限，节点纯粹执行算法发单指令，不介入任何资金存储，杜绝黑箱风险。
+            </p>
+          </div>
+
+          <div class="bg-slate-950/60 border border-slate-800 p-6 rounded-2xl space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-emerald-950/80 border border-emerald-800/60 flex items-center justify-center text-emerald-400 text-xl">
+              <i class="fa-solid fa-gauge-high"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-white">99.99% 高可用集群</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              多节点灾备冗余切换，在突发行情与高并发场景下持续保障算法平稳运转，杜绝断连滑点。
+            </p>
+          </div>
+        </div>
+
+        <!-- 旗舰期权策略对比卡片 -->
+        <div class="grid md:grid-cols-2 gap-8 items-stretch">
+          <div class="bg-slate-950/60 border border-slate-800/80 p-8 rounded-2xl flex flex-col justify-between">
+            <div>
+              <div class="flex items-center space-x-2 text-slate-400 text-sm mb-4">
+                <i class="fa-solid fa-hourglass-half"></i>
+                <span class="font-semibold">传统“买入并持有”模式 (Buy & Hold)</span>
+              </div>
+              <ul class="space-y-4 text-sm text-slate-400">
+                <li class="flex items-start space-x-3">
+                  <i class="fa-solid fa-xmark text-rose-500 mt-1"></i>
+                  <span><strong>被动承受暴跌回撤：</strong>单向持币面临巨大的资产缩水风险，资金周期冗长。</span>
+                </li>
+                <li class="flex items-start space-x-3">
+                  <i class="fa-solid fa-xmark text-rose-500 mt-1"></i>
+                  <span><strong>机会成本极高：</strong>在漫长的横盘震荡行情中资金完全处于闲置状态。</span>
+                </li>
+                <li class="flex items-start space-x-3">
+                  <i class="fa-solid fa-xmark text-rose-500 mt-1"></i>
+                  <span><strong>容易受情绪支配：</strong>主观交易往往因恐慌和贪婪错过最佳退出时机。</span>
+                </li>
+              </ul>
+            </div>
+            <div class="text-xs text-slate-600 border-t border-slate-800/80 pt-4 mt-6">
+              传统模式依赖单边大牛市，在震荡市极易侵蚀本金。
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-b from-slate-900 to-slate-950 border border-amber-500/40 p-8 rounded-2xl shadow-xl shadow-amber-500/5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center space-x-2 text-amber-400 text-sm mb-4">
+                <i class="fa-solid fa-bolt"></i>
+                <span class="font-semibold">Zero Degree BTC/USDT 期权短线算法模型</span>
+              </div>
+              <ul class="space-y-4 text-sm text-slate-300">
+                <li class="flex items-start space-x-3">
+                  <i class="fa-solid fa-check text-emerald-400 mt-1"></i>
+                  <span><strong>短周期快速落袋：</strong>平均单笔持仓仅需数分钟，触达预期收益后立即自动结算离场。</span>
+                </li>
+                <li class="flex items-start space-x-3">
+                  <i class="fa-solid fa-check text-emerald-400 mt-1"></i>
+                  <span><strong>微观无效性套利：</strong>算法毫秒级监控期权溢价与波动率差，不赌大方向，专注确定性。</span>
+                </li>
+                <li class="flex items-start space-x-3">
+                  <i class="fa-solid fa-check text-emerald-400 mt-1"></i>
+                  <span><strong>严格纪律止损：</strong>通过程序化固定参数执行，完全剔除人为贪婪与犹豫。</span>
+                </li>
+              </ul>
+            </div>
+            <div class="text-xs text-amber-400/80 border-t border-slate-800/80 pt-4 mt-6 font-mono">
+              ADVANTAGE: 极低敞口暴露时间，把资金安全放在首位
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us: 平台定位与生态延展 -->
+    <section id="about" class="max-w-6xl mx-auto px-6 py-20">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-amber-400 text-xs font-mono tracking-widest uppercase">ABOUT US</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white mt-2 mb-4">传统金融底蕴 × 数字资产科技</h2>
+        <p class="text-slate-400 text-sm leading-relaxed">
+          我们立足于传统金融体系的严谨风控标准，协同衍生品、合约化黄金交易与量化体系，推动前沿资产融合。
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="p-6 bg-slate-900/50 border border-slate-800 rounded-2xl">
+          <div class="w-10 h-10 rounded-lg bg-amber-950 flex items-center justify-center text-amber-400 text-lg mb-4">
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <h3 class="font-bold text-white text-base mb-2">衍生品策略集成</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            支持期权多腿组合及波动率对冲模型，提供灵活的策略脚本适配。
+          </p>
+        </div>
+
+        <div class="p-6 bg-slate-900/50 border border-slate-800 rounded-2xl">
+          <div class="w-10 h-10 rounded-lg bg-yellow-950 flex items-center justify-center text-yellow-400 text-lg mb-4">
+            <i class="fa-solid fa-coins"></i>
+          </div>
+          <h3 class="font-bold text-white text-base mb-2">合约化黄金交易</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            打通传统黄金避险资产与数字合约交易桥梁，丰富多资产对冲选择。
+          </p>
+        </div>
+
+        <div class="p-6 bg-slate-900/50 border border-slate-800 rounded-2xl">
+          <div class="w-10 h-10 rounded-lg bg-blue-950 flex items-center justify-center text-blue-400 text-lg mb-4">
+            <i class="fa-solid fa-shield-virus"></i>
+          </div>
+          <h3 class="font-bold text-white text-base mb-2">量化风控协同</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            提供硬性回撤熔断工具，协助对接第三方符合合规标准的资产托管通道。
+          </p>
+        </div>
+
+        <div class="p-6 bg-slate-900/50 border border-slate-800 rounded-2xl">
+          <div class="w-10 h-10 rounded-lg bg-cyan-950 flex items-center justify-center text-cyan-400 text-lg mb-4">
+            <i class="fa-solid fa-book-open"></i>
+          </div>
+          <h3 class="font-bold text-white text-base mb-2">投研智库与教育</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            系统化解析加密衍生品运作逻辑，助力高净值客户建立成熟的认知模型。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get Started: 快速开始与接入指引 -->
+    <section id="get-started" class="border-t border-slate-900 bg-slate-900/20 py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="text-amber-400 text-xs font-mono tracking-widest uppercase">GET STARTED</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-white mt-2 mb-4">三步接入专属交易网络</h2>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            清晰透明的对接流程，助您快速进入短线算法套利轨道。
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="p-6 bg-slate-950 border border-slate-800 rounded-2xl relative">
+            <div class="text-4xl font-extrabold text-slate-800 mb-4 font-mono">01</div>
+            <h3 class="text-lg font-bold text-white mb-2">需求评估与环境校验</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              联系官方商务，评估您的策略执行频率、交易偏好，并获取专属 API 接入参数。
+            </p>
+          </div>
+
+          <div class="p-6 bg-slate-950 border border-slate-800 rounded-2xl relative">
+            <div class="text-4xl font-extrabold text-amber-500/20 mb-4 font-mono">02</div>
+            <h3 class="text-lg font-bold text-white mb-2">节点配置与沙盒测试</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              分配独立私有交易节点，在模拟测试环境中验证毫秒级网络延迟与算法平稳度。
+            </p>
+          </div>
+
+          <div class="p-6 bg-slate-950 border border-slate-800 rounded-2xl relative">
+            <div class="text-4xl font-extrabold text-cyan-500/20 mb-4 font-mono">03</div>
+            <h3 class="text-lg font-bold text-white mb-2">正式上线与算法执行</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              启动自研 BTC/USDT 期权瞬时策略，依托程序化严密监控，享受自动锁利清算。
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <button onclick="toggleModal(true)" class="px-8 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold transition shadow-lg shadow-blue-600/30">
+            立即预约接入测试
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 免责声明 (Disclaimer) -->
+    <section class="border-t border-slate-900 bg-slate-950 py-12">
+      <div class="max-w-4xl mx-auto px-6 text-center space-y-3">
+        <div class="text-slate-400 text-xs font-semibold flex items-center justify-center space-x-2">
+          <i class="fa-solid fa-circle-exclamation text-amber-500"></i>
+          <span>技术服务与风险免责提示</span>
+        </div>
+        <p class="text-xs text-slate-500 leading-relaxed text-justify sm:text-center">
+          本平台仅提供交易节点网络基础设施与策略算法技术交流，不向任何个人或实体提供资产吸纳、资金代管或法定金融牌照业务。衍生品与加密货币市场具备极高价格波动性，客户需自行保管私钥与账户权限，并对自身决策承担全部责任。
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="border-t border-slate-900 bg-slate-950 py-8">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 space-y-4 sm:space-y-0">
+      <div>&copy; 2026 Zero Degree Strategy. 专注于交易节点与算法研发。</div>
+      <div class="flex space-x-6">
+        <a href="#" class="hover:text-slate-300 transition">Home</a>
+        <a href="#services" class="hover:text-slate-300 transition">Services</a>
+        <a href="#about" class="hover:text-slate-300 transition">About Us</a>
+        <a href="#get-started" class="hover:text-slate-300 transition">Get Started</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Contact Us 商务对接交互弹窗 (安全隐私保障) -->
+  <div id="contact-modal" class="hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-md w-full p-6 space-y-6 relative shadow-2xl">
+      <div class="flex justify-between items-center">
+        <h3 class="text-lg font-bold text-white flex items-center space-x-2">
+          <i class="fa-solid fa-headset text-amber-400"></i>
+          <span>商务合作与节点接入</span>
+        </h3>
+        <button onclick="toggleModal(false)" class="text-slate-400 hover:text-white text-2xl leading-none">
+          &times;
+        </button>
+      </div>
+      <p class="text-sm text-slate-400 leading-relaxed">
+        欢迎联系 Zero Degree Strategy。请通过官方指定通道沟通节点接入方案与策略实测：
+      </p>
+      <div class="space-y-3">
+        <div class="p-4 bg-slate-950 border border-slate-800 rounded-xl flex items-center justify-between">
+          <div class="flex items-center space-x-3">
+            <i class="fa-brands fa-telegram text-sky-400 text-lg"></i>
+            <span class="text-sm text-slate-300">Telegram 官方对接</span>
+          </div>
+          <span class="text-xs font-mono text-amber-400">@ZeroDegree_Official</span>
+        </div>
+        <div class="p-4 bg-slate-950 border border-slate-800 rounded-xl flex items-center justify-between">
+          <div class="flex items-center space-x-3">
+            <i class="fa-brands fa-weixin text-emerald-400 text-lg"></i>
+            <span class="text-sm text-slate-300">官方微信 / WeChat</span>
+          </div>
+          <span class="text-xs font-mono text-cyan-400">联系授权机构代表</span>
+        </div>
+      </div>
+      <button onclick="toggleModal(false)" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm font-medium transition">
+        关闭
+      </button>
+    </div>
+  </div>
+
+  <!-- 控制弹窗开关的极简脚本 -->
+  <script>
+    function toggleModal(show) {
+      const modal = document.getElementById('contact-modal');
+      if (show) {
+        modal.classList.remove('hidden');
+      } else {
+        modal.classList.add('hidden');
+      }
+    }
+  </script>
+
+</body>
+</html>
