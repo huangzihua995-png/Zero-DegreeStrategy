@@ -3,72 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Infrastructure & Models | Zero Degree Strategy</title>
+  <title>Solutions | Zero Degree Strategy</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <header>
+  <header class="navbar">
     <div class="nav-container">
-      <a href="index.html" class="brand">
-        <img src="logo.png" alt="Zero Degree Strategy Logo" onerror="this.style.display='none'">
-        <span class="brand-name">Zero Degree Strategy</span>
+      <a href="index.html" class="nav-brand">
+        <img src="logo.png" alt="Zero Degree" class="brand-logo" onerror="this.style.display='none'">
+        <span>ZERO DEGREE</span>
+        <span class="brand-badge">PROPRIETARY LAB</span>
       </a>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="solutions.html" class="active">Infrastructure & Models</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="solutions.html" class="active">Solutions</a></li>
+        <li><a href="about.html">Architecture</a></li>
+        <li><a href="contact.html">Institutional Channel</a></li>
       </ul>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-badge">Technical Specifications</div>
-      <h1>Algorithmic Models & High-Throughput Nodes</h1>
-      <p>A rigorous breakdown of our quantitative option pricing models, colocated node architecture, and multi-layered risk validation pipelines.</p>
-    </section>
+  <!-- 顶部深色终端横幅 -->
+  <section class="section-metrics" style="padding: 3.5rem 2rem;">
+    <div style="max-width: 1240px; margin: 0 auto;">
+      <div style="font-family: var(--font-mono); color: #00f0ff; font-size: 0.85rem; font-weight: 700; margin-bottom: 0.5rem;">
+        TECHNICAL SUITE
+      </div>
+      <h1 style="color: #ffffff; font-size: 2.8rem; font-weight: 900; letter-spacing: -0.02em;">
+        Quantitative Architecture &amp; Execution Protocols
+      </h1>
+    </div>
+  </section>
 
-    <section class="content-block">
-      <h2>1. Options Microstructure & Volatility Modeling</h2>
-      <p>Our quantitative strategies target BTC/USDT derivative inefficiencies through custom volatility surface construction and real-time smile curve calibrations. Rather than directional speculation, models focus on continuous non-directional arbitrage and spread compression across varying strikes and expiries.</p>
-      <p>Dynamic delta and gamma hedging algorithms continuously rebalance exposure via underlying linear instruments, maintaining neutral inventory balance even through abrupt liquidity shifts.</p>
-    </section>
-
-    <section class="content-block">
-      <h2>2. Dedicated Low-Latency Trading Nodes</h2>
-      <p>Execution certainty in digital asset markets depends entirely on physical network topology and deterministic software pipelines. Our dedicated nodes feature:</p>
-      <div class="grid" style="margin-top: 1.5rem; margin-bottom: 0;">
-        <div class="card" style="background: rgba(10, 14, 23, 0.6);">
-          <h3 style="font-size: 1.1rem; color: var(--accent-glow);">Proximity Colocation</h3>
-          <p>Bare-metal compute hardware deployed directly adjacent to major exchange infrastructure endpoints to minimize hop count and network jitter.</p>
+  <!-- 方案阵列 -->
+  <section class="section-features">
+    <div class="features-container">
+      <div class="features-grid" style="margin-top: 1rem;">
+        <div class="card-violet">
+          <div class="badge">SPECIFICATION 01</div>
+          <h3>Gamma Arbitrage Engine</h3>
+          <p>
+            Dynamic rebalancing engines executing high-frequency gamma offsets across active BTC option expiry strikes to systematically extract intraday volatility.
+          </p>
         </div>
-        <div class="card" style="background: rgba(10, 14, 23, 0.6);">
-          <h3 style="font-size: 1.1rem; color: var(--accent-glow);">Custom Kernel Tuning</h3>
-          <p>Zero-copy networking, kernel-bypass drivers, and lock-free memory ring buffers engineered for sub-millisecond market data ingestion.</p>
+
+        <div class="card-teal">
+          <div class="badge">SPECIFICATION 02</div>
+          <h3>Bare-Metal Node Hosting</h3>
+          <p>
+            Dedicated node frameworks configured directly against major digital asset derivative liquidity venues with custom asynchronous message serialization.
+          </p>
+        </div>
+
+        <div class="card-amber">
+          <div class="badge">SPECIFICATION 03</div>
+          <h3>Dynamic Margin Simulation</h3>
+          <p>
+            Pre-trade safety layers simulating cross-margin impacts and liquidation distances under severe sudden liquidity squeezes.
+          </p>
         </div>
       </div>
-    </section>
 
-    <section class="content-block">
-      <h2>3. Quantitative Risk Controls (Greeks Engine)</h2>
-      <p>Risk management is hardcoded at the kernel and network transport levels. Real-time Greeks calculation engines evaluate Delta, Gamma, Vega, Theta, and Rho in sub-millisecond loops. Automated circuit breakers instantly suspend quoting or invoke synthetic hedges if latency thresholds or risk tolerances are breached.</p>
-    </section>
-
-    <section class="contact-section">
-      <h2>Discuss Technical Specifications</h2>
-      <p>Inquire directly regarding node deployment specifications or quantitative research collaborations:</p>
-      <div class="copy-box">
-        <span id="emailText" class="copy-email">hr@zero-degreestrategy.com</span>
-        <button id="copyBtn" class="copy-btn" onclick="copyContactEmail()">Copy Email</button>
+      <!-- 底部安全与合规模块 -->
+      <div style="background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%); border: 2px solid #bfdbfe; border-radius: 14px; padding: 2.5rem; margin-top: 3.5rem;">
+        <h3 style="color: #1e3a8a; font-size: 1.3rem; margin-bottom: 0.8rem; font-weight: 800;">
+          Non-Custodial Architecture Guarantee
+        </h3>
+        <p style="color: #1e40af; font-size: 0.95rem; line-height: 1.8;">
+          All software layers and node algorithms operate purely on programmatic interfaces. Zero Degree Strategy provides software code and operational node frameworks; exchange permissions strictly prohibit fund transfers or balance modifications.
+        </p>
       </div>
-      <span id="copyFeedback" class="copy-feedback">Email copied to clipboard</span>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer>
-    <p>All rights reserved. This site is strictly for technological research and infrastructure demonstration. Zero Degree Strategy does not provide retail investment advice, asset custody, or financial intermediation services.</p>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div>Zero Degree Strategy · Quantitative Derivatives Modeling &amp; Node Operations</div>
+      <div class="footer-links">
+        <a href="index.html">Overview</a>
+        <a href="about.html">Architecture</a>
+        <a href="contact.html">Institutional Channel</a>
+      </div>
+    </div>
   </footer>
 
   <script src="main.js"></script>
