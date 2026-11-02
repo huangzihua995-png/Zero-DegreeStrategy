@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security & Risk Controls | Zero Degree Strategy</title>
+  <meta name="description" content="Institutional risk management, zero-custody API permissions, and multi-tier algorithmic circuit breakers.">
+  <link rel="icon" type="image/png" href="logo.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-amber-400 selection:text-slate-950 flex flex-col min-h-screen font-sans">
+
+  <header class="border-b border-slate-800/80 sticky top-0 bg-slate-950/90 backdrop-blur-md z-40">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center space-x-3 group">
+        <img src="logo.png" alt="Zero Degree Strategy" class="h-8 w-auto object-contain group-hover:opacity-90 transition">
+        <span class="font-bold text-base tracking-wide text-white">Zero Degree <span class="text-amber-400 font-light">Strategy</span></span>
+      </a>
+
+      <nav class="hidden md:flex items-center space-x-8 text-xs font-semibold uppercase tracking-wider text-slate-300">
+        <a href="index.html" class="hover:text-amber-400 transition">Home</a>
+        <a href="services.html" class="hover:text-amber-400 transition">Derivatives</a>
+        <a href="risk.html" class="text-amber-400">Security & Risk</a>
+        <a href="education.html" class="hover:text-amber-400 transition">Research</a>
+        <a href="about.html" class="hover:text-amber-400 transition">About Us</a>
+        <button onclick="toggleModal(true)" class="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-medium transition shadow-md shadow-blue-600/30 normal-case tracking-normal text-xs">
+          Contact Desk
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <section class="max-w-6xl mx-auto px-6 pt-20 pb-12">
+      <div class="max-w-3xl space-y-4">
+        <div class="text-xs font-mono text-emerald-400 uppercase tracking-widest">CAPITAL AUTONOMY & GOVERNANCE</div>
+        <h1 class="text-3xl sm:text-5xl font-bold text-white tracking-tight">Security & Risk Engineering</h1>
+        <p class="text-sm sm:text-base text-slate-400 leading-relaxed">
+          Zero-trust permissions, hard algorithmic circuit breakers, and complete counterparty segregation built into every operational layer.
+        </p>
+      </div>
+    </section>
+
+    <section class="border-t border-slate-900 bg-slate-900/30 py-16">
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+        <div class="bg-slate-950/70 border border-slate-800 p-6 rounded-xl space-y-4">
+          <div class="w-10 h-10 rounded-lg bg-emerald-950/60 border border-emerald-800/40 flex items-center justify-center text-emerald-400">
+            <i class="fa-solid fa-lock text-sm"></i>
+          </div>
+          <h2 class="text-lg font-bold text-white">Non-Custodial Architecture</h2>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Client capital never enters external pools. Trading operations occur strictly via client-owned API keys with permanent withdrawal restrictions.
+          </p>
+        </div>
+
+        <div class="bg-slate-950/70 border border-slate-800 p-6 rounded-xl space-y-4">
+          <div class="w-10 h-10 rounded-lg bg-rose-950/60 border border-rose-800/40 flex items-center justify-center text-rose-400">
+            <i class="fa-solid fa-shield-virus text-sm"></i>
+          </div>
+          <h2 class="text-lg font-bold text-white">Hardware Circuit Breakers</h2>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Multi-tier automatic kill-switches. Any abnormal spread divergence, margin threshold violation, or order book gap triggers immediate microsecond cutoffs.
+          </p>
+        </div>
+
+        <div class="bg-slate-950/70 border border-slate-800 p-6 rounded-xl space-y-4">
+          <div class="w-10 h-10 rounded-lg bg-blue-950/60 border border-blue-800/40 flex items-center justify-center text-blue-400">
+            <i class="fa-solid fa-sliders text-sm"></i>
+          </div>
+          <h2 class="text-lg font-bold text-white">Continuous Stress Testing</h2>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Pre-trade margin verification and systemic liquidity stress simulations across historical crash regimes (e.g. March 2020, May 2021).
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-900 bg-slate-950 py-8 text-xs text-slate-500">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div>Zero Degree Strategy. Digital Asset & Web3 Infrastructure. All rights reserved.</div>
+      <div class="flex space-x-6">
+        <a href="index.html" class="hover:text-slate-300">Home</a>
+        <a href="services.html" class="hover:text-slate-300">Derivatives</a>
+        <a href="risk.html" class="text-amber-400">Security & Risk</a>
+        <a href="education.html" class="hover:text-slate-300">Research</a>
+        <a href="about.html" class="hover:text-slate-300">About Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="contact-modal" class="hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-md w-full p-6 space-y-6">
+      <div class="flex justify-between items-center">
+        <h3 class="text-base font-bold text-white">Official Communication Desk</h3>
+        <button onclick="toggleModal(false)" class="text-slate-400 hover:text-white text-2xl leading-none">&times;</button>
+      </div>
+      <div class="p-4 bg-slate-950 border border-slate-800 rounded-xl space-y-3">
+        <div class="text-xs text-slate-400">Official Direct Email:</div>
+        <div class="text-sm font-mono text-amber-400 font-semibold select-all">hr@zero-degreestrategy.com</div>
+      </div>
+      <button onclick="toggleModal(false)" class="w-full py-2.5 rounded-xl bg-slate-800 text-slate-200 text-xs font-medium">Close</button>
+    </div>
+  </div>
+  <script>
+    function toggleModal(show) { document.getElementById('contact-modal').classList.toggle('hidden', !show); }
+  </script>
+</body>
+</html>
