@@ -5,7 +5,38 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About Us | Zero-Degree Strategy</title>
+
 <style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#080e19;color:#f3f6fb;line-height:1.8}
+a{color:inherit;text-decoration:none}
+.container{width:min(1100px,90%);margin:auto}
+header{background:#0b1423;border-bottom:1px solid #26354a}
+nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;padding:22px 0;gap:18px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:42px;height:42px;object-fit:contain}
+.brand strong{letter-spacing:1px;font-size:16px}
+nav div{display:flex;gap:20px;flex-wrap:wrap}
+nav a{font-size:14px;color:#b4c0d0}
+nav a:hover{color:#83b8e8}
+.hero{padding:95px 0;background:radial-gradient(ellipse at 80% 20%,#1b3858,#080e19 65%)}
+.eyebrow{color:#83b8e8;font-size:12px;letter-spacing:3px;font-weight:bold}
+h1{font-size:clamp(38px,5vw,58px);line-height:1.2;margin:18px 0}
+h2{font-size:32px;margin-bottom:18px}
+p{color:#aab7c9}
+.content{padding:75px 0}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:35px}
+.card{background:#101b2c;border:1px solid #28374c;padding:30px;border-radius:7px}
+.card h3{font-size:21px;margin:12px 0}
+.card p{font-size:15px}
+footer{border-top:1px solid #26354a;padding:30px 0;color:#8998ac;font-size:13px}
+@media(max-width:700px){
+.grid{grid-template-columns:1fr}
+nav{align-items:flex-start}
+nav div{gap:12px}
+}
+</style>
+
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Arial,Helvetica,sans-serif;background:#080e19;color:#f3f6fb;line-height:1.8}
 a{color:inherit;text-decoration:none}
@@ -35,7 +66,10 @@ footer{border-top:1px solid #26354a;padding:30px 0;color:#8998ac;font-size:13px}
 <header>
 <div class="container">
 <nav>
-<a href="index.html"><strong>ZERO-DEGREE STRATEGY</strong></a>
+<a href="index.html" class="brand">
+    <img src="logo.png" alt="Zero-Degree Strategy Logo">
+    <strong>ZERO-DEGREE STRATEGY</strong>
+</a>
 <div>
 <a href="index.html">Home</a>
 <a href="about.html">About Us</a>
