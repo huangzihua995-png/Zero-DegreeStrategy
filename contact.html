@@ -5,37 +5,153 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact | Zero-Degree Strategy</title>
-<meta name="description" content="Contact Zero-Degree Strategy for general inquiries and professional opportunities in digital asset markets.">
+<meta name="description" content="Contact Zero-Degree Strategy for inquiries about digital asset research, financial services, and business collaboration.">
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,Helvetica,sans-serif;background:#080e19;color:#f3f6fb;line-height:1.8}
-a{color:inherit;text-decoration:none}
-.container{width:min(1100px,90%);margin:auto}
-header{background:#0b1423;border-bottom:1px solid #26354a}
-nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;padding:22px 0;gap:18px}
-nav strong{letter-spacing:1px}
-nav div{display:flex;gap:20px;flex-wrap:wrap}
-nav a{font-size:14px;color:#b4c0d0}
-nav a:hover{color:#83b8e8}
-.hero{padding:90px 0;background:radial-gradient(ellipse at 80% 20%,#1b3858,#080e19 65%)}
-.eyebrow{color:#83b8e8;font-size:12px;letter-spacing:3px;font-weight:bold}
-h1{font-size:clamp(38px,5vw,58px);line-height:1.2;margin:18px 0}
-h2{font-size:30px;margin-bottom:16px}
-p{color:#aab7c9}
-.content{padding:75px 0}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
-.card{background:#101b2c;border:1px solid #28374c;padding:32px;border-radius:7px}
-.card h3{font-size:21px;margin-bottom:12px}
-.card p{font-size:15px}
-.email{display:inline-block;margin-top:18px;color:#83b8e8;font-size:17px;font-weight:bold}
-.email:hover{text-decoration:underline}
-.notice{margin-top:30px;padding:25px;background:#101b2c;border-left:3px solid #83b8e8}
-footer{border-top:1px solid #26354a;padding:30px 0;color:#8998ac;font-size:13px}
-@media(max-width:700px){
-.grid{grid-template-columns:1fr}
-nav{align-items:flex-start}
-nav div{gap:12px}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #080e19;
+    color: #f3f6fb;
+    line-height: 1.8;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(1100px, 90%);
+    margin: auto;
+}
+
+header {
+    background: #0b1423;
+    border-bottom: 1px solid #26354a;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 22px 0;
+    gap: 18px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    white-space: nowrap;
+}
+
+.brand img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.brand strong {
+    letter-spacing: 1px;
+}
+
+nav div {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav div a {
+    font-size: 14px;
+    color: #b4c0d0;
+}
+
+nav div a:hover {
+    color: #83b8e8;
+}
+
+.hero {
+    padding: 95px 0;
+    background: radial-gradient(ellipse at 80% 20%, #1b3858, #080e19 65%);
+}
+
+.eyebrow {
+    color: #83b8e8;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.2;
+    margin: 18px 0;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+p {
+    color: #aab7c9;
+}
+
+section.content {
+    padding: 75px 0;
+}
+
+.contact-card {
+    background: #101b2c;
+    border: 1px solid #28374c;
+    padding: 38px;
+    border-radius: 7px;
+    margin-top: 30px;
+}
+
+.contact-card h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.contact-card p {
+    margin-bottom: 18px;
+}
+
+.contact-link {
+    display: inline-block;
+    color: #83b8e8;
+    border: 1px solid #456786;
+    padding: 11px 22px;
+    border-radius: 4px;
+}
+
+.contact-link:hover {
+    background: #1b3858;
+}
+
+footer {
+    border-top: 1px solid #26354a;
+    padding: 30px 0;
+    color: #8998ac;
+    font-size: 13px;
+}
+
+@media(max-width:700px) {
+    nav {
+        align-items: flex-start;
+    }
+
+    nav div {
+        gap: 12px;
+    }
 }
 </style>
 </head>
@@ -43,63 +159,50 @@ nav div{gap:12px}
 <body>
 
 <header>
-<div class="container">
-<nav>
-<a href="index.html"><strong>ZERO-DEGREE STRATEGY</strong></a>
-<div>
-<a href="index.html">Home</a>
-<a href="about.html">About Us</a>
-<a href="services.html">Services</a>
-<a href="solutions.html">Solutions</a>
-<a href="risk.html">Risk Management</a>
-<a href="education.html">Education</a>
-<a href="contact.html">Contact</a>
-</div>
-</nav>
-</div>
+    <div class="container">
+        <nav>
+            <a href="index.html" class="brand">
+                <img src="/logo.png" alt="Zero-Degree Strategy Logo">
+                <strong>ZERO-DEGREE STRATEGY</strong>
+            </a>
+
+            <div>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="solutions.html">Solutions</a>
+                <a href="risk.html">Risk Management</a>
+                <a href="education.html">Education</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </div>
 </header>
 
 <section class="hero">
-<div class="container">
-<div class="eyebrow">GET IN TOUCH</div>
-<h1>Let's Start a Conversation.</h1>
-<p>We welcome general inquiries, professional connections, and conversations about the evolving digital asset landscape.</p>
-</div>
+    <div class="container">
+        <div class="eyebrow">CONTACT US</div>
+        <h1>Let's Start a Conversation.</h1>
+        <p>We welcome inquiries, professional connections, and opportunities to collaborate in the digital asset and financial services space.</p>
+    </div>
 </section>
 
 <section class="content">
-<div class="container">
+    <div class="container">
+        <div class="eyebrow">GET IN TOUCH</div>
+        <h2>Connect With Zero-Degree Strategy</h2>
+        <p>Whether you're interested in our research, services, or potential collaboration, we'd be glad to hear from you.</p>
 
-<div class="grid">
-
-<div class="card">
-<div class="eyebrow">GENERAL INQUIRIES</div>
-<h2>Connect With Us</h2>
-<p>For questions about Zero-Degree Strategy, our areas of focus, or general business inquiries, please contact us by email.</p>
-<a class="email" href="mailto:hr@zero-degreestrategy.com">hr@zero-degreestrategy.com</a>
-</div>
-
-<div class="card">
-<div class="eyebrow">PROFESSIONAL OPPORTUNITIES</div>
-<h2>Build With Us</h2>
-<p>We welcome conversations with experienced professionals who are interested in contributing their knowledge, perspectives, and leadership to the digital asset and financial services ecosystem.</p>
-<a class="email" href="mailto:hr@zero-degreestrategy.com">Contact Our Team</a>
-</div>
-
-</div>
-
-<div class="notice">
-<h3>Stay Connected</h3>
-<p>We appreciate your interest in Zero-Degree Strategy. For business inquiries, professional opportunities, or additional information, please reach out to our team by email.</p>
-</div>
-
-</div>
+        <div class="contact-card">
+            <h3>General Inquiries</h3>
+            <p>For business inquiries, professional opportunities, or additional information about Zero-Degree Strategy, please reach out to us by email.</p>
+            <a class="contact-link" href="mailto:info@zero-degreestrategy.com">Email Us</a>
+        </div>
+    </div>
 </section>
 
 <footer>
-<div class="container">
-© 2026 Zero-Degree Strategy. All rights reserved.
-</div>
+    <div class="container">Digital Asset Financial Services &amp; Research</div>
 </footer>
 
 </body>
