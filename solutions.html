@@ -1,182 +1,117 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services &amp; Solutions | Zero Degree Strategy</title>
-  <link rel="icon" type="image/png" href="logo.png">
-  <style>
-    :root {
-      --bg-primary: #070a10;
-      --bg-secondary: #0d131f;
-      --bg-card: rgba(15, 23, 42, 0.85);
-      --border-subtle: rgba(255, 255, 255, 0.08);
-      --border-glow: rgba(0, 240, 255, 0.35);
-      --text-main: #f8fafc;
-      --text-muted: #94a3b8;
-      --cyan: #00f0ff;
-      --emerald: #10b981;
-      --purple: #a855f7;
-      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      --font-mono: "JetBrains Mono", Menlo, Consolas, Courier, monospace;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      background-color: var(--bg-primary);
-      color: var(--text-main);
-      font-family: var(--font-sans);
-      line-height: 1.6;
-      background-image: 
-        radial-gradient(circle at 10% 10%, rgba(0, 240, 255, 0.04) 0%, transparent 40%),
-        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-      background-size: 100% 100%, 40px 40px, 40px 40px;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-    a { text-decoration: none; color: inherit; }
-
-    .navbar {
-      position: sticky; top: 0; z-index: 1000;
-      background: rgba(7, 10, 16, 0.9);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border-subtle);
-    }
-    .nav-container {
-      max-width: 1240px; margin: 0 auto; padding: 1.1rem 2rem;
-      display: flex; align-items: center; justify-content: space-between;
-    }
-    .nav-brand {
-      display: flex; align-items: center; gap: 12px;
-      font-weight: 800; font-size: 1.2rem; color: #ffffff;
-    }
-    .brand-logo { height: 32px; width: auto; }
-    .brand-badge {
-      font-size: 0.72rem; font-family: var(--font-mono);
-      background: rgba(0, 240, 255, 0.12); color: var(--cyan);
-      padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(0, 240, 255, 0.3);
-    }
-    .nav-links { display: flex; gap: 2.2rem; list-style: none; }
-    .nav-links a { font-size: 0.92rem; color: var(--text-muted); font-weight: 500; }
-    .nav-links a:hover, .nav-links a.active { color: var(--cyan); }
-
-    .main-wrap { flex: 1; max-width: 1240px; margin: 0 auto; padding: 4.5rem 2rem 5rem; width: 100%; }
-    .page-tag {
-      display: inline-block; font-family: var(--font-mono); font-size: 0.8rem;
-      color: var(--cyan); background: rgba(0, 240, 255, 0.08); border: 1px solid rgba(0, 240, 255, 0.25);
-      padding: 4px 12px; border-radius: 100px; margin-bottom: 1.2rem;
-    }
-    .page-title { font-size: 2.8rem; font-weight: 900; margin-bottom: 1rem; color: #ffffff; }
-    .page-desc { color: var(--text-muted); font-size: 1.1rem; max-width: 760px; line-height: 1.8; margin-bottom: 3.5rem; }
-
-    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 4rem; }
-    .card {
-      background: var(--bg-card); border: 1px solid var(--border-subtle);
-      border-radius: 14px; padding: 2.4rem 2rem; transition: all 0.3s ease;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    }
-    .card:hover {
-      transform: translateY(-4px); border-color: var(--border-glow);
-      box-shadow: 0 16px 35px rgba(0, 240, 255, 0.1);
-    }
-    .card-tag { font-family: var(--font-mono); font-size: 0.76rem; font-weight: 700; margin-bottom: 0.8rem; }
-    .card-title { font-size: 1.35rem; margin-bottom: 1rem; color: #ffffff; font-weight: 700; }
-    .card-desc { font-size: 0.95rem; color: var(--text-muted); line-height: 1.8; }
-
-    .statement-box {
-      background: linear-gradient(180deg, rgba(13, 19, 31, 0.9) 0%, rgba(15, 23, 42, 0.9) 100%);
-      border: 1px solid rgba(0, 240, 255, 0.25);
-      border-radius: 14px; padding: 2.5rem;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-    }
-    .statement-title { color: var(--cyan); margin-bottom: 0.9rem; font-size: 1.25rem; font-weight: 800; }
-    .statement-desc { color: #cbd5e1; font-size: 0.96rem; line-height: 1.85; }
-
-    .site-footer { border-top: 1px solid var(--border-subtle); background: #04060a; padding: 2.5rem 2rem; }
-    .footer-inner {
-      max-width: 1240px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;
-      font-size: 0.88rem; color: #64748b;
-    }
-    .footer-links { display: flex; gap: 2rem; }
-    .footer-links a { color: #94a3b8; }
-    .footer-links a:hover { color: var(--cyan); }
-
-    @media (max-width: 900px) {
-      .grid-3 { grid-template-columns: 1fr; }
-      .nav-links { display: none; }
-      .footer-inner { flex-direction: column; gap: 1rem; text-align: center; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solutions | Zero-Degree Strategy</title>
+<meta name="description" content="Explore Zero-Degree Strategy's research-led perspectives on digital asset markets, investment strategy, and risk management.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#080e19;color:#f3f6fb;line-height:1.8}
+a{color:inherit;text-decoration:none}
+.container{width:min(1100px,90%);margin:auto}
+header{background:#0b1423;border-bottom:1px solid #26354a}
+nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;padding:22px 0;gap:18px}
+nav strong{letter-spacing:1px}
+nav div{display:flex;gap:20px;flex-wrap:wrap}
+nav a{font-size:14px;color:#b4c0d0}
+nav a:hover{color:#83b8e8}
+.hero{padding:95px 0;background:radial-gradient(ellipse at 80% 20%,#1b3858,#080e19 65%)}
+.eyebrow{color:#83b8e8;font-size:12px;letter-spacing:3px;font-weight:bold}
+h1{font-size:clamp(38px,5vw,58px);line-height:1.2;margin:18px 0}
+h2{font-size:32px;margin-bottom:18px}
+p{color:#aab7c9}
+section.content{padding:75px 0}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:35px}
+.card{background:#101b2c;border:1px solid #28374c;padding:32px;border-radius:7px}
+.card h3{font-size:22px;margin:12px 0}
+.card p{font-size:15px}
+.number{color:#83b8e8;font-size:12px;letter-spacing:2px}
+.statement{margin-top:40px;padding:30px;border-left:3px solid #83b8e8;background:#101b2c}
+footer{border-top:1px solid #26354a;padding:30px 0;color:#8998ac;font-size:13px}
+@media(max-width:700px){.grid{grid-template-columns:1fr}nav{align-items:flex-start}nav div{gap:12px}}
+</style>
 </head>
 <body>
-  <header class="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="nav-brand">
-        <img src="logo.png" alt="Zero Degree" class="brand-logo" onerror="this.style.display='none'">
-        <span>ZERO DEGREE</span>
-        <span class="brand-badge">NODES &amp; RESEARCH</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html">Overview</a></li>
-        <li><a href="solutions.html" class="active">Services</a></li>
-        <li><a href="about.html">Architecture</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </div>
-  </header>
+<header>
+<div class="container">
+<nav>
+<a href="index.html"><strong>ZERO-DEGREE STRATEGY</strong></a>
+<div>
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="services.html">Services</a>
+<a href="solutions.html">Solutions</a>
+<a href="risk.html">Risk Management</a>
+<a href="education.html">Education</a>
+<a href="contact.html">Contact</a>
+</div>
+</nav>
+</div>
+</header>
 
-  <main class="main-wrap">
-    <div class="page-tag">SOLUTIONS MATRIX // WHAT WE PROVIDE</div>
-    <h1 class="page-title">Trading Nodes, Risk Management &amp; Education</h1>
-    <p class="page-desc">
-      A comprehensive infrastructure and quantitative support suite designed specifically for active market participants navigating crypto options and derivatives.
-    </p>
+<section class="hero">
+<div class="container">
+<div class="eyebrow">OUR SOLUTIONS</div>
+<h1>Clearer Perspectives for a Complex Digital Asset Market.</h1>
+<p>We focus on research, strategic thinking, and educational resources to help navigate the changing digital financial landscape.</p>
+</div>
+</section>
 
-    <div class="grid-3">
-      <div class="card">
-        <div class="card-tag" style="color: var(--cyan);">SERVICE 01 · INFRASTRUCTURE</div>
-        <h3 class="card-title">Dedicated Trading Nodes</h3>
-        <p class="card-desc">
-          High-availability execution nodes located within co-located data centers. Engineered with asynchronous order handlers, automatic circuit breakers, and zero custodial permission requirements.
-        </p>
-      </div>
+<section class="content">
+<div class="container">
+<div class="eyebrow">HOW WE APPROACH THE MARKET</div>
+<h2>Areas Where We Focus Our Efforts</h2>
+<p>Our approach is organized around key areas of digital asset financial services and market understanding.</p>
 
-      <div class="card">
-        <div class="card-tag" style="color: var(--emerald);">SERVICE 02 · RISK GOVERNANCE</div>
-        <h3 class="card-title">Risk Management Protocols</h3>
-        <p class="card-desc">
-          Automated multi-tier Greeks management covering continuous Delta neutralizing, Vega exposure caps, and pre-trade margin liquidation simulation for severe tail-risk events.
-        </p>
-      </div>
+<div class="grid">
+<article class="card">
+<div class="number">01 / MARKET UNDERSTANDING</div>
+<h3>Digital Asset Market Insights</h3>
+<p>Examine market developments, industry structures, blockchain innovation, and factors influencing digital asset markets.</p>
+</article>
 
-      <div class="card">
-        <div class="card-tag" style="color: var(--purple);">SERVICE 03 · KNOWLEDGE SUPPORT</div>
-        <h3 class="card-title">Comprehensive Education</h3>
-        <p class="card-desc">
-          Mentorship from core options math (volatility smiles, skew dynamics) to practical trade sizing and live market execution discipline, enabling traders to build self-sustaining edge.
-        </p>
-      </div>
-    </div>
+<article class="card">
+<div class="number">02 / STRATEGIC RESEARCH</div>
+<h3>Investment Strategy Perspectives</h3>
+<p>Explore investment approaches, market trends, portfolio considerations, and the factors that may influence strategic decisions.</p>
+</article>
 
-    <div class="statement-box">
-      <div class="statement-title">Non-Custodial Architecture &amp; Independent Execution</div>
-      <p class="statement-desc">
-        Zero Degree Strategy provides node infrastructure, quantitative risk software, and specialized education. We do not operate as an investment fund or asset custodian. All trading activities and strategy parameters remain under the exclusive control and execution of clients on their own verified accounts.
-      </p>
-    </div>
-  </main>
+<article class="card">
+<div class="number">03 / RISK AWARENESS</div>
+<h3>Risk Assessment</h3>
+<p>Understand volatility, liquidity, leverage, counterparty exposure, and operational risks associated with digital assets.</p>
+</article>
 
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div>Zero Degree Strategy · Trading Nodes, Risk Systems &amp; Education</div>
-      <div class="footer-links">
-        <a href="index.html">Overview</a>
-        <a href="about.html">Architecture</a>
-        <a href="contact.html">Contact Us</a>
-      </div>
-    </div>
-  </footer>
+<article class="card">
+<div class="number">04 / MARKET STRUCTURE</div>
+<h3>Crypto Derivatives Research</h3>
+<p>Develop a clearer understanding of derivatives markets, futures, options, trading mechanics, and potential sources of risk.</p>
+</article>
+
+<article class="card">
+<div class="number">05 / FINANCIAL INNOVATION</div>
+<h3>DeFi and Emerging Markets</h3>
+<p>Explore decentralized finance, blockchain-based financial models, and developments shaping the digital finance ecosystem.</p>
+</article>
+
+<article class="card">
+<div class="number">06 / KNOWLEDGE DEVELOPMENT</div>
+<h3>Education and Resources</h3>
+<p>Build market knowledge through accessible explanations, research perspectives, and educational materials.</p>
+</article>
+</div>
+
+<div class="statement">
+<h3>Our Commitment</h3>
+<p>We believe sound financial decisions begin with a clear understanding of available information, potential opportunities, and associated risks. Our goal is to encourage informed and responsible engagement with digital asset markets.</p>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="container">© 2026 Zero-Degree Strategy. All rights reserved.</div>
+</footer>
 </body>
 </html>
