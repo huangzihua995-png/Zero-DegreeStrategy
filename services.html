@@ -1,115 +1,121 @@
+
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Derivatives & Execution | Zero Degree Strategy</title>
-  <meta name="description" content="Quantitative derivatives pricing, low-latency execution routing, and multi-leg volatility architectures.">
-  <link rel="icon" type="image/png" href="logo.png">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Services | Zero-Degree Strategy</title>
+<meta name="description" content="Explore digital asset financial services, crypto derivatives research, investment strategy, risk management, and DeFi education.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#080e19;color:#f3f6fb;line-height:1.8}
+a{color:inherit;text-decoration:none}
+.container{width:min(1100px,90%);margin:auto}
+header{background:#0b1423;border-bottom:1px solid #26354a}
+nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;padding:22px 0;gap:18px}
+nav strong{letter-spacing:1px}
+nav div{display:flex;gap:20px;flex-wrap:wrap}
+nav a{font-size:14px;color:#b4c0d0}
+nav a:hover{color:#83b8e8}
+.hero{padding:95px 0;background:radial-gradient(ellipse at 80% 20%,#1b3858,#080e19 65%)}
+.eyebrow{color:#83b8e8;font-size:12px;letter-spacing:3px;font-weight:bold}
+h1{font-size:clamp(38px,5vw,58px);line-height:1.2;margin:18px 0}
+h2{font-size:32px;margin-bottom:18px}
+p{color:#aab7c9}
+.content{padding:75px 0}
+.intro{max-width:750px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:35px}
+.card{background:#101b2c;border:1px solid #28374c;padding:32px;border-radius:7px;transition:.2s}
+.card:hover{border-color:#83b8e8;transform:translateY(-4px)}
+.number{color:#83b8e8;font-size:12px;letter-spacing:2px}
+.card h3{font-size:22px;margin:12px 0}
+.card p{font-size:15px}
+.note{margin-top:40px;padding:28px;border-left:3px solid #83b8e8;background:#101b2c}
+footer{border-top:1px solid #26354a;padding:30px 0;color:#8998ac;font-size:13px}
+@media(max-width:700px){.grid{grid-template-columns:1fr}nav{align-items:flex-start}nav div{gap:12px}}
+</style>
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased selection:bg-amber-400 selection:text-slate-950 flex flex-col min-h-screen font-sans">
+<body>
+<header>
+<div class="container">
+<nav>
+<a href="index.html"><strong>ZERO-DEGREE STRATEGY</strong></a>
+<div>
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="services.html">Services</a>
+<a href="solutions.html">Solutions</a>
+<a href="risk.html">Risk Management</a>
+<a href="education.html">Education</a>
+<a href="contact.html">Contact</a>
+</div>
+</nav>
+</div>
+</header>
 
-  <!-- 顶部导航栏 -->
-  <header class="border-b border-slate-800/80 sticky top-0 bg-slate-950/90 backdrop-blur-md z-40">
-    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-      <a href="index.html" class="flex items-center space-x-3 group">
-        <img src="logo.png" alt="Zero Degree Strategy" class="h-8 w-auto object-contain group-hover:opacity-90 transition">
-        <span class="font-bold text-base tracking-wide text-white">Zero Degree <span class="text-amber-400 font-light">Strategy</span></span>
-      </a>
+<section class="hero">
+<div class="container">
+<div class="eyebrow">OUR SERVICES</div>
+<h1>Perspectives Across the Digital Asset Financial Landscape.</h1>
+<p>Explore our areas of focus across digital assets, crypto derivatives, investment strategy, risk awareness, and decentralized finance.</p>
+</div>
+</section>
 
-      <nav class="hidden md:flex items-center space-x-8 text-xs font-semibold uppercase tracking-wider text-slate-300">
-        <a href="index.html" class="hover:text-amber-400 transition">Home</a>
-        <a href="services.html" class="text-amber-400">Derivatives</a>
-        <a href="risk.html" class="hover:text-amber-400 transition">Security & Risk</a>
-        <a href="education.html" class="hover:text-amber-400 transition">Research</a>
-        <a href="about.html" class="hover:text-amber-400 transition">About Us</a>
-        <button onclick="toggleModal(true)" class="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-medium transition shadow-md shadow-blue-600/30 normal-case tracking-normal text-xs">
-          Contact Desk
-        </button>
-      </nav>
-    </div>
-  </header>
+<section class="content">
+<div class="container">
+<div class="intro">
+<div class="eyebrow">AREAS OF FOCUS</div>
+<h2>Our Core Service Areas</h2>
+<p>We aim to provide research, strategic perspectives, and educational resources that support a more informed understanding of digital asset markets.</p>
+</div>
 
-  <main class="flex-grow">
-    <!-- Hero Header -->
-    <section class="max-w-6xl mx-auto px-6 pt-20 pb-12">
-      <div class="max-w-3xl space-y-4">
-        <div class="text-xs font-mono text-amber-400 uppercase tracking-widest">INFRASTRUCTURE CAPABILITIES</div>
-        <h1 class="text-3xl sm:text-5xl font-bold text-white tracking-tight">Quantitative Derivatives & Execution Routing</h1>
-        <p class="text-sm sm:text-base text-slate-400 leading-relaxed">
-          Engineered for institutional participants seeking algorithmic pricing models and direct collocated network access across digital asset order books.
-        </p>
-      </div>
-    </section>
+<div class="grid">
+<article class="card">
+<div class="number">01 / DIGITAL ASSETS</div>
+<h3>Digital Asset Market Research</h3>
+<p>Explore digital asset market structures, industry developments, blockchain innovation, and emerging financial models.</p>
+</article>
 
-    <!-- 核心能力网格 -->
-    <section class="border-t border-slate-900 bg-slate-900/30 py-16">
-      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8">
-        <div class="bg-slate-950/70 border border-slate-800 p-8 rounded-2xl space-y-4">
-          <div class="w-10 h-10 rounded-lg bg-amber-950/60 border border-amber-800/40 flex items-center justify-center text-amber-400">
-            <i class="fa-solid fa-bolt text-sm"></i>
-          </div>
-          <h2 class="text-xl font-bold text-white">Dedicated Execution Nodes</h2>
-          <p class="text-xs text-slate-400 leading-relaxed">
-            Direct FIX and WebSocket gateway interfaces deployed adjacent to major derivatives matching engines. Ultra-low jitter routing minimizes round-trip slippage and structural latency.
-          </p>
-          <ul class="text-xs text-slate-500 font-mono space-y-1.5 pt-2">
-            <li>• Sub-millisecond round-trip packet transport</li>
-            <li>• Collocated cross-connect infrastructure</li>
-            <li>• High-throughput order stream serialization</li>
-          </ul>
-        </div>
+<article class="card">
+<div class="number">02 / DERIVATIVES</div>
+<h3>Crypto Derivatives</h3>
+<p>Understand futures, options, derivatives market mechanics, trading structures, and the risks associated with leveraged exposure.</p>
+</article>
 
-        <div class="bg-slate-950/70 border border-slate-800 p-8 rounded-2xl space-y-4">
-          <div class="w-10 h-10 rounded-lg bg-cyan-950/60 border border-cyan-800/40 flex items-center justify-center text-cyan-400">
-            <i class="fa-solid fa-chart-pie text-sm"></i>
-          </div>
-          <h2 class="text-xl font-bold text-white">Options Volatility Modeling</h2>
-          <p class="text-xs text-slate-400 leading-relaxed">
-            Continuous surface reconstruction tracking local and implied volatility skews across BTC/USDT derivative contracts. Systematic pricing algorithms capture multi-instrument divergence.
-          </p>
-          <ul class="text-xs text-slate-500 font-mono space-y-1.5 pt-2">
-            <li>• Real-time implied volatility surface mapping</li>
-            <li>• Dynamic Greeks delta-neutral inventory rebalancing</li>
-            <li>• Mathematical curve arbitrage detection</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  </main>
+<article class="card">
+<div class="number">03 / INVESTMENT STRATEGY</div>
+<h3>Investment Strategy Research</h3>
+<p>Examine market trends, strategic approaches, portfolio considerations, and research perspectives across digital asset markets.</p>
+</article>
 
-  <!-- 页脚 -->
-  <footer class="border-t border-slate-900 bg-slate-950 py-8 text-xs text-slate-500">
-    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
-      <div>Zero Degree Strategy. Digital Asset & Web3 Infrastructure. All rights reserved.</div>
-      <div class="flex space-x-6">
-        <a href="index.html" class="hover:text-slate-300">Home</a>
-        <a href="services.html" class="text-amber-400">Derivatives</a>
-        <a href="risk.html" class="hover:text-slate-300">Security & Risk</a>
-        <a href="education.html" class="hover:text-slate-300">Research</a>
-        <a href="about.html" class="hover:text-slate-300">About Us</a>
-      </div>
-    </div>
-  </footer>
+<article class="card">
+<div class="number">04 / RISK MANAGEMENT</div>
+<h3>Risk Management Resources</h3>
+<p>Explore volatility, liquidity, counterparty exposure, operational risks, and frameworks for informed risk assessment.</p>
+</article>
 
-  <!-- Modal -->
-  <div id="contact-modal" class="hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
-    <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-md w-full p-6 space-y-6">
-      <div class="flex justify-between items-center">
-        <h3 class="text-base font-bold text-white">Official Communication Desk</h3>
-        <button onclick="toggleModal(false)" class="text-slate-400 hover:text-white text-2xl leading-none">&times;</button>
-      </div>
-      <div class="p-4 bg-slate-950 border border-slate-800 rounded-xl space-y-3">
-        <div class="text-xs text-slate-400">Official Direct Email:</div>
-        <div class="text-sm font-mono text-amber-400 font-semibold select-all">hr@zero-degreestrategy.com</div>
-      </div>
-      <button onclick="toggleModal(false)" class="w-full py-2.5 rounded-xl bg-slate-800 text-slate-200 text-xs font-medium">Close</button>
-    </div>
-  </div>
-  <script>
-    function toggleModal(show) { document.getElementById('contact-modal').classList.toggle('hidden', !show); }
-  </script>
+<article class="card">
+<div class="number">05 / DECENTRALIZED FINANCE</div>
+<h3>DeFi Research</h3>
+<p>Follow developments in decentralized finance, blockchain protocols, digital financial infrastructure, and emerging opportunities.</p>
+</article>
+
+<article class="card">
+<div class="number">06 / EDUCATION</div>
+<h3>Financial Market Education</h3>
+<p>Access educational materials designed to explain digital asset concepts, market dynamics, and important risk considerations.</p>
+</article>
+</div>
+
+<div class="note">
+<h3>Our Approach</h3>
+<p>Our focus is on clear information, thoughtful research, and responsible communication. Digital asset markets involve substantial risks, and all investment decisions require independent consideration.</p>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="container">© 2026 Zero-Degree Strategy. All rights reserved.</div>
+</footer>
 </body>
 </html>
