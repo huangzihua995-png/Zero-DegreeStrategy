@@ -6,110 +6,255 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Solutions | Zero-Degree Strategy</title>
 <meta name="description" content="Explore Zero-Degree Strategy's research-led perspectives on digital asset markets, investment strategy, and risk management.">
+
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,Helvetica,sans-serif;background:#080e19;color:#f3f6fb;line-height:1.8}
-a{color:inherit;text-decoration:none}
-.container{width:min(1100px,90%);margin:auto}
-header{background:#0b1423;border-bottom:1px solid #26354a}
-nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;padding:22px 0;gap:18px}
-.brand{display:flex;align-items:center;gap:12px;flex-shrink:0}
-.brand img{display:block;width:42px;height:42px;object-fit:contain}
-.brand strong{letter-spacing:1px;font-size:16px;color:#f3f6fb}
-nav div{display:flex;gap:20px;flex-wrap:wrap}
-nav div a{font-size:14px;color:#b4c0d0}
-nav div a:hover{color:#83b8e8}
-.hero{padding:95px 0;background:radial-gradient(ellipse at 80% 20%,#1b3858,#080e19 65%)}
-.eyebrow{color:#83b8e8;font-size:12px;letter-spacing:3px;font-weight:bold}
-h1{font-size:clamp(38px,5vw,58px);line-height:1.2;margin:18px 0}
-h2{font-size:32px;margin-bottom:18px}
-p{color:#aab7c9}
-.content{padding:75px 0}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:35px}
-.card{background:#101b2c;border:1px solid #28374c;padding:32px;border-radius:7px}
-.card h3{font-size:22px;margin:12px 0}
-.card p{font-size:15px}
-.number{color:#83b8e8;font-size:12px;letter-spacing:2px}
-.statement{margin-top:40px;padding:30px;border-left:3px solid #83b8e8;background:#101b2c}
-@media(max-width:700px){
-.grid{grid-template-columns:1fr}
-nav{align-items:flex-start}
-nav div{gap:12px}
-.brand img{width:38px;height:38px}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #080e19;
+    color: #f3f6fb;
+    line-height: 1.8;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(1100px, 90%);
+    margin: auto;
+}
+
+header {
+    background: #0b1423;
+    border-bottom: 1px solid #26354a;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 22px 0;
+    gap: 18px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    white-space: nowrap;
+}
+
+.brand img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.brand strong {
+    letter-spacing: 1px;
+}
+
+nav div {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav div a {
+    font-size: 14px;
+    color: #b4c0d0;
+}
+
+nav div a:hover {
+    color: #83b8e8;
+}
+
+.hero {
+    padding: 95px 0;
+    background: radial-gradient(ellipse at 80% 20%, #1b3858, #080e19 65%);
+}
+
+.eyebrow {
+    color: #83b8e8;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.2;
+    margin: 18px 0;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+p {
+    color: #aab7c9;
+}
+
+section.content {
+    padding: 75px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.card {
+    background: #101b2c;
+    border: 1px solid #28374c;
+    padding: 32px;
+    border-radius: 7px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin: 12px 0;
+}
+
+.card p {
+    font-size: 15px;
+}
+
+.number {
+    color: #83b8e8;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.statement {
+    margin-top: 40px;
+    padding: 30px;
+    border-left: 3px solid #83b8e8;
+    background: #101b2c;
+}
+
+footer {
+    border-top: 1px solid #26354a;
+    padding: 30px 0;
+    color: #8998ac;
+    font-size: 13px;
+}
+
+@media(max-width:700px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        align-items: flex-start;
+    }
+
+    nav div {
+        gap: 12px;
+    }
 }
 </style>
 </head>
+
 <body>
+
 <header>
-<div class="container">
-<nav>
-<a href="index.html" class="brand">
-<img src="/logo.png" alt="Zero-Degree Strategy Logo">
-<strong>ZERO-DEGREE STRATEGY</strong>
-</a>
-<div>
-<a href="index.html">Home</a>
-<a href="about.html">About Us</a>
-<a href="services.html">Services</a>
-<a href="solutions.html">Solutions</a>
-<a href="risk.html">Risk Management</a>
-<a href="education.html">Education</a>
-<a href="contact.html">Contact</a>
-</div>
-</nav>
-</div>
+    <div class="container">
+        <nav>
+            <a href="index.html" class="brand">
+                <img src="/logo.png" alt="Zero-Degree Strategy Logo">
+                <strong>ZERO-DEGREE STRATEGY</strong>
+            </a>
+
+            <div>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="solutions.html">Solutions</a>
+                <a href="risk.html">Risk Management</a>
+                <a href="education.html">Education</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </div>
 </header>
 
 <section class="hero">
-<div class="container">
-<div class="eyebrow">OUR SOLUTIONS</div>
-<h1>Clearer Perspectives for a Complex Digital Asset Market.</h1>
-<p>We focus on research, strategic thinking, and educational resources to help navigate the changing digital financial landscape.</p>
-</div>
+    <div class="container">
+        <div class="eyebrow">OUR SOLUTIONS</div>
+        <h1>Clearer Perspectives for a Complex Digital Asset Market.</h1>
+        <p>We focus on research, strategic thinking, and educational resources to help navigate the changing digital financial landscape.</p>
+    </div>
 </section>
 
 <section class="content">
-<div class="container">
-<div class="eyebrow">HOW WE APPROACH THE MARKET</div>
-<h2>Areas Where We Focus Our Efforts</h2>
-<p>Our approach is organized around key areas of digital asset financial services and market understanding.</p>
-<div class="grid">
-<article class="card">
-<div class="number">01 / MARKET UNDERSTANDING</div>
-<h3>Digital Asset Market Insights</h3>
-<p>Examine market developments, industry structures, blockchain innovation, and factors influencing digital asset markets.</p>
-</article>
-<article class="card">
-<div class="number">02 / STRATEGIC RESEARCH</div>
-<h3>Investment Strategy Perspectives</h3>
-<p>Explore investment approaches, market trends, portfolio considerations, and the factors that may influence strategic decisions.</p>
-</article>
-<article class="card">
-<div class="number">03 / RISK AWARENESS</div>
-<h3>Risk Assessment</h3>
-<p>Understand volatility, liquidity, leverage, counterparty exposure, and operational risks associated with digital assets.</p>
-</article>
-<article class="card">
-<div class="number">04 / MARKET STRUCTURE</div>
-<h3>Crypto Derivatives Research</h3>
-<p>Develop a clearer understanding of derivatives markets, futures, options, trading mechanics, and potential sources of risk.</p>
-</article>
-<article class="card">
-<div class="number">05 / FINANCIAL INNOVATION</div>
-<h3>DeFi and Emerging Markets</h3>
-<p>Explore decentralized finance, blockchain-based financial models, and developments shaping the digital finance ecosystem.</p>
-</article>
-<article class="card">
-<div class="number">06 / KNOWLEDGE DEVELOPMENT</div>
-<h3>Education and Resources</h3>
-<p>Build market knowledge through accessible explanations, research perspectives, and educational materials.</p>
-</article>
-</div>
-<div class="statement">
-<h3>Our Commitment</h3>
-<p>We believe sound financial decisions begin with a clear understanding of available information, potential opportunities, and associated risks. Our goal is to encourage informed and responsible engagement with digital asset markets.</p>
-</div>
-</div>
+    <div class="container">
+        <div class="eyebrow">HOW WE APPROACH THE MARKET</div>
+        <h2>Areas Where We Focus Our Efforts</h2>
+        <p>Our approach is organized around key areas of digital asset financial services and market understanding.</p>
+
+        <div class="grid">
+
+            <article class="card">
+                <div class="number">01 / MARKET UNDERSTANDING</div>
+                <h3>Digital Asset Market Insights</h3>
+                <p>Examine market developments, industry structures, blockchain innovation, and factors influencing digital asset markets.</p>
+            </article>
+
+            <article class="card">
+                <div class="number">02 / STRATEGIC RESEARCH</div>
+                <h3>Investment Strategy Perspectives</h3>
+                <p>Explore investment approaches, market trends, portfolio considerations, and the factors that may influence strategic decisions.</p>
+            </article>
+
+            <article class="card">
+                <div class="number">03 / RISK AWARENESS</div>
+                <h3>Risk Assessment</h3>
+                <p>Understand volatility, liquidity, leverage, counterparty exposure, and operational risks associated with digital assets.</p>
+            </article>
+
+            <article class="card">
+                <div class="number">04 / MARKET STRUCTURE</div>
+                <h3>Crypto Derivatives Research</h3>
+                <p>Develop a clearer understanding of derivatives markets, futures, options, trading mechanics, and potential sources of risk.</p>
+            </article>
+
+            <article class="card">
+                <div class="number">05 / FINANCIAL INNOVATION</div>
+                <h3>DeFi and Emerging Markets</h3>
+                <p>Explore decentralized finance, blockchain-based financial models, and developments shaping the digital finance ecosystem.</p>
+            </article>
+
+            <article class="card">
+                <div class="number">06 / KNOWLEDGE DEVELOPMENT</div>
+                <h3>Education and Resources</h3>
+                <p>Build market knowledge through accessible explanations, research perspectives, and educational materials.</p>
+            </article>
+
+        </div>
+
+        <div class="statement">
+            <h3>Our Commitment</h3>
+            <p>We believe sound financial decisions begin with a clear understanding of available information, potential opportunities, and associated risks. Our goal is to encourage informed and responsible engagement with digital asset markets.</p>
+        </div>
+
+    </div>
 </section>
+
+<footer>
+    <div class="container">Digital Asset Financial Services &amp; Research</div>
+</footer>
+
 </body>
 </html>
