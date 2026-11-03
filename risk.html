@@ -5,113 +5,256 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Risk Management | Zero-Degree Strategy</title>
-<meta name="description" content="Explore digital asset market risks, volatility, liquidity, leverage, and risk management principles.">
+<meta name="description" content="Explore digital asset risk management, market volatility, liquidity, and responsible risk awareness with Zero-Degree Strategy.">
+
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,Helvetica,sans-serif;background:#080e19;color:#f3f6fb;line-height:1.8}
-a{color:inherit;text-decoration:none}
-.container{width:min(1100px,90%);margin:auto}
-header{background:#0b1423;border-bottom:1px solid #26354a}
-nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;padding:22px 0;gap:18px}
-nav strong{letter-spacing:1px}
-nav div{display:flex;gap:20px;flex-wrap:wrap}
-nav a{font-size:14px;color:#b4c0d0}
-nav a:hover{color:#83b8e8}
-.hero{padding:95px 0;background:radial-gradient(ellipse at 80% 20%,#1b3858,#080e19 65%)}
-.eyebrow{color:#83b8e8;font-size:12px;letter-spacing:3px;font-weight:bold}
-h1{font-size:clamp(38px,5vw,58px);line-height:1.2;margin:18px 0}
-h2{font-size:32px;margin-bottom:18px}
-p{color:#aab7c9}
-section.content{padding:75px 0}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:35px}
-.card{background:#101b2c;border:1px solid #28374c;padding:30px;border-radius:7px}
-.card h3{font-size:21px;margin:12px 0}
-.card p{font-size:15px}
-.number{color:#83b8e8;font-size:12px;letter-spacing:2px}
-.notice{margin-top:35px;padding:30px;background:#101b2c;border-left:3px solid #83b8e8}
-footer{border-top:1px solid #26354a;padding:30px 0;color:#8998ac;font-size:13px}
-@media(max-width:700px){.grid{grid-template-columns:1fr}nav{align-items:flex-start}nav div{gap:12px}}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #080e19;
+    color: #f3f6fb;
+    line-height: 1.8;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(1100px, 90%);
+    margin: auto;
+}
+
+header {
+    background: #0b1423;
+    border-bottom: 1px solid #26354a;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 22px 0;
+    gap: 18px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    white-space: nowrap;
+}
+
+.brand img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.brand strong {
+    letter-spacing: 1px;
+}
+
+nav div {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav div a {
+    font-size: 14px;
+    color: #b4c0d0;
+}
+
+nav div a:hover {
+    color: #83b8e8;
+}
+
+.hero {
+    padding: 95px 0;
+    background: radial-gradient(ellipse at 80% 20%, #1b3858, #080e19 65%);
+}
+
+.eyebrow {
+    color: #83b8e8;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.2;
+    margin: 18px 0;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+p {
+    color: #aab7c9;
+}
+
+section.content {
+    padding: 75px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.card {
+    background: #101b2c;
+    border: 1px solid #28374c;
+    padding: 32px;
+    border-radius: 7px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin: 12px 0;
+}
+
+.card p {
+    font-size: 15px;
+}
+
+.number {
+    color: #83b8e8;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.statement {
+    margin-top: 40px;
+    padding: 30px;
+    border-left: 3px solid #83b8e8;
+    background: #101b2c;
+}
+
+footer {
+    border-top: 1px solid #26354a;
+    padding: 30px 0;
+    color: #8998ac;
+    font-size: 13px;
+}
+
+@media(max-width:700px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        align-items: flex-start;
+    }
+
+    nav div {
+        gap: 12px;
+    }
+}
 </style>
 </head>
+
 <body>
+
 <header>
-<div class="container">
-<nav>
-<a href="index.html"><strong>ZERO-DEGREE STRATEGY</strong></a>
-<div>
-<a href="index.html">Home</a>
-<a href="about.html">About Us</a>
-<a href="services.html">Services</a>
-<a href="solutions.html">Solutions</a>
-<a href="risk.html">Risk Management</a>
-<a href="education.html">Education</a>
-<a href="contact.html">Contact</a>
-</div>
-</nav>
-</div>
+    <div class="container">
+        <nav>
+            <a href="index.html" class="brand">
+                <img src="/logo.png" alt="Zero-Degree Strategy Logo">
+                <strong>ZERO-DEGREE STRATEGY</strong>
+            </a>
+
+            <div>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="solutions.html">Solutions</a>
+                <a href="risk.html">Risk Management</a>
+                <a href="education.html">Education</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </div>
 </header>
 
 <section class="hero">
-<div class="container">
-<div class="eyebrow">RISK MANAGEMENT</div>
-<h1>A More Disciplined Perspective on Digital Asset Risk.</h1>
-<p>Understanding risk is essential when exploring digital asset markets. We emphasize awareness, research, and informed decision-making.</p>
-</div>
+    <div class="container">
+        <div class="eyebrow">RISK MANAGEMENT</div>
+        <h1>A More Informed Approach to Digital Asset Risk.</h1>
+        <p>Understanding risk is an essential part of navigating digital asset markets. We focus on research, awareness, and responsible financial decision-making.</p>
+    </div>
 </section>
 
 <section class="content">
-<div class="container">
-<div class="eyebrow">UNDERSTANDING MARKET RISK</div>
-<h2>Key Areas of Risk Awareness</h2>
-<p>Digital asset markets involve a range of financial, technological, and operational risks. Understanding these factors is an important part of responsible market participation.</p>
+    <div class="container">
+        <div class="eyebrow">UNDERSTANDING MARKET RISK</div>
+        <h2>Key Risk Considerations</h2>
+        <p>Digital asset markets involve unique risks. Understanding these factors can help individuals and organizations make more informed decisions.</p>
 
-<div class="grid">
-<article class="card">
-<div class="number">01 / MARKET VOLATILITY</div>
-<h3>Price Volatility</h3>
-<p>Digital asset prices can change rapidly. Market sentiment, liquidity, economic developments, and other factors may contribute to significant price movements.</p>
-</article>
+        <div class="grid">
 
-<article class="card">
-<div class="number">02 / LIQUIDITY</div>
-<h3>Liquidity Risk</h3>
-<p>Market conditions can affect the ability to buy or sell assets at expected prices. Limited liquidity may increase transaction costs and execution uncertainty.</p>
-</article>
+            <article class="card">
+                <div class="number">01 / MARKET VOLATILITY</div>
+                <h3>Price Fluctuations</h3>
+                <p>Digital asset prices can change rapidly. Market sentiment, liquidity, economic developments, and regulatory changes may all influence price movements.</p>
+            </article>
 
-<article class="card">
-<div class="number">03 / LEVERAGE</div>
-<h3>Leverage and Derivatives</h3>
-<p>Leveraged positions and derivatives can magnify both gains and losses. Liquidation, margin requirements, and market gaps require careful consideration.</p>
-</article>
+            <article class="card">
+                <div class="number">02 / LIQUIDITY</div>
+                <h3>Market Liquidity Risk</h3>
+                <p>Trading volume and market depth can vary significantly. Limited liquidity may affect execution prices and the ability to enter or exit positions.</p>
+            </article>
 
-<article class="card">
-<div class="number">04 / COUNTERPARTY</div>
-<h3>Counterparty Risk</h3>
-<p>Exchanges, custodians, lending platforms, and other service providers may face operational or financial difficulties that affect users and assets.</p>
-</article>
+            <article class="card">
+                <div class="number">03 / LEVERAGE</div>
+                <h3>Leverage and Derivatives</h3>
+                <p>Leveraged products and derivatives can amplify both potential gains and losses. Understanding margin requirements and liquidation mechanisms is important.</p>
+            </article>
 
-<article class="card">
-<div class="number">05 / TECHNOLOGY</div>
-<h3>Technology and Security</h3>
-<p>Blockchain networks, smart contracts, wallets, and digital infrastructure may be exposed to technical vulnerabilities and cybersecurity threats.</p>
-</article>
+            <article class="card">
+                <div class="number">04 / COUNTERPARTY</div>
+                <h3>Platform and Counterparty Exposure</h3>
+                <p>Digital asset participants may face risks involving exchanges, custodians, service providers, and other counterparties.</p>
+            </article>
 
-<article class="card">
-<div class="number">06 / REGULATORY</div>
-<h3>Regulatory Uncertainty</h3>
-<p>Digital asset regulations and compliance requirements continue to evolve across jurisdictions and may affect market participants.</p>
-</article>
-</div>
+            <article class="card">
+                <div class="number">05 / TECHNOLOGY</div>
+                <h3>Operational and Technology Risk</h3>
+                <p>Cybersecurity incidents, software vulnerabilities, smart contract failures, and operational disruptions can affect digital asset activities.</p>
+            </article>
 
-<div class="notice">
-<h3>Our Risk Awareness Principles</h3>
-<p>We encourage careful research, independent assessment, an understanding of potential losses, and responsible decision-making. No investment strategy can eliminate market risk or guarantee returns.</p>
-</div>
-</div>
+            <article class="card">
+                <div class="number">06 / REGULATORY</div>
+                <h3>Regulatory Developments</h3>
+                <p>Changes in laws, regulations, and compliance requirements may influence digital asset markets, products, and business operations.</p>
+            </article>
+
+        </div>
+
+        <div class="statement">
+            <h3>Our Perspective</h3>
+            <p>Risk cannot be eliminated, but it can be better understood. We emphasize research, careful evaluation, and informed decision-making when examining digital asset opportunities and challenges.</p>
+        </div>
+
+    </div>
 </section>
 
 <footer>
-<div class="container">© 2026 Zero-Degree Strategy. All rights reserved.</div>
+    <div class="container">Digital Asset Financial Services &amp; Research</div>
 </footer>
+
 </body>
 </html>
