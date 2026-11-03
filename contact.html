@@ -1,168 +1,88 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | Zero Degree Strategy</title>
-  <link rel="icon" type="image/png" href="logo.png">
-  <style>
-    :root {
-      --bg-primary: #070a10;
-      --bg-secondary: #0d131f;
-      --bg-card: rgba(15, 23, 42, 0.85);
-      --border-subtle: rgba(255, 255, 255, 0.08);
-      --border-glow: rgba(0, 240, 255, 0.35);
-      --text-main: #f8fafc;
-      --text-muted: #94a3b8;
-      --cyan: #00f0ff;
-      --emerald: #10b981;
-      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      --font-mono: "JetBrains Mono", Menlo, Consolas, Courier, monospace;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      background-color: var(--bg-primary);
-      color: var(--text-main);
-      font-family: var(--font-sans);
-      line-height: 1.6;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      background-image: 
-        radial-gradient(circle at 50% 30%, rgba(0, 240, 255, 0.05) 0%, transparent 50%),
-        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-      background-size: 100% 100%, 40px 40px, 40px 40px;
-    }
-    a { text-decoration: none; color: inherit; }
-
-    .navbar {
-      position: sticky; top: 0; z-index: 1000;
-      background: rgba(7, 10, 16, 0.88);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border-subtle);
-    }
-    .nav-container {
-      max-width: 1240px; margin: 0 auto; padding: 1.1rem 2rem;
-      display: flex; align-items: center; justify-content: space-between;
-    }
-    .nav-brand {
-      display: flex; align-items: center; gap: 12px;
-      font-weight: 800; font-size: 1.2rem; color: #ffffff;
-    }
-    .brand-logo { height: 32px; width: auto; }
-    .brand-badge {
-      font-size: 0.72rem; font-family: var(--font-mono);
-      background: rgba(0, 240, 255, 0.12); color: var(--cyan);
-      padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(0, 240, 255, 0.3);
-    }
-    .nav-links { display: flex; gap: 2.2rem; list-style: none; }
-    .nav-links a { font-size: 0.92rem; color: var(--text-muted); font-weight: 500; }
-    .nav-links a:hover, .nav-links a.active { color: var(--cyan); }
-
-    .contact-container {
-      flex: 1; max-width: 760px; margin: 4.5rem auto; padding: 0 2rem;
-      width: 100%; text-align: center;
-    }
-    .contact-box {
-      background: var(--bg-secondary); border: 1px solid var(--border-glow);
-      border-radius: 16px; padding: 3.5rem 2.5rem;
-      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5), 0 0 35px rgba(0, 240, 255, 0.08);
-    }
-    .email-display {
-      display: flex; align-items: center; justify-content: space-between;
-      background: var(--bg-primary); border: 1px solid var(--border-subtle);
-      border-radius: 8px; padding: 1.1rem 1.5rem; margin: 2rem 0;
-      font-family: var(--font-mono); font-size: 1.15rem; color: var(--cyan); font-weight: 700;
-    }
-    .copy-btn {
-      background: var(--cyan); color: #070a10; border: none; padding: 0.65rem 1.4rem;
-      border-radius: 6px; font-size: 0.9rem; font-weight: 700; cursor: pointer; transition: all 0.2s;
-    }
-    .copy-btn:hover { background: #67e8f9; transform: scale(1.02); }
-
-    .site-footer { border-top: 1px solid var(--border-subtle); background: #04060a; padding: 2.5rem 2rem; }
-    .footer-inner {
-      max-width: 1240px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;
-      font-size: 0.88rem; color: #64748b;
-    }
-    .footer-links { display: flex; gap: 2rem; }
-    .footer-links a { color: #94a3b8; }
-    .footer-links a:hover { color: var(--cyan); }
-
-    @media (max-width: 768px) {
-      .nav-links { display: none; }
-      .email-display { flex-direction: column; gap: 1rem; }
-      .footer-inner { flex-direction: column; gap: 1rem; text-align: center; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Zero-Degree Strategy</title>
+<meta name="description" content="Contact Zero-Degree Strategy for general inquiries and professional opportunities in digital asset markets.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#080e19;color:#f3f6fb;line-height:1.8}
+a{color:inherit;text-decoration:none}
+.container{width:min(1100px,90%);margin:auto}
+header{background:#0b1423;border-bottom:1px solid #26354a}
+nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;padding:22px 0;gap:18px}
+nav strong{letter-spacing:1px}
+nav div{display:flex;gap:20px;flex-wrap:wrap}
+nav a{font-size:14px;color:#b4c0d0}
+nav a:hover{color:#83b8e8}
+.hero{padding:90px 0;background:radial-gradient(ellipse at 80% 20%,#1b3858,#080e19 65%)}
+.eyebrow{color:#83b8e8;font-size:12px;letter-spacing:3px;font-weight:bold}
+h1{font-size:clamp(38px,5vw,58px);line-height:1.2;margin:18px 0}
+h2{font-size:30px;margin-bottom:16px}
+p{color:#aab7c9}
+.content{padding:75px 0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.card{background:#101b2c;border:1px solid #28374c;padding:32px;border-radius:7px}
+.card h3{font-size:21px;margin-bottom:12px}
+.card p{font-size:15px}
+.notice{margin-top:30px;padding:25px;background:#101b2c;border-left:3px solid #83b8e8}
+footer{border-top:1px solid #26354a;padding:30px 0;color:#8998ac;font-size:13px}
+@media(max-width:700px){.grid{grid-template-columns:1fr}nav{align-items:flex-start}nav div{gap:12px}}
+</style>
 </head>
 <body>
-  <header class="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="nav-brand">
-        <img src="logo.png" alt="Zero Degree" class="brand-logo" onerror="this.style.display='none'">
-        <span>ZERO DEGREE</span>
-        <span class="brand-badge">NODES &amp; RESEARCH</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html">Overview</a></li>
-        <li><a href="solutions.html">Services</a></li>
-        <li><a href="about.html">Architecture</a></li>
-        <li><a href="contact.html" class="active">Contact Us</a></li>
-      </ul>
-    </div>
-  </header>
+<header>
+<div class="container">
+<nav>
+<a href="index.html"><strong>ZERO-DEGREE STRATEGY</strong></a>
+<div>
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="services.html">Services</a>
+<a href="solutions.html">Solutions</a>
+<a href="risk.html">Risk Management</a>
+<a href="education.html">Education</a>
+<a href="contact.html">Contact</a>
+</div>
+</nav>
+</div>
+</header>
 
-  <main class="contact-container">
-    <div class="contact-box">
-      <div style="font-family: var(--font-mono); color: var(--cyan); font-size: 0.82rem; letter-spacing: 0.08em; margin-bottom: 0.8rem;">
-        COMMUNICATION CHANNEL // INQUIRIES
-      </div>
-      <h1 style="font-size: 2.2rem; color: #ffffff; font-weight: 900; margin-bottom: 1rem;">Direct Technical Communication</h1>
-      <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.8; max-width: 580px; margin: 0 auto;">
-        For inquiries regarding trading node connectivity specifications, risk management system integration, or structured education sessions, reach out directly:
-      </p>
+<section class="hero">
+<div class="container">
+<div class="eyebrow">GET IN TOUCH</div>
+<h1>Let's Start a Conversation.</h1>
+<p>We welcome general inquiries, professional connections, and conversations about the evolving digital asset landscape.</p>
+</div>
+</section>
 
-      <div class="email-display">
-        <span id="emailTarget">hr@zero-degreestrategy.com</span>
-        <button class="copy-btn" id="copyBtn">COPY EMAIL</button>
-      </div>
+<section class="content">
+<div class="container">
+<div class="grid">
+<div class="card">
+<div class="eyebrow">GENERAL INQUIRIES</div>
+<h2>Connect With Us</h2>
+<p>For questions about Zero-Degree Strategy, our areas of focus, or general business inquiries, please reach out through our official communication channels.</p>
+</div>
 
-      <div style="font-size: 0.85rem; color: #64748b;">
-        All communication is confidential. Technical and research teams review inquiries continuously.
-      </div>
-    </div>
-  </main>
+<div class="card">
+<div class="eyebrow">PROFESSIONAL OPPORTUNITIES</div>
+<h2>Build With Us</h2>
+<p>We welcome conversations with experienced professionals who are interested in contributing their knowledge, perspectives, and leadership to the digital asset and financial services ecosystem.</p>
+</div>
+</div>
 
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div>Zero Degree Strategy · Trading Nodes, Risk Systems &amp; Education</div>
-      <div class="footer-links">
-        <a href="index.html">Overview</a>
-        <a href="solutions.html">Services</a>
-        <a href="about.html">Architecture</a>
-      </div>
-    </div>
-  </footer>
+<div class="notice">
+<h3>Stay Connected</h3>
+<p>We appreciate your interest in Zero-Degree Strategy. Additional contact information and communication channels will be provided as they become available.</p>
+</div>
+</div>
+</section>
 
-  <script>
-    document.getElementById("copyBtn").addEventListener("click", function() {
-      const email = document.getElementById("emailTarget").innerText.trim();
-      navigator.clipboard.writeText(email).then(() => {
-        const btn = document.getElementById("copyBtn");
-        const oldText = btn.innerText;
-        btn.innerText = "COPIED ✓";
-        btn.style.background = "#10b981";
-        btn.style.color = "#ffffff";
-        setTimeout(() => {
-          btn.innerText = oldText;
-          btn.style.background = "";
-          btn.style.color = "";
-        }, 2200);
-      });
-    });
-  </script>
+<footer>
+<div class="container">© 2026 Zero-Degree Strategy. All rights reserved.</div>
+</footer>
 </body>
 </html>
