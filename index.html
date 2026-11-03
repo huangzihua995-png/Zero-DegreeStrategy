@@ -1,78 +1,295 @@
+
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zero Degree Strategy LLC | Digital Asset & Web3 Financial Infrastructure</title>
-  <meta name="description" content="Zero Degree Strategy LLC is an emerging technology company developing a focused infrastructure platform for digital assets, quantitative derivatives models, and financial market workflows in Manhattan, New York.">
-  <link rel="icon" type="image/png" href="logo.png">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://zero-degreestrategy.com/">
-  <meta property="og:title" content="Zero Degree Strategy LLC | Financial Infrastructure for Digital Finance">
-  <meta property="og:description" content="Building institutional financial infrastructure, quantitative derivatives models, and non-custodial risk architectures.">
-  <meta property="og:image" content="https://zero-degreestrategy.com/logo.png">
-
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- FontAwesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Zero-Degree Strategy provides digital asset research, crypto financial services, investment strategy insights, and risk management resources.">
+<title>Zero-Degree Strategy | Digital Asset Financial Services</title>
+<link rel="icon" href="logo.png">
+<style>
+:root {
+  --bg: #080e19;
+  --panel: #101b2c;
+  --text: #f3f6fb;
+  --muted: #a6b2c4;
+  --accent: #83b8e8;
+  --line: rgba(255,255,255,.12);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+a { color: inherit; text-decoration: none; }
+.container { width: min(1160px, 90%); margin: auto; }
+header {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(8,14,25,.94);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(14px);
+}
+.nav {
+  min-height: 78px;
+  display: flex; align-items: center;
+  justify-content: space-between; gap: 25px;
+}
+.brand { display: flex; align-items: center; gap: 12px; font-weight: 700; }
+.brand img { width: 42px; height: 42px; object-fit: contain; }
+.brand span { letter-spacing: .5px; }
+nav { display: flex; gap: 25px; align-items: center; }
+nav a { color: var(--muted); font-size: 14px; }
+nav a:hover { color: white; }
+.nav-button, .button {
+  display: inline-block; padding: 12px 22px;
+  border-radius: 4px; background: var(--accent);
+  color: #07111e; font-weight: 700;
+}
+.hero {
+  padding: 115px 0 105px;
+  background:
+    radial-gradient(ellipse at 80% 25%, rgba(61,119,174,.22), transparent 45%),
+    linear-gradient(135deg,#0b1525,#080e19 70%);
+}
+.eyebrow {
+  color: var(--accent); text-transform: uppercase;
+  letter-spacing: 3px; font-size: 12px; font-weight: 700;
+}
+h1 {
+  font-size: clamp(40px,6vw,68px);
+  line-height: 1.12; max-width: 850px;
+  margin: 24px 0;
+}
+.hero p { color: var(--muted); max-width: 680px; font-size: 18px; }
+.actions { display: flex; gap: 15px; flex-wrap: wrap; margin-top: 32px; }
+.button.secondary {
+  background: transparent; color: white;
+  border: 1px solid var(--line);
+}
+section { padding: 85px 0; }
+.section-heading { max-width: 700px; margin-bottom: 42px; }
+h2 { font-size: clamp(29px,4vw,42px); line-height: 1.2; margin: 12px 0; }
+.section-heading p, .card p { color: var(--muted); }
+.grid {
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 22px;
+}
+.card {
+  background: var(--panel); border: 1px solid var(--line);
+  border-radius: 8px; padding: 30px;
+  transition: transform .2s,border-color .2s;
+}
+.card:hover { transform: translateY(-5px); border-color: var(--accent); }
+.card .number { color: var(--accent); font-size: 13px; letter-spacing: 2px; }
+.card h3 { font-size: 21px; margin: 17px 0 12px; }
+.about { background: #0c1626; }
+.about-layout {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 60px; align-items: center;
+}
+.about-panel {
+  border: 1px solid var(--line); padding: 35px;
+  background: linear-gradient(145deg,#14243a,#0c1626);
+}
+.about-panel p { color: var(--muted); }
+.values { display: grid; gap: 18px; margin-top: 25px; }
+.value { border-left: 2px solid var(--accent); padding-left: 17px; }
+.value strong { display: block; margin-bottom: 4px; }
+.value span { color: var(--muted); font-size: 14px; }
+.insights { background: #080e19; }
+.cta {
+  text-align: center; padding: 65px 30px;
+  background: linear-gradient(135deg,#142b45,#101b2c);
+  border: 1px solid var(--line); border-radius: 8px;
+}
+.cta p { color: var(--muted); max-width: 620px; margin: 15px auto 28px; }
+footer { border-top: 1px solid var(--line); padding: 35px 0; }
+.footer-row {
+  display: flex; justify-content: space-between;
+  gap: 20px; flex-wrap: wrap; color: var(--muted); font-size: 13px;
+}
+@media(max-width:800px) {
+  .nav { flex-wrap: wrap; padding: 15px 0; }
+  nav { width: 100%; flex-wrap: wrap; gap: 15px; }
+  .grid { grid-template-columns: 1fr; }
+  .about-layout { grid-template-columns: 1fr; gap: 30px; }
+  .hero { padding: 80px 0; }
+  section { padding: 65px 0; }
+}
+</style>
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased selection:bg-amber-400 selection:text-slate-950 flex flex-col min-h-screen font-sans">
+<body>
 
-  <!-- 1. 顶部公告条 -->
-  <div class="border-b border-slate-900 bg-slate-950/90 px-6 py-2.5 text-center text-xs text-slate-400 backdrop-blur-md">
-    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2">
-      <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono uppercase bg-slate-800 text-amber-400">Company Update</span>
-      <span>Zero Degree Strategy LLC continues to expand U.S. market operations under the Manhattan, New York business designation.</span>
-    </div>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="logo.png" alt="Zero-Degree Strategy Logo">
+      <span>ZERO-DEGREE STRATEGY</span>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="risk.html">Risk Management</a>
+      <a href="education.html">Education</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </div>
+</header>
 
-  <!-- 2. 顶部毛玻璃导航栏 -->
-  <header class="border-b border-slate-800/80 sticky top-0 bg-slate-950/85 backdrop-blur-md z-40">
-    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-      <a href="index.html" class="flex items-center space-x-3 group">
-        <img src="logo.png" alt="Zero Degree Strategy LLC" class="h-8 w-auto object-contain group-hover:opacity-90 transition">
-        <span class="font-bold text-base tracking-wide text-white">Zero Degree <span class="text-amber-400 font-light">Strategy</span></span>
-      </a>
-
-      <nav class="hidden md:flex items-center space-x-8 text-xs font-semibold uppercase tracking-wider text-slate-300">
-        <a href="index.html" class="text-amber-400">Home</a>
-        <a href="services.html" class="hover:text-amber-400 transition">Derivatives</a>
-        <a href="risk.html" class="hover:text-amber-400 transition">Security & Risk</a>
-        <a href="education.html" class="hover:text-amber-400 transition">Research</a>
-        <a href="about.html" class="hover:text-amber-400 transition">About Us</a>
-        <button onclick="toggleModal(true)" class="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-medium transition shadow-md shadow-blue-600/30 normal-case tracking-normal text-xs">
-          Contact Desk
-        </button>
-      </nav>
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow">Digital Assets · Financial Strategy · Risk Awareness</div>
+      <h1>Building a More Informed Approach to Digital Asset Markets.</h1>
+      <p>
+        Zero-Degree Strategy is focused on digital asset financial services,
+        crypto derivatives, investment strategy research, and risk management
+        resources. We aim to help individuals and organizations better
+        understand an evolving financial landscape.
+      </p>
+      <div class="actions">
+        <a class="button" href="services.html">Explore Our Services</a>
+        <a class="button secondary" href="about.html">Discover Our Approach</a>
+      </div>
     </div>
-  </header>
+  </section>
 
-  <main class="flex-grow">
-    <!-- 3. Hero 区域 (曼哈顿真实全景天际线大底图) -->
-    <section class="relative min-h-[640px] flex items-center justify-center border-b border-slate-900 bg-cover bg-center overflow-hidden" 
-             style="background-image: url('https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&w=2000&q=80');">
-      
-      <div class="absolute inset-0 bg-gradient-to-b from-slate-950/90 via-slate-950/80 to-slate-950"></div>
-      
-      <div class="relative z-10 max-w-5xl mx-auto px-6 py-24 text-center space-y-6">
-        <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-slate-900/80 border border-slate-700/80 text-amber-400 text-xs font-mono uppercase tracking-wider backdrop-blur-md">
-          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-          <span>U.S. MARKET OPERATIONS · MANHATTAN, NEW YORK</span>
-        </div>
-        
-        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight drop-shadow-md">
-          Digital Asset & Web3 Financial Infrastructure
-        </h1>
-        
-        <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed drop-shadow">
-          Building a U.S.-focused infrastructure platform for digital assets, quantitative derivatives models, dedicated routing nodes, and institutional risk workflows.
+  <section>
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">What We Focus On</div>
+        <h2>Exploring the Digital Asset Financial Ecosystem</h2>
+        <p>
+          We focus on research, strategic perspectives, and educational
+          resources across several areas of the digital asset market.
         </p>
-        
-        <div class="pt-4 flex flex-wrap justify-center gap-4 text-xs font-semibold uppercase tracking-wider">
-          <a href="services.html" class="px-7 py-3.5 rounded-lg bg-white text-slate-950 hover:bg-slate-200 transition shadow-lg">
-            Explore Our Platform &rarr;
-          </a>
-          <button onclick="toggleModal(true)" class="px-7 py-3.5 rounded-lg border border-slate-700 bg-slate-900/80 text-slate-200 hover:bg-slate-800 hover
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="number">01 / DIGITAL ASSETS</div>
+          <h3>Digital Asset Services</h3>
+          <p>
+            Explore digital asset markets, industry developments,
+            market structures, and emerging financial opportunities.
+          </p>
+        </article>
+        <article class="card">
+          <div class="number">02 / STRATEGY</div>
+          <h3>Investment Strategy</h3>
+          <p>
+            Develop a more informed perspective through market research,
+            strategic analysis, and investment education.
+          </p>
+        </article>
+        <article class="card">
+          <div class="number">03 / RISK</div>
+          <h3>Risk Management</h3>
+          <p>
+            Understand market volatility, exposure, risk considerations,
+            and approaches to responsible decision-making.
+          </p>
+        </article>
+        <article class="card">
+          <div class="number">04 / DERIVATIVES</div>
+          <h3>Crypto Derivatives</h3>
+          <p>
+            Learn about digital asset derivatives, market mechanics,
+            trading structures, and associated risks.
+          </p>
+        </article>
+        <article class="card">
+          <div class="number">05 / DEFI</div>
+          <h3>DeFi Research</h3>
+          <p>
+            Follow developments in decentralized finance, blockchain
+            infrastructure, and emerging market models.
+          </p>
+        </article>
+        <article class="card">
+          <div class="number">06 / EDUCATION</div>
+          <h3>Market Education</h3>
+          <p>
+            Access educational perspectives designed to improve
+            understanding of digital asset opportunities and risks.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container about-layout">
+      <div>
+        <div class="eyebrow">About Zero-Degree Strategy</div>
+        <h2>Connecting Financial Perspectives with Digital Innovation.</h2>
+        <p style="color:var(--muted);margin-top:18px">
+          Digital asset markets are evolving rapidly. We believe that
+          informed decisions begin with a clear understanding of market
+          dynamics, financial strategy, and risk.
+        </p>
+        <div class="actions">
+          <a class="button" href="about.html">Learn More About Us</a>
+        </div>
+      </div>
+      <div class="about-panel">
+        <h3>Our Core Principles</h3>
+        <div class="values">
+          <div class="value">
+            <strong>Trust</strong>
+            <span>Building relationships through responsible communication.</span>
+          </div>
+          <div class="value">
+            <strong>Transparency</strong>
+            <span>Promoting clarity around market opportunities and risks.</span>
+          </div>
+          <div class="value">
+            <strong>Innovation</strong>
+            <span>Keeping pace with developments in digital finance.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="insights">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">Research & Education</div>
+        <h2>Knowledge for a Changing Financial Landscape.</h2>
+        <p>
+          Explore educational materials and perspectives on digital assets,
+          crypto derivatives, decentralized finance, and risk awareness.
+        </p>
+      </div>
+      <a class="button secondary" href="education.html">Explore Insights & Education</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="cta">
+        <div class="eyebrow">Connect With Us</div>
+        <h2>Let's Start a Conversation.</h2>
+        <p>
+          Have a question about our focus areas or want to explore
+          potential collaboration? We'd be glad to hear from you.
+        </p>
+        <a class="button" href="contact.html">Contact Our Team</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <span>© 2026 Zero-Degree Strategy. All rights reserved.</span>
+    <span>Digital Asset Financial Services & Research</span>
+  </div>
+</footer>
+
+</body>
+</html>
