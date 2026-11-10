@@ -198,13 +198,15 @@ footer {
         <p>For business inquiries, professional opportunities, or additional information about Zero-Degree Strategy, please reach out to us by email.</p>
         
         <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 16px;">
-          <a href="mailto:hr@zero-degreestrategy.com" style="display: inline-flex; align-items: center; gap: 8px; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 6px; padding: 10px 16px; color: #38bdf8; font-family: monospace; font-size: 15px; text-decoration: none; font-weight: 500;">
+          <div onclick="navigator.clipboard.writeText('hr@zero-degreestrategy.com'); const tag = this.querySelector('.copy-notify'); tag.innerText='Copied!'; setTimeout(() => { tag.innerText='Click to copy'; }, 2000);" 
+               style="cursor: pointer; display: inline-flex; align-items: center; gap: 8px; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 6px; padding: 10px 16px; color: #38bdf8; font-family: monospace; font-size: 15px; user-select: all;">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
               <polyline points="22,6 12,13 2,6"></polyline>
             </svg>
-            hr@zero-degreestrategy.com
-          </a>
+            <span>hr@zero-degreestrategy.com</span>
+            <span class="copy-notify" style="font-size: 11px; color: #94a3b8; margin-left: 6px; background: rgba(255, 255, 255, 0.05); padding: 2px 6px; border-radius: 4px;">Click to copy</span>
+          </div>
           <button type="button" onclick="navigator.clipboard.writeText('hr@zero-degreestrategy.com'); this.innerText='Copied!'; setTimeout(() => { this.innerText='Copy'; }, 2000);" style="background: transparent; border: 1px solid rgba(255, 255, 255, 0.25); border-radius: 6px; padding: 10px 14px; color: #e2e8f0; font-size: 14px; cursor: pointer;">
             Copy
           </button>
